@@ -259,7 +259,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database.cs" />
+    <Compile Include="Services\Database.cs" />
     <Compile Include="staffRegistration.cs">
       <SubType>Form</SubType>
     </Compile>

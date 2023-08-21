@@ -181,6 +181,7 @@
             this.register.Size = new System.Drawing.Size(184, 16);
             this.register.TabIndex = 5;
             this.register.Text = "Click here to Staff Registration";
+            this.register.Click += new System.EventHandler(this.register_Click);
             // 
             // loginBtn
             // 

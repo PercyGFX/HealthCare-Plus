@@ -40,5 +40,13 @@ namespace HealthCare_Plus
                 // Perform database operations here.
             }
         }
+
+        private void register_Click(object sender, EventArgs e)
+        {
+            staffRegistration staffRegistration = new staffRegistration();
+            staffRegistration.Show();
+
+            this.Hide();
+        }
     }
 }
