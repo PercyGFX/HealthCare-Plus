@@ -1,0 +1,56 @@
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\HealthCare Plus.exe.config
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\HealthCare Plus.exe
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\HealthCare Plus.pdb
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare Plus.csproj.AssemblyReference.cache
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare Plus.csproj.SuggestedBindingRedirects.cache
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.login.resources
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.Properties.Resources.resources
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare Plus.csproj.GenerateResource.cache
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare Plus.csproj.CoreCompileInputs.cache
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare Plus.exe
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare Plus.pdb
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\Microsoft.Win32.Registry.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\Microsoft.Win32.Registry.AccessControl.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\Microsoft.Win32.SystemEvents.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\Newtonsoft.Json.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\RestSharp.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Buffers.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.CodeDom.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Data.Odbc.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Data.OleDb.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Data.SqlClient.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Diagnostics.EventLog.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Drawing.Common.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.IO.FileSystem.AccessControl.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.IO.Packaging.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.IO.Ports.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Memory.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Numerics.Vectors.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Security.AccessControl.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Security.Cryptography.Cng.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Security.Permissions.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Security.Principal.Windows.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.ServiceModel.Syndication.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.ServiceProcess.ServiceController.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Threading.AccessControl.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare Plus.csproj.Fody.CopyLocal.cache
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare Plus.csproj.CopyComplete
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare Plus.exe.licenses
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.staffRegistration.resources
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\BouncyCastle.Crypto.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\Google.Protobuf.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\K4os.Compression.LZ4.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\K4os.Hash.xxHash.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\MySql.Data.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.IO.Pipelines.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Threading.Tasks.Extensions.xml
