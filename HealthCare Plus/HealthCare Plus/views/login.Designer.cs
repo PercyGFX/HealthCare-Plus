@@ -37,11 +37,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.password = new System.Windows.Forms.TextBox();
-            this.username = new System.Windows.Forms.TextBox();
+            this.txtpassword = new System.Windows.Forms.TextBox();
+            this.txtusername = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.register = new System.Windows.Forms.Label();
-            this.loginBtn = new System.Windows.Forms.Button();
+            this.btnlogin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,11 +80,11 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.password);
-            this.panel1.Controls.Add(this.username);
+            this.panel1.Controls.Add(this.txtpassword);
+            this.panel1.Controls.Add(this.txtusername);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.register);
-            this.panel1.Controls.Add(this.loginBtn);
+            this.panel1.Controls.Add(this.btnlogin);
             this.panel1.Location = new System.Drawing.Point(21, 72);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(507, 407);
@@ -140,24 +140,24 @@
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
-            // password
+            // txtpassword
             // 
-            this.password.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password.Location = new System.Drawing.Point(173, 204);
-            this.password.Multiline = true;
-            this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(286, 40);
-            this.password.TabIndex = 8;
+            this.txtpassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpassword.Location = new System.Drawing.Point(173, 204);
+            this.txtpassword.Multiline = true;
+            this.txtpassword.Name = "txtpassword";
+            this.txtpassword.Size = new System.Drawing.Size(286, 40);
+            this.txtpassword.TabIndex = 8;
             // 
-            // username
+            // txtusername
             // 
-            this.username.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.ForeColor = System.Drawing.Color.Black;
-            this.username.Location = new System.Drawing.Point(173, 147);
-            this.username.Multiline = true;
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(286, 40);
-            this.username.TabIndex = 7;
+            this.txtusername.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtusername.ForeColor = System.Drawing.Color.Black;
+            this.txtusername.Location = new System.Drawing.Point(173, 147);
+            this.txtusername.Multiline = true;
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(286, 40);
+            this.txtusername.TabIndex = 7;
             // 
             // label3
             // 
@@ -183,20 +183,20 @@
             this.register.Text = "Click here to Staff Registration";
             this.register.Click += new System.EventHandler(this.register_Click);
             // 
-            // loginBtn
+            // btnlogin
             // 
-            this.loginBtn.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.loginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.loginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loginBtn.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginBtn.ForeColor = System.Drawing.Color.White;
-            this.loginBtn.Location = new System.Drawing.Point(173, 274);
-            this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(286, 40);
-            this.loginBtn.TabIndex = 4;
-            this.loginBtn.Text = "LOGIN";
-            this.loginBtn.UseVisualStyleBackColor = false;
-            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
+            this.btnlogin.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnlogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlogin.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogin.ForeColor = System.Drawing.Color.White;
+            this.btnlogin.Location = new System.Drawing.Point(173, 274);
+            this.btnlogin.Name = "btnlogin";
+            this.btnlogin.Size = new System.Drawing.Size(286, 40);
+            this.btnlogin.TabIndex = 4;
+            this.btnlogin.Text = "LOGIN";
+            this.btnlogin.UseVisualStyleBackColor = false;
+            this.btnlogin.Click += new System.EventHandler(this.loginBtn_Click);
             // 
             // login
             // 
@@ -235,11 +235,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox password;
-        private System.Windows.Forms.TextBox username;
+        private System.Windows.Forms.TextBox txtpassword;
+        private System.Windows.Forms.TextBox txtusername;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label register;
-        private System.Windows.Forms.Button loginBtn;
+        private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
