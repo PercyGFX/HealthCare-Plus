@@ -16,5 +16,10 @@ namespace HealthCare_Plus
         {
             InitializeComponent();
         }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

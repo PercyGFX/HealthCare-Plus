@@ -273,6 +273,7 @@
             this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.exit.TabIndex = 29;
             this.exit.TabStop = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // staffRegistration
             // 

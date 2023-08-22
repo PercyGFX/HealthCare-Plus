@@ -30,39 +30,50 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminDashboard));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.picboxlogo = new System.Windows.Forms.PictureBox();
             this.editAccount = new System.Windows.Forms.Button();
             this.orders = new System.Windows.Forms.Button();
             this.customers = new System.Windows.Forms.Button();
             this.reports = new System.Windows.Forms.Button();
             this.priceList = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.picboxclose = new System.Windows.Forms.PictureBox();
+            this.picboxminimize = new System.Windows.Forms.PictureBox();
+            this.picboxlogout = new System.Windows.Forms.PictureBox();
+            this.lbladmindashboard = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.exit = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxlogo)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxclose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxminimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxlogout)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.picboxlogo);
             this.panel1.Controls.Add(this.editAccount);
             this.panel1.Controls.Add(this.orders);
             this.panel1.Controls.Add(this.customers);
             this.panel1.Controls.Add(this.reports);
             this.panel1.Controls.Add(this.priceList);
-            this.panel1.Location = new System.Drawing.Point(0, -1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(226, 590);
+            this.panel1.Size = new System.Drawing.Size(226, 592);
             this.panel1.TabIndex = 0;
+            // 
+            // picboxlogo
+            // 
+            this.picboxlogo.Image = ((System.Drawing.Image)(resources.GetObject("picboxlogo.Image")));
+            this.picboxlogo.Location = new System.Drawing.Point(66, 13);
+            this.picboxlogo.Name = "picboxlogo";
+            this.picboxlogo.Size = new System.Drawing.Size(78, 77);
+            this.picboxlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picboxlogo.TabIndex = 35;
+            this.picboxlogo.TabStop = false;
             // 
             // editAccount
             // 
@@ -137,76 +148,71 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkGray;
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.exit);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(225, 1);
+            this.panel2.Controls.Add(this.picboxclose);
+            this.panel2.Controls.Add(this.picboxminimize);
+            this.panel2.Controls.Add(this.picboxlogout);
+            this.panel2.Controls.Add(this.lbladmindashboard);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(226, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(916, 69);
+            this.panel2.Size = new System.Drawing.Size(917, 69);
             this.panel2.TabIndex = 1;
             // 
-            // label1
+            // picboxclose
             // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(7, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(349, 45);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "Admin Dashboard";
+            this.picboxclose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picboxclose.Image = ((System.Drawing.Image)(resources.GetObject("picboxclose.Image")));
+            this.picboxclose.Location = new System.Drawing.Point(869, 11);
+            this.picboxclose.Name = "picboxclose";
+            this.picboxclose.Size = new System.Drawing.Size(37, 39);
+            this.picboxclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picboxclose.TabIndex = 34;
+            this.picboxclose.TabStop = false;
+            this.picboxclose.Click += new System.EventHandler(this.picboxclose_Click);
+            // 
+            // picboxminimize
+            // 
+            this.picboxminimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picboxminimize.Image = ((System.Drawing.Image)(resources.GetObject("picboxminimize.Image")));
+            this.picboxminimize.Location = new System.Drawing.Point(826, 11);
+            this.picboxminimize.Name = "picboxminimize";
+            this.picboxminimize.Size = new System.Drawing.Size(37, 39);
+            this.picboxminimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picboxminimize.TabIndex = 33;
+            this.picboxminimize.TabStop = false;
+            this.picboxminimize.Click += new System.EventHandler(this.picboxminimize_Click);
+            // 
+            // picboxlogout
+            // 
+            this.picboxlogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picboxlogout.Image = ((System.Drawing.Image)(resources.GetObject("picboxlogout.Image")));
+            this.picboxlogout.Location = new System.Drawing.Point(783, 11);
+            this.picboxlogout.Name = "picboxlogout";
+            this.picboxlogout.Size = new System.Drawing.Size(37, 39);
+            this.picboxlogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picboxlogout.TabIndex = 30;
+            this.picboxlogout.TabStop = false;
+            this.picboxlogout.Click += new System.EventHandler(this.picboxlogout_Click);
+            // 
+            // lbladmindashboard
+            // 
+            this.lbladmindashboard.AutoSize = true;
+            this.lbladmindashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbladmindashboard.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbladmindashboard.ForeColor = System.Drawing.Color.White;
+            this.lbladmindashboard.Location = new System.Drawing.Point(7, 11);
+            this.lbladmindashboard.Name = "lbladmindashboard";
+            this.lbladmindashboard.Size = new System.Drawing.Size(349, 45);
+            this.lbladmindashboard.TabIndex = 31;
+            this.lbladmindashboard.Text = "Admin Dashboard";
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(232, 76);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(226, 69);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(899, 513);
+            this.panel3.Size = new System.Drawing.Size(917, 523);
             this.panel3.TabIndex = 2;
-            // 
-            // exit
-            // 
-            this.exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exit.Image = ((System.Drawing.Image)(resources.GetObject("exit.Image")));
-            this.exit.Location = new System.Drawing.Point(783, 11);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(37, 39);
-            this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.exit.TabIndex = 30;
-            this.exit.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(826, 11);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(37, 39);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 33;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(869, 11);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(37, 39);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 34;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(66, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(78, 77);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 35;
-            this.pictureBox1.TabStop = false;
             // 
             // adminDashboard
             // 
@@ -223,12 +229,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "adminDashboard";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picboxlogo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxclose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxminimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxlogout)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -242,11 +248,11 @@
         private System.Windows.Forms.Button reports;
         private System.Windows.Forms.Button priceList;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbladmindashboard;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox exit;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picboxlogout;
+        private System.Windows.Forms.PictureBox picboxclose;
+        private System.Windows.Forms.PictureBox picboxminimize;
+        private System.Windows.Forms.PictureBox picboxlogo;
     }
 }

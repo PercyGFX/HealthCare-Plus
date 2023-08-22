@@ -17,9 +17,21 @@ namespace HealthCare_Plus.views.admin
             InitializeComponent();
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void picboxclose_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void picboxminimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void picboxlogout_Click(object sender, EventArgs e)
+        {
+            login login = new login();
+            this.Hide();
+            login.Show();
         }
     }
 }
