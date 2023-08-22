@@ -54,3 +54,4 @@ C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\MySql.Data.
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.IO.Pipelines.xml
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.admin.adminDashboard.resources

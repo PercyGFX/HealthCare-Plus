@@ -286,6 +286,9 @@
     <Compile Include="views\staff\staffDashboard.Designer.cs">
       <DependentUpon>staffDashboard.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="views\admin\adminDashboard.resx">
+      <DependentUpon>adminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
