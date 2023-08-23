@@ -260,6 +260,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Services\Database.cs" />
+    <Compile Include="Services\md5convert.cs" />
     <Compile Include="Services\validations.cs" />
     <Compile Include="views\admin\adminDashboard.cs">
       <SubType>Form</SubType>

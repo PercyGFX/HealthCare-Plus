@@ -14,27 +14,6 @@ namespace HealthCare_Plus
         // database object 
             Database dbManager = new Database();
 
-        // md5 convert
-
-        private string GetMd5Hash(string input)
-        {
-            using (MD5 md5 = MD5.Create())
-            {
-                byte[] inputBytes = Encoding.UTF8.GetBytes(input);
-                byte[] hashBytes = md5.ComputeHash(inputBytes);
-
-                StringBuilder sb = new StringBuilder();
-
-                for (int i = 0; i < hashBytes.Length; i++)
-                {
-                    sb.Append(hashBytes[i].ToString("x2"));
-                }
-
-                return sb.ToString();
-            }
-        }
-
-
 
         public login()
         {
@@ -68,7 +47,7 @@ namespace HealthCare_Plus
                     dbManager.OpenConnection(connection);
 
                     string usernameInput = txtusername.Text;
-                    string passwordInput = GetMd5Hash(txtpassword.Text);
+                    string passwordInput = md5convert.GetMd5Hash(txtpassword.Text.Trim());
 
                     string query = "SELECT * FROM user WHERE username = @Username AND password = @Password";
                     using (MySqlCommand cmd = new MySqlCommand(query, connection))
