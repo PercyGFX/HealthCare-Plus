@@ -37,7 +37,7 @@
             this.panelsidebar = new System.Windows.Forms.Panel();
             this.picboxlogo = new System.Windows.Forms.PictureBox();
             this.btnreports = new System.Windows.Forms.Button();
-            this.btnpatients = new System.Windows.Forms.Button();
+            this.btnappoinments = new System.Windows.Forms.Button();
             this.btcdoctors = new System.Windows.Forms.Button();
             this.btnrooms = new System.Windows.Forms.Button();
             this.btnpayments = new System.Windows.Forms.Button();
@@ -100,11 +100,11 @@
             // 
             this.lblstaffdashboard.AutoSize = true;
             this.lblstaffdashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblstaffdashboard.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblstaffdashboard.Font = new System.Drawing.Font("Bebas Neue", 27.75F, System.Drawing.FontStyle.Bold);
             this.lblstaffdashboard.ForeColor = System.Drawing.Color.White;
             this.lblstaffdashboard.Location = new System.Drawing.Point(7, 11);
             this.lblstaffdashboard.Name = "lblstaffdashboard";
-            this.lblstaffdashboard.Size = new System.Drawing.Size(319, 45);
+            this.lblstaffdashboard.Size = new System.Drawing.Size(241, 44);
             this.lblstaffdashboard.TabIndex = 31;
             this.lblstaffdashboard.Text = "Staff Dashboard";
             // 
@@ -113,7 +113,7 @@
             this.panelsidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panelsidebar.Controls.Add(this.picboxlogo);
             this.panelsidebar.Controls.Add(this.btnreports);
-            this.panelsidebar.Controls.Add(this.btnpatients);
+            this.panelsidebar.Controls.Add(this.btnappoinments);
             this.panelsidebar.Controls.Add(this.btcdoctors);
             this.panelsidebar.Controls.Add(this.btnrooms);
             this.panelsidebar.Controls.Add(this.btnpayments);
@@ -144,22 +144,22 @@
             this.btnreports.Name = "btnreports";
             this.btnreports.Size = new System.Drawing.Size(211, 58);
             this.btnreports.TabIndex = 7;
-            this.btnreports.Text = "REPORTS";
+            this.btnreports.Text = "Medication Management";
             this.btnreports.UseVisualStyleBackColor = false;
             // 
-            // btnpatients
+            // btnappoinments
             // 
-            this.btnpatients.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.btnpatients.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnpatients.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnpatients.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpatients.ForeColor = System.Drawing.Color.White;
-            this.btnpatients.Location = new System.Drawing.Point(8, 125);
-            this.btnpatients.Name = "btnpatients";
-            this.btnpatients.Size = new System.Drawing.Size(212, 58);
-            this.btnpatients.TabIndex = 6;
-            this.btnpatients.Text = "PATIENTS";
-            this.btnpatients.UseVisualStyleBackColor = false;
+            this.btnappoinments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btnappoinments.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnappoinments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnappoinments.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnappoinments.ForeColor = System.Drawing.Color.White;
+            this.btnappoinments.Location = new System.Drawing.Point(8, 125);
+            this.btnappoinments.Name = "btnappoinments";
+            this.btnappoinments.Size = new System.Drawing.Size(212, 58);
+            this.btnappoinments.TabIndex = 6;
+            this.btnappoinments.Text = "APPOINMENTS";
+            this.btnappoinments.UseVisualStyleBackColor = false;
             // 
             // btcdoctors
             // 
@@ -172,7 +172,7 @@
             this.btcdoctors.Name = "btcdoctors";
             this.btcdoctors.Size = new System.Drawing.Size(212, 58);
             this.btcdoctors.TabIndex = 10;
-            this.btcdoctors.Text = "DOCTORS";
+            this.btcdoctors.Text = "DOCTOR SHEDULES";
             this.btcdoctors.UseVisualStyleBackColor = false;
             // 
             // btnrooms
@@ -186,7 +186,7 @@
             this.btnrooms.Name = "btnrooms";
             this.btnrooms.Size = new System.Drawing.Size(212, 58);
             this.btnrooms.TabIndex = 8;
-            this.btnrooms.Text = "ROOMS";
+            this.btnrooms.Text = "PATIENT RECORDS";
             this.btnrooms.UseVisualStyleBackColor = false;
             // 
             // btnpayments
@@ -200,7 +200,7 @@
             this.btnpayments.Name = "btnpayments";
             this.btnpayments.Size = new System.Drawing.Size(212, 58);
             this.btnpayments.TabIndex = 9;
-            this.btnpayments.Text = "PAYMENTS";
+            this.btnpayments.Text = "DOCTOR INFORMATION";
             this.btnpayments.UseVisualStyleBackColor = false;
             // 
             // panelcontent
@@ -243,7 +243,7 @@
         private System.Windows.Forms.Panel panelsidebar;
         private System.Windows.Forms.PictureBox picboxlogo;
         private System.Windows.Forms.Button btnreports;
-        private System.Windows.Forms.Button btnpatients;
+        private System.Windows.Forms.Button btnappoinments;
         private System.Windows.Forms.Button btcdoctors;
         private System.Windows.Forms.Button btnrooms;
         private System.Windows.Forms.Button btnpayments;

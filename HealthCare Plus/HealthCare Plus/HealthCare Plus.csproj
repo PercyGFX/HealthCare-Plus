@@ -260,6 +260,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Services\Database.cs" />
+    <Compile Include="Services\validations.cs" />
     <Compile Include="views\admin\adminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -304,6 +305,9 @@
     </Compile>
     <EmbeddedResource Include="views\staffRegistration.resx">
       <DependentUpon>staffRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\staffDashboard.resx">
+      <DependentUpon>staffDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

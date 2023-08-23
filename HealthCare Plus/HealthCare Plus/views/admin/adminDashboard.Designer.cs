@@ -29,41 +29,43 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminDashboard));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelsidebar = new System.Windows.Forms.Panel();
             this.picboxlogo = new System.Windows.Forms.PictureBox();
-            this.editAccount = new System.Windows.Forms.Button();
-            this.orders = new System.Windows.Forms.Button();
-            this.customers = new System.Windows.Forms.Button();
-            this.reports = new System.Windows.Forms.Button();
-            this.priceList = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnreports = new System.Windows.Forms.Button();
+            this.btnpatients = new System.Windows.Forms.Button();
+            this.btcdoctors = new System.Windows.Forms.Button();
+            this.btnrooms = new System.Windows.Forms.Button();
+            this.btnpayments = new System.Windows.Forms.Button();
+            this.paneltop = new System.Windows.Forms.Panel();
             this.picboxclose = new System.Windows.Forms.PictureBox();
             this.picboxminimize = new System.Windows.Forms.PictureBox();
             this.picboxlogout = new System.Windows.Forms.PictureBox();
             this.lbladmindashboard = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.panelcontent = new System.Windows.Forms.Panel();
+            this.btnresources = new System.Windows.Forms.Button();
+            this.panelsidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxlogo)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.paneltop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxminimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxlogout)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelsidebar
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.picboxlogo);
-            this.panel1.Controls.Add(this.editAccount);
-            this.panel1.Controls.Add(this.orders);
-            this.panel1.Controls.Add(this.customers);
-            this.panel1.Controls.Add(this.reports);
-            this.panel1.Controls.Add(this.priceList);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(226, 592);
-            this.panel1.TabIndex = 0;
+            this.panelsidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelsidebar.Controls.Add(this.btnresources);
+            this.panelsidebar.Controls.Add(this.picboxlogo);
+            this.panelsidebar.Controls.Add(this.btnreports);
+            this.panelsidebar.Controls.Add(this.btnpatients);
+            this.panelsidebar.Controls.Add(this.btcdoctors);
+            this.panelsidebar.Controls.Add(this.btnrooms);
+            this.panelsidebar.Controls.Add(this.btnpayments);
+            this.panelsidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelsidebar.Location = new System.Drawing.Point(0, 0);
+            this.panelsidebar.Name = "panelsidebar";
+            this.panelsidebar.Size = new System.Drawing.Size(226, 592);
+            this.panelsidebar.TabIndex = 0;
             // 
             // picboxlogo
             // 
@@ -75,88 +77,88 @@
             this.picboxlogo.TabIndex = 35;
             this.picboxlogo.TabStop = false;
             // 
-            // editAccount
+            // btnreports
             // 
-            this.editAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.editAccount.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.editAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editAccount.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editAccount.ForeColor = System.Drawing.Color.White;
-            this.editAccount.Location = new System.Drawing.Point(9, 381);
-            this.editAccount.Name = "editAccount";
-            this.editAccount.Size = new System.Drawing.Size(211, 58);
-            this.editAccount.TabIndex = 7;
-            this.editAccount.Text = "EDIT ACCOUNT";
-            this.editAccount.UseVisualStyleBackColor = false;
+            this.btnreports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btnreports.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnreports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreports.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreports.ForeColor = System.Drawing.Color.White;
+            this.btnreports.Location = new System.Drawing.Point(9, 445);
+            this.btnreports.Name = "btnreports";
+            this.btnreports.Size = new System.Drawing.Size(211, 58);
+            this.btnreports.TabIndex = 7;
+            this.btnreports.Text = "REPORTS";
+            this.btnreports.UseVisualStyleBackColor = false;
             // 
-            // orders
+            // btnpatients
             // 
-            this.orders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.orders.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.orders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.orders.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.orders.ForeColor = System.Drawing.Color.White;
-            this.orders.Location = new System.Drawing.Point(8, 125);
-            this.orders.Name = "orders";
-            this.orders.Size = new System.Drawing.Size(212, 58);
-            this.orders.TabIndex = 6;
-            this.orders.Text = "ORDERS";
-            this.orders.UseVisualStyleBackColor = false;
+            this.btnpatients.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btnpatients.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnpatients.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnpatients.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpatients.ForeColor = System.Drawing.Color.White;
+            this.btnpatients.Location = new System.Drawing.Point(8, 125);
+            this.btnpatients.Name = "btnpatients";
+            this.btnpatients.Size = new System.Drawing.Size(212, 58);
+            this.btnpatients.TabIndex = 6;
+            this.btnpatients.Text = "PATIENTS";
+            this.btnpatients.UseVisualStyleBackColor = false;
             // 
-            // customers
+            // btcdoctors
             // 
-            this.customers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.customers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.customers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customers.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customers.ForeColor = System.Drawing.Color.White;
-            this.customers.Location = new System.Drawing.Point(8, 189);
-            this.customers.Name = "customers";
-            this.customers.Size = new System.Drawing.Size(212, 58);
-            this.customers.TabIndex = 10;
-            this.customers.Text = "CUSTOMERS";
-            this.customers.UseVisualStyleBackColor = false;
+            this.btcdoctors.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btcdoctors.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btcdoctors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btcdoctors.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btcdoctors.ForeColor = System.Drawing.Color.White;
+            this.btcdoctors.Location = new System.Drawing.Point(8, 189);
+            this.btcdoctors.Name = "btcdoctors";
+            this.btcdoctors.Size = new System.Drawing.Size(212, 58);
+            this.btcdoctors.TabIndex = 10;
+            this.btcdoctors.Text = "DOCTORS";
+            this.btcdoctors.UseVisualStyleBackColor = false;
             // 
-            // reports
+            // btnrooms
             // 
-            this.reports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.reports.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.reports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reports.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reports.ForeColor = System.Drawing.Color.White;
-            this.reports.Location = new System.Drawing.Point(8, 253);
-            this.reports.Name = "reports";
-            this.reports.Size = new System.Drawing.Size(212, 58);
-            this.reports.TabIndex = 8;
-            this.reports.Text = "REPORTS";
-            this.reports.UseVisualStyleBackColor = false;
+            this.btnrooms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btnrooms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnrooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrooms.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnrooms.ForeColor = System.Drawing.Color.White;
+            this.btnrooms.Location = new System.Drawing.Point(8, 253);
+            this.btnrooms.Name = "btnrooms";
+            this.btnrooms.Size = new System.Drawing.Size(212, 58);
+            this.btnrooms.TabIndex = 8;
+            this.btnrooms.Text = "ROOMS";
+            this.btnrooms.UseVisualStyleBackColor = false;
             // 
-            // priceList
+            // btnpayments
             // 
-            this.priceList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.priceList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.priceList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.priceList.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.priceList.ForeColor = System.Drawing.Color.White;
-            this.priceList.Location = new System.Drawing.Point(8, 317);
-            this.priceList.Name = "priceList";
-            this.priceList.Size = new System.Drawing.Size(212, 58);
-            this.priceList.TabIndex = 9;
-            this.priceList.Text = "PRICE LIST";
-            this.priceList.UseVisualStyleBackColor = false;
+            this.btnpayments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btnpayments.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnpayments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnpayments.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpayments.ForeColor = System.Drawing.Color.White;
+            this.btnpayments.Location = new System.Drawing.Point(8, 317);
+            this.btnpayments.Name = "btnpayments";
+            this.btnpayments.Size = new System.Drawing.Size(212, 58);
+            this.btnpayments.TabIndex = 9;
+            this.btnpayments.Text = "PAYMENTS";
+            this.btnpayments.UseVisualStyleBackColor = false;
             // 
-            // panel2
+            // paneltop
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.picboxclose);
-            this.panel2.Controls.Add(this.picboxminimize);
-            this.panel2.Controls.Add(this.picboxlogout);
-            this.panel2.Controls.Add(this.lbladmindashboard);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(226, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(917, 69);
-            this.panel2.TabIndex = 1;
+            this.paneltop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.paneltop.Controls.Add(this.picboxclose);
+            this.paneltop.Controls.Add(this.picboxminimize);
+            this.paneltop.Controls.Add(this.picboxlogout);
+            this.paneltop.Controls.Add(this.lbladmindashboard);
+            this.paneltop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paneltop.Location = new System.Drawing.Point(226, 0);
+            this.paneltop.Name = "paneltop";
+            this.paneltop.Size = new System.Drawing.Size(917, 69);
+            this.paneltop.TabIndex = 1;
             // 
             // picboxclose
             // 
@@ -198,21 +200,35 @@
             // 
             this.lbladmindashboard.AutoSize = true;
             this.lbladmindashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbladmindashboard.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbladmindashboard.Font = new System.Drawing.Font("Bebas Neue", 27.75F, System.Drawing.FontStyle.Bold);
             this.lbladmindashboard.ForeColor = System.Drawing.Color.White;
-            this.lbladmindashboard.Location = new System.Drawing.Point(7, 11);
+            this.lbladmindashboard.Location = new System.Drawing.Point(6, 13);
             this.lbladmindashboard.Name = "lbladmindashboard";
-            this.lbladmindashboard.Size = new System.Drawing.Size(349, 45);
+            this.lbladmindashboard.Size = new System.Drawing.Size(248, 44);
             this.lbladmindashboard.TabIndex = 31;
             this.lbladmindashboard.Text = "Admin Dashboard";
             // 
-            // panel3
+            // panelcontent
             // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(226, 69);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(917, 523);
-            this.panel3.TabIndex = 2;
+            this.panelcontent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelcontent.Location = new System.Drawing.Point(226, 69);
+            this.panelcontent.Name = "panelcontent";
+            this.panelcontent.Size = new System.Drawing.Size(917, 523);
+            this.panelcontent.TabIndex = 2;
+            // 
+            // btnresources
+            // 
+            this.btnresources.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btnresources.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnresources.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnresources.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnresources.ForeColor = System.Drawing.Color.White;
+            this.btnresources.Location = new System.Drawing.Point(8, 381);
+            this.btnresources.Name = "btnresources";
+            this.btnresources.Size = new System.Drawing.Size(212, 58);
+            this.btnresources.TabIndex = 36;
+            this.btnresources.Text = "RESOURCES";
+            this.btnresources.UseVisualStyleBackColor = false;
             // 
             // adminDashboard
             // 
@@ -220,18 +236,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1143, 592);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelcontent);
+            this.Controls.Add(this.paneltop);
+            this.Controls.Add(this.panelsidebar);
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "adminDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "adminDashboard";
-            this.panel1.ResumeLayout(false);
+            this.panelsidebar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picboxlogo)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.paneltop.ResumeLayout(false);
+            this.paneltop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxclose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxminimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxlogout)).EndInit();
@@ -241,18 +257,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button editAccount;
-        private System.Windows.Forms.Button orders;
-        private System.Windows.Forms.Button customers;
-        private System.Windows.Forms.Button reports;
-        private System.Windows.Forms.Button priceList;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelsidebar;
+        private System.Windows.Forms.Button btnreports;
+        private System.Windows.Forms.Button btnpatients;
+        private System.Windows.Forms.Button btcdoctors;
+        private System.Windows.Forms.Button btnrooms;
+        private System.Windows.Forms.Button btnpayments;
+        private System.Windows.Forms.Panel paneltop;
         private System.Windows.Forms.Label lbladmindashboard;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelcontent;
         private System.Windows.Forms.PictureBox picboxlogout;
         private System.Windows.Forms.PictureBox picboxclose;
         private System.Windows.Forms.PictureBox picboxminimize;
         private System.Windows.Forms.PictureBox picboxlogo;
+        private System.Windows.Forms.Button btnresources;
     }
 }

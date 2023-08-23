@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using HealthCare_Plus.views.admin;
 using HealthCare_Plus.views.staff;
+using HealthCare_Plus.Services;
 
 namespace HealthCare_Plus
 {
@@ -33,22 +34,6 @@ namespace HealthCare_Plus
             }
         }
 
-        //validations
-        public bool isValid()
-        {
-            if (txtusername.Text.Trim() == "")
-            {
-                MessageBox.Show("Enter a valid username.", "Error");
-                return false;
-            }
-            else if (txtpassword.Text.Trim() == "")
-            {
-                MessageBox.Show("Enter a valid password.", "Error");
-                return false;
-            }
-
-            return true;
-        }
 
 
         public login()
@@ -76,7 +61,7 @@ namespace HealthCare_Plus
         private void loginBtn_Click(object sender, EventArgs e)
         {
 
-            if (isValid())
+            if (LoginValidations.IsValidLogin(txtusername.Text.Trim(), txtpassword.Text.Trim()))
             {
                 using (MySqlConnection connection = dbManager.GetConnection())
                 {

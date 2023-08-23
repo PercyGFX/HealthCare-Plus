@@ -32,35 +32,35 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.password = new System.Windows.Forms.RichTextBox();
-            this.uname = new System.Windows.Forms.RichTextBox();
-            this.tel = new System.Windows.Forms.RichTextBox();
-            this.email = new System.Windows.Forms.RichTextBox();
-            this.address = new System.Windows.Forms.RichTextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtpassword = new System.Windows.Forms.RichTextBox();
+            this.txtusername = new System.Windows.Forms.RichTextBox();
+            this.txtphone = new System.Windows.Forms.RichTextBox();
+            this.txtemail = new System.Windows.Forms.RichTextBox();
+            this.txtaddress = new System.Windows.Forms.RichTextBox();
+            this.btnregister = new System.Windows.Forms.Button();
+            this.btncancel = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cusName = new System.Windows.Forms.RichTextBox();
+            this.txtname = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.exit = new System.Windows.Forms.PictureBox();
+            this.picboxexit = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxexit)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.label1.Font = new System.Drawing.Font("Bebas Neue", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(110, 112);
+            this.label1.Location = new System.Drawing.Point(110, 108);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(391, 55);
+            this.label1.Size = new System.Drawing.Size(320, 57);
             this.label1.TabIndex = 24;
             this.label1.Text = "Staff Registration";
             // 
@@ -76,110 +76,112 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.OldLace;
-            this.panel2.Controls.Add(this.password);
-            this.panel2.Controls.Add(this.uname);
-            this.panel2.Controls.Add(this.tel);
-            this.panel2.Controls.Add(this.email);
-            this.panel2.Controls.Add(this.address);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.txtpassword);
+            this.panel2.Controls.Add(this.txtusername);
+            this.panel2.Controls.Add(this.txtphone);
+            this.panel2.Controls.Add(this.txtemail);
+            this.panel2.Controls.Add(this.txtaddress);
+            this.panel2.Controls.Add(this.btnregister);
+            this.panel2.Controls.Add(this.btncancel);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.cusName);
+            this.panel2.Controls.Add(this.txtname);
             this.panel2.Location = new System.Drawing.Point(120, 185);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(702, 412);
             this.panel2.TabIndex = 27;
             // 
-            // password
+            // txtpassword
             // 
-            this.password.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.password.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password.Location = new System.Drawing.Point(381, 243);
-            this.password.Multiline = false;
-            this.password.Name = "password";
-            this.password.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.password.Size = new System.Drawing.Size(288, 41);
-            this.password.TabIndex = 21;
-            this.password.Text = "";
+            this.txtpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtpassword.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpassword.Location = new System.Drawing.Point(381, 243);
+            this.txtpassword.Multiline = false;
+            this.txtpassword.Name = "txtpassword";
+            this.txtpassword.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.txtpassword.Size = new System.Drawing.Size(288, 41);
+            this.txtpassword.TabIndex = 21;
+            this.txtpassword.Text = "";
             // 
-            // uname
+            // txtusername
             // 
-            this.uname.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.uname.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uname.Location = new System.Drawing.Point(22, 243);
-            this.uname.Multiline = false;
-            this.uname.Name = "uname";
-            this.uname.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.uname.Size = new System.Drawing.Size(288, 41);
-            this.uname.TabIndex = 20;
-            this.uname.Text = "";
+            this.txtusername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtusername.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtusername.Location = new System.Drawing.Point(22, 243);
+            this.txtusername.Multiline = false;
+            this.txtusername.Name = "txtusername";
+            this.txtusername.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.txtusername.Size = new System.Drawing.Size(288, 41);
+            this.txtusername.TabIndex = 20;
+            this.txtusername.Text = "";
             // 
-            // tel
+            // txtphone
             // 
-            this.tel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tel.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tel.Location = new System.Drawing.Point(381, 148);
-            this.tel.Multiline = false;
-            this.tel.Name = "tel";
-            this.tel.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.tel.Size = new System.Drawing.Size(288, 41);
-            this.tel.TabIndex = 19;
-            this.tel.Text = "";
+            this.txtphone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtphone.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtphone.Location = new System.Drawing.Point(381, 148);
+            this.txtphone.Multiline = false;
+            this.txtphone.Name = "txtphone";
+            this.txtphone.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.txtphone.Size = new System.Drawing.Size(288, 41);
+            this.txtphone.TabIndex = 19;
+            this.txtphone.Text = "";
             // 
-            // email
+            // txtemail
             // 
-            this.email.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.email.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email.Location = new System.Drawing.Point(22, 148);
-            this.email.Multiline = false;
-            this.email.Name = "email";
-            this.email.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.email.Size = new System.Drawing.Size(288, 41);
-            this.email.TabIndex = 18;
-            this.email.Text = "";
+            this.txtemail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtemail.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtemail.Location = new System.Drawing.Point(22, 148);
+            this.txtemail.Multiline = false;
+            this.txtemail.Name = "txtemail";
+            this.txtemail.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.txtemail.Size = new System.Drawing.Size(288, 41);
+            this.txtemail.TabIndex = 18;
+            this.txtemail.Text = "";
             // 
-            // address
+            // txtaddress
             // 
-            this.address.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.address.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.address.Location = new System.Drawing.Point(381, 44);
-            this.address.Multiline = false;
-            this.address.Name = "address";
-            this.address.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.address.Size = new System.Drawing.Size(288, 41);
-            this.address.TabIndex = 17;
-            this.address.Text = "";
+            this.txtaddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtaddress.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtaddress.Location = new System.Drawing.Point(381, 44);
+            this.txtaddress.Multiline = false;
+            this.txtaddress.Name = "txtaddress";
+            this.txtaddress.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.txtaddress.Size = new System.Drawing.Size(288, 41);
+            this.txtaddress.TabIndex = 17;
+            this.txtaddress.Text = "";
             // 
-            // button2
+            // btnregister
             // 
-            this.button2.BackColor = System.Drawing.Color.Teal;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(381, 322);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(288, 46);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Register";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnregister.BackColor = System.Drawing.Color.Teal;
+            this.btnregister.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnregister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnregister.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnregister.ForeColor = System.Drawing.Color.White;
+            this.btnregister.Location = new System.Drawing.Point(381, 322);
+            this.btnregister.Name = "btnregister";
+            this.btnregister.Size = new System.Drawing.Size(288, 46);
+            this.btnregister.TabIndex = 16;
+            this.btnregister.Text = "Register";
+            this.btnregister.UseVisualStyleBackColor = false;
+            this.btnregister.Click += new System.EventHandler(this.btnregister_Click);
             // 
-            // button1
+            // btncancel
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.button1.Location = new System.Drawing.Point(22, 322);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(288, 46);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Cancel";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btncancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancel.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
+            this.btncancel.Location = new System.Drawing.Point(22, 322);
+            this.btncancel.Name = "btncancel";
+            this.btncancel.Size = new System.Drawing.Size(288, 46);
+            this.btncancel.TabIndex = 15;
+            this.btncancel.Text = "Cancel";
+            this.btncancel.UseVisualStyleBackColor = true;
+            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
             // label7
             // 
@@ -241,17 +243,17 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Name";
             // 
-            // cusName
+            // txtname
             // 
-            this.cusName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.cusName.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cusName.Location = new System.Drawing.Point(22, 44);
-            this.cusName.Multiline = false;
-            this.cusName.Name = "cusName";
-            this.cusName.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.cusName.Size = new System.Drawing.Size(288, 41);
-            this.cusName.TabIndex = 3;
-            this.cusName.Text = "";
+            this.txtname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtname.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtname.Location = new System.Drawing.Point(22, 44);
+            this.txtname.Multiline = false;
+            this.txtname.Name = "txtname";
+            this.txtname.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.txtname.Size = new System.Drawing.Size(288, 41);
+            this.txtname.TabIndex = 3;
+            this.txtname.Text = "";
             // 
             // pictureBox1
             // 
@@ -263,17 +265,17 @@
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
-            // exit
+            // picboxexit
             // 
-            this.exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exit.Image = ((System.Drawing.Image)(resources.GetObject("exit.Image")));
-            this.exit.Location = new System.Drawing.Point(785, 12);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(37, 39);
-            this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.exit.TabIndex = 29;
-            this.exit.TabStop = false;
-            this.exit.Click += new System.EventHandler(this.exit_Click);
+            this.picboxexit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picboxexit.Image = ((System.Drawing.Image)(resources.GetObject("picboxexit.Image")));
+            this.picboxexit.Location = new System.Drawing.Point(785, 12);
+            this.picboxexit.Name = "picboxexit";
+            this.picboxexit.Size = new System.Drawing.Size(37, 39);
+            this.picboxexit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picboxexit.TabIndex = 29;
+            this.picboxexit.TabStop = false;
+            this.picboxexit.Click += new System.EventHandler(this.exit_Click);
             // 
             // staffRegistration
             // 
@@ -281,7 +283,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(851, 633);
-            this.Controls.Add(this.exit);
+            this.Controls.Add(this.picboxexit);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -293,7 +295,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxexit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,21 +305,21 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RichTextBox password;
-        private System.Windows.Forms.RichTextBox uname;
-        private System.Windows.Forms.RichTextBox tel;
-        private System.Windows.Forms.RichTextBox email;
-        private System.Windows.Forms.RichTextBox address;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RichTextBox txtpassword;
+        private System.Windows.Forms.RichTextBox txtusername;
+        private System.Windows.Forms.RichTextBox txtphone;
+        private System.Windows.Forms.RichTextBox txtemail;
+        private System.Windows.Forms.RichTextBox txtaddress;
+        private System.Windows.Forms.Button btnregister;
+        private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox cusName;
+        private System.Windows.Forms.RichTextBox txtname;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox exit;
+        private System.Windows.Forms.PictureBox picboxexit;
     }
 }
