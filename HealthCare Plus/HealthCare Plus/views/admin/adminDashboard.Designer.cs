@@ -52,7 +52,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.picboxlogo);
             this.panel1.Controls.Add(this.editAccount);
             this.panel1.Controls.Add(this.orders);
@@ -82,7 +82,7 @@
             this.editAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.editAccount.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editAccount.ForeColor = System.Drawing.Color.White;
-            this.editAccount.Location = new System.Drawing.Point(4, 381);
+            this.editAccount.Location = new System.Drawing.Point(9, 381);
             this.editAccount.Name = "editAccount";
             this.editAccount.Size = new System.Drawing.Size(211, 58);
             this.editAccount.TabIndex = 7;
@@ -96,7 +96,7 @@
             this.orders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.orders.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.orders.ForeColor = System.Drawing.Color.White;
-            this.orders.Location = new System.Drawing.Point(3, 125);
+            this.orders.Location = new System.Drawing.Point(8, 125);
             this.orders.Name = "orders";
             this.orders.Size = new System.Drawing.Size(212, 58);
             this.orders.TabIndex = 6;
@@ -110,7 +110,7 @@
             this.customers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customers.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customers.ForeColor = System.Drawing.Color.White;
-            this.customers.Location = new System.Drawing.Point(3, 189);
+            this.customers.Location = new System.Drawing.Point(8, 189);
             this.customers.Name = "customers";
             this.customers.Size = new System.Drawing.Size(212, 58);
             this.customers.TabIndex = 10;
@@ -124,7 +124,7 @@
             this.reports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.reports.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reports.ForeColor = System.Drawing.Color.White;
-            this.reports.Location = new System.Drawing.Point(3, 253);
+            this.reports.Location = new System.Drawing.Point(8, 253);
             this.reports.Name = "reports";
             this.reports.Size = new System.Drawing.Size(212, 58);
             this.reports.TabIndex = 8;
@@ -138,7 +138,7 @@
             this.priceList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.priceList.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceList.ForeColor = System.Drawing.Color.White;
-            this.priceList.Location = new System.Drawing.Point(3, 317);
+            this.priceList.Location = new System.Drawing.Point(8, 317);
             this.priceList.Name = "priceList";
             this.priceList.Size = new System.Drawing.Size(212, 58);
             this.priceList.TabIndex = 9;
@@ -147,7 +147,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkGray;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel2.Controls.Add(this.picboxclose);
             this.panel2.Controls.Add(this.picboxminimize);
             this.panel2.Controls.Add(this.picboxlogout);
