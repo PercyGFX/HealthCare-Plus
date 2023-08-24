@@ -64,7 +64,7 @@
             this.panelsidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelsidebar.Location = new System.Drawing.Point(0, 0);
             this.panelsidebar.Name = "panelsidebar";
-            this.panelsidebar.Size = new System.Drawing.Size(226, 592);
+            this.panelsidebar.Size = new System.Drawing.Size(226, 692);
             this.panelsidebar.TabIndex = 0;
             // 
             // btnresources
@@ -229,7 +229,7 @@
             this.panelcontent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelcontent.Location = new System.Drawing.Point(226, 69);
             this.panelcontent.Name = "panelcontent";
-            this.panelcontent.Size = new System.Drawing.Size(917, 523);
+            this.panelcontent.Size = new System.Drawing.Size(917, 623);
             this.panelcontent.TabIndex = 2;
             // 
             // adminDashboard
@@ -237,7 +237,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1143, 592);
+            this.ClientSize = new System.Drawing.Size(1143, 692);
             this.Controls.Add(this.panelcontent);
             this.Controls.Add(this.paneltop);
             this.Controls.Add(this.panelsidebar);
