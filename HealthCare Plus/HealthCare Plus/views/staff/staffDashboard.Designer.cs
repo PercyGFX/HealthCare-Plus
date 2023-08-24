@@ -73,6 +73,7 @@
             this.picboxclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picboxclose.TabIndex = 34;
             this.picboxclose.TabStop = false;
+            this.picboxclose.Click += new System.EventHandler(this.picboxclose_Click);
             // 
             // picboxminimize
             // 
@@ -95,6 +96,7 @@
             this.picboxlogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picboxlogout.TabIndex = 30;
             this.picboxlogout.TabStop = false;
+            this.picboxlogout.Click += new System.EventHandler(this.picboxlogout_Click);
             // 
             // lblstaffdashboard
             // 

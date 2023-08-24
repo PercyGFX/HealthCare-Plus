@@ -16,5 +16,17 @@ namespace HealthCare_Plus.views.staff
         {
             InitializeComponent();
         }
+
+        private void picboxlogout_Click(object sender, EventArgs e)
+        {
+            login login = new login();
+            this.Hide();
+            login.Show();
+        }
+
+        private void picboxclose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

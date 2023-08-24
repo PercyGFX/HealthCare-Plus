@@ -56,3 +56,5 @@ C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.IO.P
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.admin.adminDashboard.resources
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.staff.staffDashboard.resources
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.admin.doctors.resources
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.admin.patients.resources

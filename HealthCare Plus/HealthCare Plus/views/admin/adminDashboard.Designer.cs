@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminDashboard));
             this.panelsidebar = new System.Windows.Forms.Panel();
+            this.btnresources = new System.Windows.Forms.Button();
             this.picboxlogo = new System.Windows.Forms.PictureBox();
             this.btnreports = new System.Windows.Forms.Button();
             this.btnpatients = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.picboxlogout = new System.Windows.Forms.PictureBox();
             this.lbladmindashboard = new System.Windows.Forms.Label();
             this.panelcontent = new System.Windows.Forms.Panel();
-            this.btnresources = new System.Windows.Forms.Button();
             this.panelsidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxlogo)).BeginInit();
             this.paneltop.SuspendLayout();
@@ -66,6 +66,20 @@
             this.panelsidebar.Name = "panelsidebar";
             this.panelsidebar.Size = new System.Drawing.Size(226, 592);
             this.panelsidebar.TabIndex = 0;
+            // 
+            // btnresources
+            // 
+            this.btnresources.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btnresources.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnresources.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnresources.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnresources.ForeColor = System.Drawing.Color.White;
+            this.btnresources.Location = new System.Drawing.Point(8, 381);
+            this.btnresources.Name = "btnresources";
+            this.btnresources.Size = new System.Drawing.Size(212, 58);
+            this.btnresources.TabIndex = 36;
+            this.btnresources.Text = "RESOURCES";
+            this.btnresources.UseVisualStyleBackColor = false;
             // 
             // picboxlogo
             // 
@@ -104,6 +118,7 @@
             this.btnpatients.TabIndex = 6;
             this.btnpatients.Text = "PATIENTS";
             this.btnpatients.UseVisualStyleBackColor = false;
+            this.btnpatients.Click += new System.EventHandler(this.btnpatients_Click);
             // 
             // btcdoctors
             // 
@@ -118,6 +133,7 @@
             this.btcdoctors.TabIndex = 10;
             this.btcdoctors.Text = "DOCTORS";
             this.btcdoctors.UseVisualStyleBackColor = false;
+            this.btcdoctors.Click += new System.EventHandler(this.btcdoctors_Click);
             // 
             // btnrooms
             // 
@@ -215,20 +231,6 @@
             this.panelcontent.Name = "panelcontent";
             this.panelcontent.Size = new System.Drawing.Size(917, 523);
             this.panelcontent.TabIndex = 2;
-            // 
-            // btnresources
-            // 
-            this.btnresources.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.btnresources.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnresources.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnresources.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnresources.ForeColor = System.Drawing.Color.White;
-            this.btnresources.Location = new System.Drawing.Point(8, 381);
-            this.btnresources.Name = "btnresources";
-            this.btnresources.Size = new System.Drawing.Size(212, 58);
-            this.btnresources.TabIndex = 36;
-            this.btnresources.Text = "RESOURCES";
-            this.btnresources.UseVisualStyleBackColor = false;
             // 
             // adminDashboard
             // 

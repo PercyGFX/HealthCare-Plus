@@ -12,6 +12,18 @@ namespace HealthCare_Plus.views.admin
 {
     public partial class adminDashboard : Form
     {
+
+        // forms load to main container code
+
+        public void loadform(UserControl Form)
+        {
+            Form.Dock = DockStyle.Fill;
+            this.panelcontent.Controls.Clear();
+            this.panelcontent.Controls.Add(Form);
+            Form.BringToFront();
+        }
+
+
         public adminDashboard()
         {
             InitializeComponent();
@@ -32,6 +44,17 @@ namespace HealthCare_Plus.views.admin
             login login = new login();
             this.Hide();
             login.Show();
+        }
+
+        private void btnpatients_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btcdoctors_Click(object sender, EventArgs e)
+        {
+            doctors doctors = new doctors();
+            loadform(doctors);
         }
     }
 }

@@ -268,6 +268,18 @@
     <Compile Include="views\admin\adminDashboard.Designer.cs">
       <DependentUpon>adminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\admin\doctors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\admin\doctors.Designer.cs">
+      <DependentUpon>doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\patients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\admin\patients.Designer.cs">
+      <DependentUpon>patients.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\staffRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -290,6 +302,12 @@
     </Compile>
     <EmbeddedResource Include="views\admin\adminDashboard.resx">
       <DependentUpon>adminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\admin\doctors.resx">
+      <DependentUpon>doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\admin\patients.resx">
+      <DependentUpon>patients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\login.resx">
       <DependentUpon>login.cs</DependentUpon>
