@@ -49,83 +49,109 @@ namespace HealthCare_Plus.Services
     }
 
 
-   /// /////////////////////////// registration validations ///////////////////////////////////////////////////////////////
- 
+    /// /////////////////////////// registration validations ///////////////////////////////////////////////////////////////
+
 
     public class RegisterValidations
     {
-        public static bool IsValidName(string name)
+        private static bool IsValidField(string fieldValue)
         {
-            return !string.IsNullOrWhiteSpace(name);
-        }
-
-        public static bool IsValidAddress(string address)
-        {
-            return !string.IsNullOrWhiteSpace(address);
-        }
-
-        public static bool IsValidPhone(string phone)
-        {
-            // Basic phone number format validation
-            return !string.IsNullOrWhiteSpace(phone) && Regex.IsMatch(phone, @"^\d{10}$");
-        }
-
-        public static bool IsValidEmail(string email)
-        {
-            // Basic phone number format validation
-            return !string.IsNullOrWhiteSpace(email);
-        }
-
-        
-
-        public static bool IsValidUsername(string username)
-        {
-            return !string.IsNullOrWhiteSpace(username);
-        }
-
-        public static bool IsValidPassword(string password)
-        {
-            return !string.IsNullOrWhiteSpace(password);
+            return !string.IsNullOrWhiteSpace(fieldValue);
         }
 
         public static bool IsValidRegistration(string name, string address, string phone, string email, string username, string password)
         {
-            if (!IsValidName(name))
+            if (!IsValidField(name))
+            {
+                ShowErrorMessage("name");
+                return false;
+            }
+            else if (!IsValidField(address))
+            {
+                ShowErrorMessage("address");
+                return false;
+            }
+            else if (!IsValidField(phone))
+            {
+                ShowErrorMessage("phone number");
+                return false;
+            }
+            else if (!IsValidField(email))
+            {
+                ShowErrorMessage("email");
+                return false;
+            }
+            else if (!IsValidField(username))
+            {
+                ShowErrorMessage("username");
+                return false;
+            }
+            else if (!IsValidField(password))
+            {
+                ShowErrorMessage("password");
+                return false;
+            }
+
+            return true;
+        }
+
+        private static void ShowErrorMessage(string fieldName)
+        {
+            MessageBox.Show($"Enter a valid {fieldName}.", "Error");
+        }
+    }
+
+    ///////////////////////////// Add doctor validations ///////////////////////////////////
+
+    public class AddDoctorValidations
+    {
+        public static bool IsValidField(string fieldValue)
+        {
+            return !string.IsNullOrWhiteSpace(fieldValue);
+        }
+
+        public static bool IsValidFormFields(string name, string age, string location, string phone, string email, string specialized, string qualifications)
+        {
+            if (!IsValidField(name))
             {
                 MessageBox.Show("Enter a valid name.", "Error");
                 return false;
             }
-            else if (!IsValidAddress(address))
+            else if (!IsValidField(age))
             {
-                MessageBox.Show("Enter a valid address.", "Error");
+                MessageBox.Show("Enter a valid age.", "Error");
                 return false;
             }
-            else if (!IsValidPhone(phone))
+            else if (!IsValidField(location))
+            {
+                MessageBox.Show("Enter a valid location.", "Error");
+                return false;
+            }
+            else if (!IsValidField(phone))
             {
                 MessageBox.Show("Enter a valid phone number.", "Error");
                 return false;
             }
-
-            else if (!IsValidEmail(email))
+            else if (!IsValidField(email))
             {
                 MessageBox.Show("Enter a valid email.", "Error");
                 return false;
             }
-
-            else if (!IsValidUsername(username))
+            else if (!IsValidField(specialized))
             {
-                MessageBox.Show("Enter a valid username.", "Error");
+                MessageBox.Show("Enter a valid specialization.", "Error");
                 return false;
             }
-            else if (!IsValidPassword(password))
+            else if (!IsValidField(qualifications))
             {
-                MessageBox.Show("Enter a valid password.", "Error");
+                MessageBox.Show("Enter valid qualifications.", "Error");
                 return false;
             }
 
             return true;
         }
     }
+
 
 
 }

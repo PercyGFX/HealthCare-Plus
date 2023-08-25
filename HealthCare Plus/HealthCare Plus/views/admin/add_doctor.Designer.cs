@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtpassword = new System.Windows.Forms.RichTextBox();
-            this.txtusername = new System.Windows.Forms.RichTextBox();
-            this.txtphone = new System.Windows.Forms.RichTextBox();
+            this.rtextqualifications = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtspecialized = new System.Windows.Forms.RichTextBox();
             this.txtemail = new System.Windows.Forms.RichTextBox();
-            this.txtaddress = new System.Windows.Forms.RichTextBox();
-            this.btnregister = new System.Windows.Forms.Button();
+            this.txtphone = new System.Windows.Forms.RichTextBox();
+            this.txtlocation = new System.Windows.Forms.RichTextBox();
+            this.txtage = new System.Windows.Forms.RichTextBox();
+            this.btnadd = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,8 +47,6 @@
             this.txtname = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -54,14 +54,14 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.OldLace;
-            this.panel2.Controls.Add(this.richTextBox1);
+            this.panel2.Controls.Add(this.rtextqualifications);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.txtpassword);
-            this.panel2.Controls.Add(this.txtusername);
-            this.panel2.Controls.Add(this.txtphone);
+            this.panel2.Controls.Add(this.txtspecialized);
             this.panel2.Controls.Add(this.txtemail);
-            this.panel2.Controls.Add(this.txtaddress);
-            this.panel2.Controls.Add(this.btnregister);
+            this.panel2.Controls.Add(this.txtphone);
+            this.panel2.Controls.Add(this.txtlocation);
+            this.panel2.Controls.Add(this.txtage);
+            this.panel2.Controls.Add(this.btnadd);
             this.panel2.Controls.Add(this.btncancel);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
@@ -75,29 +75,51 @@
             this.panel2.Size = new System.Drawing.Size(702, 533);
             this.panel2.TabIndex = 29;
             // 
-            // txtpassword
+            // rtextqualifications
             // 
-            this.txtpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtpassword.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpassword.Location = new System.Drawing.Point(381, 243);
-            this.txtpassword.Multiline = false;
-            this.txtpassword.Name = "txtpassword";
-            this.txtpassword.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.txtpassword.Size = new System.Drawing.Size(288, 41);
-            this.txtpassword.TabIndex = 21;
-            this.txtpassword.Text = "";
+            this.rtextqualifications.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtextqualifications.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.rtextqualifications.ForeColor = System.Drawing.Color.Black;
+            this.rtextqualifications.Location = new System.Drawing.Point(22, 327);
+            this.rtextqualifications.Name = "rtextqualifications";
+            this.rtextqualifications.Size = new System.Drawing.Size(647, 132);
+            this.rtextqualifications.TabIndex = 23;
+            this.rtextqualifications.Text = "";
             // 
-            // txtusername
+            // label1
             // 
-            this.txtusername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtusername.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtusername.Location = new System.Drawing.Point(22, 243);
-            this.txtusername.Multiline = false;
-            this.txtusername.Name = "txtusername";
-            this.txtusername.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.txtusername.Size = new System.Drawing.Size(288, 41);
-            this.txtusername.TabIndex = 20;
-            this.txtusername.Text = "";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(18, 300);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 24);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Qualifications";
+            // 
+            // txtspecialized
+            // 
+            this.txtspecialized.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtspecialized.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtspecialized.Location = new System.Drawing.Point(381, 243);
+            this.txtspecialized.Multiline = false;
+            this.txtspecialized.Name = "txtspecialized";
+            this.txtspecialized.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.txtspecialized.Size = new System.Drawing.Size(288, 41);
+            this.txtspecialized.TabIndex = 21;
+            this.txtspecialized.Text = "";
+            // 
+            // txtemail
+            // 
+            this.txtemail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtemail.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtemail.Location = new System.Drawing.Point(22, 243);
+            this.txtemail.Multiline = false;
+            this.txtemail.Name = "txtemail";
+            this.txtemail.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.txtemail.Size = new System.Drawing.Size(288, 41);
+            this.txtemail.TabIndex = 20;
+            this.txtemail.Text = "";
             // 
             // txtphone
             // 
@@ -111,43 +133,44 @@
             this.txtphone.TabIndex = 19;
             this.txtphone.Text = "";
             // 
-            // txtemail
+            // txtlocation
             // 
-            this.txtemail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtemail.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemail.Location = new System.Drawing.Point(22, 148);
-            this.txtemail.Multiline = false;
-            this.txtemail.Name = "txtemail";
-            this.txtemail.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.txtemail.Size = new System.Drawing.Size(288, 41);
-            this.txtemail.TabIndex = 18;
-            this.txtemail.Text = "";
+            this.txtlocation.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtlocation.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtlocation.Location = new System.Drawing.Point(22, 148);
+            this.txtlocation.Multiline = false;
+            this.txtlocation.Name = "txtlocation";
+            this.txtlocation.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.txtlocation.Size = new System.Drawing.Size(288, 41);
+            this.txtlocation.TabIndex = 18;
+            this.txtlocation.Text = "";
             // 
-            // txtaddress
+            // txtage
             // 
-            this.txtaddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtaddress.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtaddress.Location = new System.Drawing.Point(381, 44);
-            this.txtaddress.Multiline = false;
-            this.txtaddress.Name = "txtaddress";
-            this.txtaddress.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.txtaddress.Size = new System.Drawing.Size(288, 41);
-            this.txtaddress.TabIndex = 17;
-            this.txtaddress.Text = "";
+            this.txtage.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtage.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtage.Location = new System.Drawing.Point(381, 44);
+            this.txtage.Multiline = false;
+            this.txtage.Name = "txtage";
+            this.txtage.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.txtage.Size = new System.Drawing.Size(288, 41);
+            this.txtage.TabIndex = 17;
+            this.txtage.Text = "";
             // 
-            // btnregister
+            // btnadd
             // 
-            this.btnregister.BackColor = System.Drawing.Color.Teal;
-            this.btnregister.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnregister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnregister.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnregister.ForeColor = System.Drawing.Color.White;
-            this.btnregister.Location = new System.Drawing.Point(381, 465);
-            this.btnregister.Name = "btnregister";
-            this.btnregister.Size = new System.Drawing.Size(288, 46);
-            this.btnregister.TabIndex = 16;
-            this.btnregister.Text = "Add";
-            this.btnregister.UseVisualStyleBackColor = false;
+            this.btnadd.BackColor = System.Drawing.Color.Teal;
+            this.btnadd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnadd.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnadd.ForeColor = System.Drawing.Color.White;
+            this.btnadd.Location = new System.Drawing.Point(381, 465);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(288, 46);
+            this.btnadd.TabIndex = 16;
+            this.btnadd.Text = "Add";
+            this.btnadd.UseVisualStyleBackColor = false;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
             // btncancel
             // 
@@ -262,27 +285,6 @@
             this.lbladmindashboard.TabIndex = 32;
             this.lbladmindashboard.Text = "Add Doctor";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(18, 300);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 24);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "Qualifications";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.richTextBox1.ForeColor = System.Drawing.Color.Black;
-            this.richTextBox1.Location = new System.Drawing.Point(22, 327);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(647, 132);
-            this.richTextBox1.TabIndex = 23;
-            this.richTextBox1.Text = "";
-            // 
             // add_doctor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -303,12 +305,12 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RichTextBox txtpassword;
-        private System.Windows.Forms.RichTextBox txtusername;
-        private System.Windows.Forms.RichTextBox txtphone;
+        private System.Windows.Forms.RichTextBox txtspecialized;
         private System.Windows.Forms.RichTextBox txtemail;
-        private System.Windows.Forms.RichTextBox txtaddress;
-        private System.Windows.Forms.Button btnregister;
+        private System.Windows.Forms.RichTextBox txtphone;
+        private System.Windows.Forms.RichTextBox txtlocation;
+        private System.Windows.Forms.RichTextBox txtage;
+        private System.Windows.Forms.Button btnadd;
         private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -319,7 +321,7 @@
         private System.Windows.Forms.RichTextBox txtname;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbladmindashboard;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtextqualifications;
         private System.Windows.Forms.Label label1;
     }
 }
