@@ -280,6 +280,12 @@
     <Compile Include="views\admin\doctors.Designer.cs">
       <DependentUpon>doctors.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\admin\doctor_induvidual.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\admin\doctor_induvidual.Designer.cs">
+      <DependentUpon>doctor_induvidual.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\admin\patients.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -314,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\admin\doctors.resx">
       <DependentUpon>doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\admin\doctor_induvidual.resx">
+      <DependentUpon>doctor_induvidual.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\admin\patients.resx">
       <DependentUpon>patients.cs</DependentUpon>

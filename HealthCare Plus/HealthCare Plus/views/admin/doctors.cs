@@ -52,7 +52,19 @@ namespace HealthCare_Plus.views.admin
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                int selectedDoctorId = Convert.ToInt32(doctorgridview.Rows[e.RowIndex].Cells["id"].Value);
 
+                doctor_induvidual doctor_induvidual = new doctor_induvidual(selectedDoctorId);
+                if (ParentForm is adminDashboard adminDashboard)
+                {
+                    adminDashboard.loadform(doctor_induvidual);
+                }
+
+                
+                
+            }
         }
 
         private void orders_Click(object sender, EventArgs e)
