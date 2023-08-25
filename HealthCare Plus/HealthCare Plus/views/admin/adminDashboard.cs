@@ -48,7 +48,8 @@ namespace HealthCare_Plus.views.admin
 
         private void btnpatients_Click(object sender, EventArgs e)
         {
-
+            patients patients = new patients();
+            loadform(patients);
         }
 
         private void btcdoctors_Click(object sender, EventArgs e)

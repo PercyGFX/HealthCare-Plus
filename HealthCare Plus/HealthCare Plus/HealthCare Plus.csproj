@@ -262,6 +262,12 @@
     <Compile Include="Services\Database.cs" />
     <Compile Include="Services\md5convert.cs" />
     <Compile Include="Services\validations.cs" />
+    <Compile Include="views\admin\addpatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\admin\addpatient.Designer.cs">
+      <DependentUpon>addpatient.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\admin\add_doctor.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -312,6 +318,9 @@
     <Compile Include="views\staff\staffDashboard.Designer.cs">
       <DependentUpon>staffDashboard.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="views\admin\addpatient.resx">
+      <DependentUpon>addpatient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\admin\add_doctor.resx">
       <DependentUpon>add_doctor.cs</DependentUpon>
     </EmbeddedResource>

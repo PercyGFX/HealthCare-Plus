@@ -153,5 +153,50 @@ namespace HealthCare_Plus.Services
     }
 
 
+    ///////////////////////////// Add doctor validations ///////////////////////////////////
+
+    public class AddPatientValidations
+    {
+        public static bool IsValidField(string fieldValue)
+        {
+            return !string.IsNullOrWhiteSpace(fieldValue);
+        }
+
+        public static bool IsValidFormFields(string name, string age, string address, string phone, string bloodType, string description)
+        {
+            if (!IsValidField(name))
+            {
+                MessageBox.Show("Enter a valid name.", "Error");
+                return false;
+            }
+            else if (!IsValidField(age))
+            {
+                MessageBox.Show("Enter a valid age.", "Error");
+                return false;
+            }
+            else if (!IsValidField(address))
+            {
+                MessageBox.Show("Enter a valid address.", "Error");
+                return false;
+            }
+            else if (!IsValidField(phone))
+            {
+                MessageBox.Show("Enter a valid phone number.", "Error");
+                return false;
+            }
+            else if (!IsValidField(bloodType))
+            {
+                MessageBox.Show("Enter a valid blood type.", "Error");
+                return false;
+            }
+            else if (!IsValidField(description))
+            {
+                MessageBox.Show("Enter a valid description.", "Error");
+                return false;
+            }
+
+            return true;
+        }
+    }
 
 }
