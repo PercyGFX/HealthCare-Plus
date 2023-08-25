@@ -28,13 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.orders = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.doctorgridview = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
-            this.txtusername = new System.Windows.Forms.TextBox();
+            this.txtsearch = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doctorgridview)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,14 +56,36 @@
             this.orders.UseVisualStyleBackColor = false;
             this.orders.Click += new System.EventHandler(this.orders_Click);
             // 
-            // dataGridView1
+            // doctorgridview
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 145);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(871, 428);
-            this.dataGridView1.TabIndex = 3;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.doctorgridview.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.doctorgridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.doctorgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.doctorgridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.doctorgridview.DefaultCellStyle = dataGridViewCellStyle5;
+            this.doctorgridview.GridColor = System.Drawing.Color.Silver;
+            this.doctorgridview.Location = new System.Drawing.Point(20, 145);
+            this.doctorgridview.Name = "doctorgridview";
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.doctorgridview.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.doctorgridview.Size = new System.Drawing.Size(871, 428);
+            this.doctorgridview.TabIndex = 3;
+            this.doctorgridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // panel1
             // 
@@ -84,16 +109,16 @@
             this.lbladmindashboard.TabIndex = 32;
             this.lbladmindashboard.Text = "Doctors";
             // 
-            // txtusername
+            // txtsearch
             // 
-            this.txtusername.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtusername.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtusername.ForeColor = System.Drawing.Color.Black;
-            this.txtusername.Location = new System.Drawing.Point(461, 63);
-            this.txtusername.Multiline = true;
-            this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(286, 38);
-            this.txtusername.TabIndex = 8;
+            this.txtsearch.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txtsearch.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsearch.ForeColor = System.Drawing.Color.Black;
+            this.txtsearch.Location = new System.Drawing.Point(461, 63);
+            this.txtsearch.Multiline = true;
+            this.txtsearch.Name = "txtsearch";
+            this.txtsearch.Size = new System.Drawing.Size(286, 38);
+            this.txtsearch.TabIndex = 8;
             // 
             // button1
             // 
@@ -108,6 +133,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // doctors
             // 
@@ -115,13 +141,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtusername);
+            this.Controls.Add(this.txtsearch);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.doctorgridview);
             this.Controls.Add(this.orders);
             this.Name = "doctors";
             this.Size = new System.Drawing.Size(908, 587);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.doctors_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.doctorgridview)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -131,10 +158,10 @@
 
         #endregion
         private System.Windows.Forms.Button orders;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView doctorgridview;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbladmindashboard;
-        private System.Windows.Forms.TextBox txtusername;
+        private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.Button button1;
     }
 }
