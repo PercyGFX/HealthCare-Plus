@@ -90,6 +90,25 @@ namespace HealthCare_Plus.views.staff
             return doctors;
         }
 
+        // get id from patients and doctos 
+        private int GetIdFromFormattedText(string formattedText)
+        {
+            // Split the formatted text by the separator character (assuming "-" here)
+            string[] parts = formattedText.Split('-');
+
+            if (parts.Length > 0)
+            {
+                // Try to parse the first part as an integer
+                if (int.TryParse(parts[0].Trim(), out int id))
+                {
+                    return id;
+                }
+            }
+
+            // Return -1 or throw an exception based on your needs if parsing fails
+            return -1;
+        }
+
         public add_appoinment()
         {
             InitializeComponent();
@@ -105,7 +124,41 @@ namespace HealthCare_Plus.views.staff
              txtcost.Text.Trim(),
              rtextdescription.Text.Trim()))
             {
-                // Proceed with processing the form data
+                int patientId = GetIdFromFormattedText(combopatient.Text);
+                int doctorId = GetIdFromFormattedText(combodoctor.Text);
+                string appointmentDate = date.Value.ToString("yyyy-MM-dd HH:mm:ss"); // Format the date properly
+                string cost = txtcost.Text.Trim();
+                string description = rtextdescription.Text.Trim();
+                string isActive = "Active"; // Hardcoded value
+
+                using (MySqlConnection connection = dbManager.GetConnection())
+                {
+                    dbManager.OpenConnection(connection);
+
+                    string insertQuery = "INSERT INTO appoiment (doctor_id, patient_id, description, date, isactive, cost) VALUES (@DoctorId, @PatientId, @Description, @Date, @IsActive, @Cost)";
+                    using (MySqlCommand insertCommand = new MySqlCommand(insertQuery, connection))
+                    {
+                        insertCommand.Parameters.AddWithValue("@DoctorId", doctorId);
+                        insertCommand.Parameters.AddWithValue("@PatientId", patientId);
+                        insertCommand.Parameters.AddWithValue("@Description", description);
+                        insertCommand.Parameters.AddWithValue("@Date", appointmentDate);
+                        insertCommand.Parameters.AddWithValue("@IsActive", isActive);
+                        insertCommand.Parameters.AddWithValue("@Cost", cost);
+
+                        int rowsAffected = insertCommand.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Appointment data added successfully.", "Success");
+
+                            // Load back to the main form (adjust form name accordingly)
+                            // Code to load the appropriate form goes here
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to add appointment data.", "Error");
+                        }
+                    }
+                }
             }
 
         }
