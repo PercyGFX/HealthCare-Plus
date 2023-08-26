@@ -126,7 +126,8 @@ namespace HealthCare_Plus.views.staff
             {
                 int patientId = GetIdFromFormattedText(combopatient.Text);
                 int doctorId = GetIdFromFormattedText(combodoctor.Text);
-                string appointmentDate = date.Value.ToString("yyyy-MM-dd HH:mm:ss"); // Format the date properly
+                string appointmentDate = date.Value.ToString("yyyy-MM-dd");// Format the date properly
+                string appointmentTime = time.Value.ToString("HH:mm:ss");
                 string cost = txtcost.Text.Trim();
                 string description = rtextdescription.Text.Trim();
                 string isActive = "Active"; // Hardcoded value
@@ -135,13 +136,14 @@ namespace HealthCare_Plus.views.staff
                 {
                     dbManager.OpenConnection(connection);
 
-                    string insertQuery = "INSERT INTO appoiment (doctor_id, patient_id, description, date, isactive, cost) VALUES (@DoctorId, @PatientId, @Description, @Date, @IsActive, @Cost)";
+                    string insertQuery = "INSERT INTO appoiment (doctor_id, patient_id, description, date,time, isactive, cost) VALUES (@DoctorId, @PatientId, @Description, @Date, @Time, @IsActive, @Cost)";
                     using (MySqlCommand insertCommand = new MySqlCommand(insertQuery, connection))
                     {
                         insertCommand.Parameters.AddWithValue("@DoctorId", doctorId);
                         insertCommand.Parameters.AddWithValue("@PatientId", patientId);
                         insertCommand.Parameters.AddWithValue("@Description", description);
                         insertCommand.Parameters.AddWithValue("@Date", appointmentDate);
+                        insertCommand.Parameters.AddWithValue("@Time", appointmentTime);
                         insertCommand.Parameters.AddWithValue("@IsActive", isActive);
                         insertCommand.Parameters.AddWithValue("@Cost", cost);
 
@@ -151,7 +153,11 @@ namespace HealthCare_Plus.views.staff
                             MessageBox.Show("Appointment data added successfully.", "Success");
 
                             // Load back to the main form (adjust form name accordingly)
-                            // Code to load the appropriate form goes here
+                            appoinments appoinments = new appoinments();
+                            if (ParentForm is staffDashboard staffDashboard)
+                            {
+                                staffDashboard.loadform(appoinments);
+                            }
                         }
                         else
                         {

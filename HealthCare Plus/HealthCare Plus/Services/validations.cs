@@ -236,6 +236,7 @@ namespace HealthCare_Plus.Services
                 MessageBox.Show("Select a valid date.", "Error");
                 return false;
             }
+
             else if (!IsValidField(txtcost))
             {
                 MessageBox.Show("Enter a valid cost.", "Error");

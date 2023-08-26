@@ -33,12 +33,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
-            this.doctorgridview = new System.Windows.Forms.DataGridView();
+            this.appoinmentgridview = new System.Windows.Forms.DataGridView();
             this.btnaddappoinment = new System.Windows.Forms.Button();
             this.btnsearch = new System.Windows.Forms.Button();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.doctorgridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appoinmentgridview)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,10 +63,10 @@
             this.lbladmindashboard.TabIndex = 32;
             this.lbladmindashboard.Text = "Appoinments";
             // 
-            // doctorgridview
+            // appoinmentgridview
             // 
-            this.doctorgridview.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.doctorgridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.appoinmentgridview.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.appoinmentgridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -74,8 +74,8 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.doctorgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.doctorgridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.appoinmentgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.appoinmentgridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -83,15 +83,15 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.doctorgridview.DefaultCellStyle = dataGridViewCellStyle2;
-            this.doctorgridview.GridColor = System.Drawing.Color.Silver;
-            this.doctorgridview.Location = new System.Drawing.Point(20, 133);
-            this.doctorgridview.Name = "doctorgridview";
+            this.appoinmentgridview.DefaultCellStyle = dataGridViewCellStyle2;
+            this.appoinmentgridview.GridColor = System.Drawing.Color.Silver;
+            this.appoinmentgridview.Location = new System.Drawing.Point(20, 133);
+            this.appoinmentgridview.Name = "appoinmentgridview";
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.doctorgridview.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.doctorgridview.Size = new System.Drawing.Size(871, 428);
-            this.doctorgridview.TabIndex = 11;
+            this.appoinmentgridview.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.appoinmentgridview.Size = new System.Drawing.Size(871, 428);
+            this.appoinmentgridview.TabIndex = 11;
             // 
             // btnaddappoinment
             // 
@@ -139,15 +139,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.doctorgridview);
+            this.Controls.Add(this.appoinmentgridview);
             this.Controls.Add(this.btnaddappoinment);
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.txtsearch);
             this.Name = "appoinments";
             this.Size = new System.Drawing.Size(935, 601);
+            this.Load += new System.EventHandler(this.appoinments_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.doctorgridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appoinmentgridview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,7 +158,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbladmindashboard;
-        private System.Windows.Forms.DataGridView doctorgridview;
+        private System.Windows.Forms.DataGridView appoinmentgridview;
         private System.Windows.Forms.Button btnaddappoinment;
         private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.TextBox txtsearch;
