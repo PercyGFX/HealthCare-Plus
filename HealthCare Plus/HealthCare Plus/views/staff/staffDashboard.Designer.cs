@@ -177,6 +177,7 @@
             this.btcdoctors.TabIndex = 10;
             this.btcdoctors.Text = "DOCTOR SHEDULES";
             this.btcdoctors.UseVisualStyleBackColor = false;
+            this.btcdoctors.Click += new System.EventHandler(this.btcdoctors_Click);
             // 
             // btnrooms
             // 

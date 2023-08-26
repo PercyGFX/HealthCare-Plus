@@ -324,6 +324,12 @@
     <Compile Include="views\staff\appoinments.Designer.cs">
       <DependentUpon>appoinments.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\staff\doctor_shedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\staff\doctor_shedule.Designer.cs">
+      <DependentUpon>doctor_shedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\staff\staffDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -369,6 +375,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\staff\appoinments.resx">
       <DependentUpon>appoinments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\doctor_shedule.resx">
+      <DependentUpon>doctor_shedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\staff\staffDashboard.resx">
       <DependentUpon>staffDashboard.cs</DependentUpon>

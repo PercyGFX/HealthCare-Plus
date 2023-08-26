@@ -43,5 +43,11 @@ namespace HealthCare_Plus.views.staff
             appoinments appoinments = new appoinments();
             loadform(appoinments);
         }
+
+        private void btcdoctors_Click(object sender, EventArgs e)
+        {
+            doctor_shedule doctor_shedule = new doctor_shedule();
+            loadform(doctor_shedule);
+        }
     }
 }
