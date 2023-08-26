@@ -122,7 +122,7 @@
             this.panelsidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelsidebar.Location = new System.Drawing.Point(0, 0);
             this.panelsidebar.Name = "panelsidebar";
-            this.panelsidebar.Size = new System.Drawing.Size(226, 681);
+            this.panelsidebar.Size = new System.Drawing.Size(226, 817);
             this.panelsidebar.TabIndex = 3;
             // 
             // picboxlogo
@@ -146,7 +146,7 @@
             this.btnreports.Name = "btnreports";
             this.btnreports.Size = new System.Drawing.Size(211, 58);
             this.btnreports.TabIndex = 7;
-            this.btnreports.Text = "Medication Management";
+            this.btnreports.Text = "MEDICATIONS";
             this.btnreports.UseVisualStyleBackColor = false;
             // 
             // btnappoinments
@@ -162,6 +162,7 @@
             this.btnappoinments.TabIndex = 6;
             this.btnappoinments.Text = "APPOINMENTS";
             this.btnappoinments.UseVisualStyleBackColor = false;
+            this.btnappoinments.Click += new System.EventHandler(this.btnappoinments_Click);
             // 
             // btcdoctors
             // 
@@ -202,22 +203,21 @@
             this.btnpayments.Name = "btnpayments";
             this.btnpayments.Size = new System.Drawing.Size(212, 58);
             this.btnpayments.TabIndex = 9;
-            this.btnpayments.Text = "DOCTOR INFORMATION";
+            this.btnpayments.Text = "DOCTORS";
             this.btnpayments.UseVisualStyleBackColor = false;
             // 
             // panelcontent
             // 
-            this.panelcontent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelcontent.Location = new System.Drawing.Point(0, 0);
+            this.panelcontent.Location = new System.Drawing.Point(226, 70);
             this.panelcontent.Name = "panelcontent";
-            this.panelcontent.Size = new System.Drawing.Size(1145, 681);
+            this.panelcontent.Size = new System.Drawing.Size(919, 742);
             this.panelcontent.TabIndex = 5;
             // 
             // staffDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1145, 681);
+            this.ClientSize = new System.Drawing.Size(1145, 817);
             this.Controls.Add(this.paneltop);
             this.Controls.Add(this.panelsidebar);
             this.Controls.Add(this.panelcontent);

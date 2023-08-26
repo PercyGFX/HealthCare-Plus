@@ -199,4 +199,56 @@ namespace HealthCare_Plus.Services
         }
     }
 
+    //////////////////////// Add appoinemnt validations ///////////////////////////////////
+    ///
+    public class AddAppointmentValidations
+    {
+        public static bool IsValidComboBoxSelection(ComboBox comboBox)
+        {
+            return comboBox.SelectedIndex != -1; // Check if a valid item is selected
+        }
+
+        public static bool IsValidDate(DateTimePicker dateTimePicker)
+        {
+            // Check if a valid date is selected (not the default value)
+            return dateTimePicker.Value != dateTimePicker.MinDate;
+        }
+
+        public static bool IsValidField(string fieldValue)
+        {
+            return !string.IsNullOrWhiteSpace(fieldValue);
+        }
+
+        public static bool IsValidFormFields(ComboBox combopatient, ComboBox combodoctor, DateTimePicker date, string txtcost, string rtextdescription)
+        {
+            if (!IsValidComboBoxSelection(combopatient))
+            {
+                MessageBox.Show("Select a patient.", "Error");
+                return false;
+            }
+            else if (!IsValidComboBoxSelection(combodoctor))
+            {
+                MessageBox.Show("Select a doctor.", "Error");
+                return false;
+            }
+            else if (!IsValidDate(date))
+            {
+                MessageBox.Show("Select a valid date.", "Error");
+                return false;
+            }
+            else if (!IsValidField(txtcost))
+            {
+                MessageBox.Show("Enter a valid cost.", "Error");
+                return false;
+            }
+            else if (!IsValidField(rtextdescription))
+            {
+                MessageBox.Show("Enter a valid description.", "Error");
+                return false;
+            }
+
+            return true;
+        }
+    }
+
 }

@@ -312,6 +312,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="views\staff\add_appoinment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\staff\add_appoinment.Designer.cs">
+      <DependentUpon>add_appoinment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\staff\appoinments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\staff\appoinments.Designer.cs">
+      <DependentUpon>appoinments.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\staff\staffDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -351,6 +363,12 @@
     </Compile>
     <EmbeddedResource Include="views\staffRegistration.resx">
       <DependentUpon>staffRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\add_appoinment.resx">
+      <DependentUpon>add_appoinment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\appoinments.resx">
+      <DependentUpon>appoinments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\staff\staffDashboard.resx">
       <DependentUpon>staffDashboard.cs</DependentUpon>

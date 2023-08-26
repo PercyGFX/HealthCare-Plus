@@ -43,6 +43,7 @@
             this.picboxlogout = new System.Windows.Forms.PictureBox();
             this.lbladmindashboard = new System.Windows.Forms.Label();
             this.panelcontent = new System.Windows.Forms.Panel();
+            this.btnappoinments = new System.Windows.Forms.Button();
             this.panelsidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxlogo)).BeginInit();
             this.paneltop.SuspendLayout();
@@ -54,6 +55,7 @@
             // panelsidebar
             // 
             this.panelsidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelsidebar.Controls.Add(this.btnappoinments);
             this.panelsidebar.Controls.Add(this.btnresources);
             this.panelsidebar.Controls.Add(this.picboxlogo);
             this.panelsidebar.Controls.Add(this.btnreports);
@@ -74,7 +76,7 @@
             this.btnresources.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnresources.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnresources.ForeColor = System.Drawing.Color.White;
-            this.btnresources.Location = new System.Drawing.Point(8, 381);
+            this.btnresources.Location = new System.Drawing.Point(8, 445);
             this.btnresources.Name = "btnresources";
             this.btnresources.Size = new System.Drawing.Size(212, 58);
             this.btnresources.TabIndex = 36;
@@ -98,7 +100,7 @@
             this.btnreports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnreports.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreports.ForeColor = System.Drawing.Color.White;
-            this.btnreports.Location = new System.Drawing.Point(9, 445);
+            this.btnreports.Location = new System.Drawing.Point(9, 509);
             this.btnreports.Name = "btnreports";
             this.btnreports.Size = new System.Drawing.Size(211, 58);
             this.btnreports.TabIndex = 7;
@@ -142,7 +144,7 @@
             this.btnrooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnrooms.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrooms.ForeColor = System.Drawing.Color.White;
-            this.btnrooms.Location = new System.Drawing.Point(8, 253);
+            this.btnrooms.Location = new System.Drawing.Point(8, 317);
             this.btnrooms.Name = "btnrooms";
             this.btnrooms.Size = new System.Drawing.Size(212, 58);
             this.btnrooms.TabIndex = 8;
@@ -156,7 +158,7 @@
             this.btnpayments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnpayments.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnpayments.ForeColor = System.Drawing.Color.White;
-            this.btnpayments.Location = new System.Drawing.Point(8, 317);
+            this.btnpayments.Location = new System.Drawing.Point(8, 381);
             this.btnpayments.Name = "btnpayments";
             this.btnpayments.Size = new System.Drawing.Size(212, 58);
             this.btnpayments.TabIndex = 9;
@@ -232,6 +234,20 @@
             this.panelcontent.Size = new System.Drawing.Size(917, 694);
             this.panelcontent.TabIndex = 2;
             // 
+            // btnappoinments
+            // 
+            this.btnappoinments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btnappoinments.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnappoinments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnappoinments.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnappoinments.ForeColor = System.Drawing.Color.White;
+            this.btnappoinments.Location = new System.Drawing.Point(8, 253);
+            this.btnappoinments.Name = "btnappoinments";
+            this.btnappoinments.Size = new System.Drawing.Size(212, 58);
+            this.btnappoinments.TabIndex = 37;
+            this.btnappoinments.Text = "APPOINMENTS";
+            this.btnappoinments.UseVisualStyleBackColor = false;
+            // 
             // adminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,5 +289,6 @@
         private System.Windows.Forms.PictureBox picboxminimize;
         private System.Windows.Forms.PictureBox picboxlogo;
         private System.Windows.Forms.Button btnresources;
+        private System.Windows.Forms.Button btnappoinments;
     }
 }
