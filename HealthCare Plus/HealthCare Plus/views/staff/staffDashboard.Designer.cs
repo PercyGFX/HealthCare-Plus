@@ -42,6 +42,7 @@
             this.btnrooms = new System.Windows.Forms.Button();
             this.btnpayments = new System.Windows.Forms.Button();
             this.panelcontent = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.paneltop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxminimize)).BeginInit();
@@ -113,6 +114,7 @@
             // panelsidebar
             // 
             this.panelsidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelsidebar.Controls.Add(this.button1);
             this.panelsidebar.Controls.Add(this.picboxlogo);
             this.panelsidebar.Controls.Add(this.btnreports);
             this.panelsidebar.Controls.Add(this.btnappoinments);
@@ -175,7 +177,7 @@
             this.btcdoctors.Name = "btcdoctors";
             this.btcdoctors.Size = new System.Drawing.Size(212, 58);
             this.btcdoctors.TabIndex = 10;
-            this.btcdoctors.Text = "DOCTOR SHEDULES";
+            this.btcdoctors.Text = "DOCTOR SCHEDULE";
             this.btcdoctors.UseVisualStyleBackColor = false;
             this.btcdoctors.Click += new System.EventHandler(this.btcdoctors_Click);
             // 
@@ -214,6 +216,20 @@
             this.panelcontent.Size = new System.Drawing.Size(919, 742);
             this.panelcontent.TabIndex = 5;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(9, 445);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(211, 58);
+            this.button1.TabIndex = 36;
+            this.button1.Text = "ROOMS";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // staffDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -251,5 +267,6 @@
         private System.Windows.Forms.Button btnrooms;
         private System.Windows.Forms.Button btnpayments;
         private System.Windows.Forms.Panel panelcontent;
+        private System.Windows.Forms.Button button1;
     }
 }

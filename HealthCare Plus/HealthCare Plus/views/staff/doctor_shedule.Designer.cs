@@ -30,7 +30,7 @@
         {
             this.combodoctor = new System.Windows.Forms.ComboBox();
             this.date = new System.Windows.Forms.DateTimePicker();
-            this.btnadd = new System.Windows.Forms.Button();
+            this.btnavailability = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,19 +59,20 @@
             this.date.TabIndex = 28;
             this.date.Value = new System.DateTime(2023, 8, 20, 0, 0, 0, 0);
             // 
-            // btnadd
+            // btnavailability
             // 
-            this.btnadd.BackColor = System.Drawing.Color.Teal;
-            this.btnadd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnadd.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnadd.ForeColor = System.Drawing.Color.White;
-            this.btnadd.Location = new System.Drawing.Point(87, 145);
-            this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(288, 46);
-            this.btnadd.TabIndex = 27;
-            this.btnadd.Text = "Check Availability";
-            this.btnadd.UseVisualStyleBackColor = false;
+            this.btnavailability.BackColor = System.Drawing.Color.Teal;
+            this.btnavailability.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnavailability.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnavailability.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnavailability.ForeColor = System.Drawing.Color.White;
+            this.btnavailability.Location = new System.Drawing.Point(87, 145);
+            this.btnavailability.Name = "btnavailability";
+            this.btnavailability.Size = new System.Drawing.Size(288, 46);
+            this.btnavailability.TabIndex = 27;
+            this.btnavailability.Text = "Check Availability";
+            this.btnavailability.UseVisualStyleBackColor = false;
+            this.btnavailability.Click += new System.EventHandler(this.btnavailability_Click);
             // 
             // label3
             // 
@@ -88,7 +89,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.OldLace;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.btnadd);
+            this.panel2.Controls.Add(this.btnavailability);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.date);
             this.panel2.Controls.Add(this.combodoctor);
@@ -116,6 +117,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "doctor_shedule";
             this.Size = new System.Drawing.Size(860, 684);
+            this.Load += new System.EventHandler(this.doctor_shedule_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -126,7 +128,7 @@
 
         private System.Windows.Forms.ComboBox combodoctor;
         private System.Windows.Forms.DateTimePicker date;
-        private System.Windows.Forms.Button btnadd;
+        private System.Windows.Forms.Button btnavailability;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
