@@ -318,11 +318,29 @@
     <Compile Include="views\staff\add_appoinment.Designer.cs">
       <DependentUpon>add_appoinment.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\staff\allowcate_room.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\staff\allowcate_room.Designer.cs">
+      <DependentUpon>allowcate_room.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\staff\appoinments.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="views\staff\appoinments.Designer.cs">
       <DependentUpon>appoinments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\staff\booked_rooms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\staff\booked_rooms.Designer.cs">
+      <DependentUpon>booked_rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\staff\discharge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\staff\discharge.Designer.cs">
+      <DependentUpon>discharge.cs</DependentUpon>
     </Compile>
     <Compile Include="views\staff\doctoravailability.cs">
       <SubType>UserControl</SubType>
@@ -347,6 +365,36 @@
     </Compile>
     <Compile Include="views\staff\doctor_shedule.Designer.cs">
       <DependentUpon>doctor_shedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\staff\medications.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\staff\medications.Designer.cs">
+      <DependentUpon>medications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\staff\patient_records.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\staff\patient_records.Designer.cs">
+      <DependentUpon>patient_records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\staff\resources.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\staff\resources.Designer.cs">
+      <DependentUpon>resources.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\staff\rooms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\staff\rooms.Designer.cs">
+      <DependentUpon>rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\staff\room_schedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\staff\room_schedule.Designer.cs">
+      <DependentUpon>room_schedule.cs</DependentUpon>
     </Compile>
     <Compile Include="views\staff\staffDashboard.cs">
       <SubType>Form</SubType>
@@ -391,8 +439,17 @@
     <EmbeddedResource Include="views\staff\add_appoinment.resx">
       <DependentUpon>add_appoinment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\allowcate_room.resx">
+      <DependentUpon>allowcate_room.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\staff\appoinments.resx">
       <DependentUpon>appoinments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\booked_rooms.resx">
+      <DependentUpon>booked_rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\discharge.resx">
+      <DependentUpon>discharge.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\staff\doctoravailability.resx">
       <DependentUpon>doctoravailability.cs</DependentUpon>
@@ -405,6 +462,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\staff\doctor_shedule.resx">
       <DependentUpon>doctor_shedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\medications.resx">
+      <DependentUpon>medications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\patient_records.resx">
+      <DependentUpon>patient_records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\resources.resx">
+      <DependentUpon>resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\rooms.resx">
+      <DependentUpon>rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\room_schedule.resx">
+      <DependentUpon>room_schedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\staff\staffDashboard.resx">
       <DependentUpon>staffDashboard.cs</DependentUpon>

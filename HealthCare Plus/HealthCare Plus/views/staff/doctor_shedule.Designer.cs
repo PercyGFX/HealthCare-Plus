@@ -34,7 +34,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lbladmindashboard = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // combodoctor
@@ -93,9 +96,9 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.date);
             this.panel2.Controls.Add(this.combodoctor);
-            this.panel2.Location = new System.Drawing.Point(159, 16);
+            this.panel2.Location = new System.Drawing.Point(203, 47);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(558, 368);
+            this.panel2.Size = new System.Drawing.Size(434, 283);
             this.panel2.TabIndex = 32;
             // 
             // label1
@@ -109,17 +112,42 @@
             this.label1.TabIndex = 31;
             this.label1.Text = "Date";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel1.Controls.Add(this.lbladmindashboard);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(860, 41);
+            this.panel1.TabIndex = 34;
+            // 
+            // lbladmindashboard
+            // 
+            this.lbladmindashboard.AutoSize = true;
+            this.lbladmindashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbladmindashboard.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbladmindashboard.ForeColor = System.Drawing.Color.Black;
+            this.lbladmindashboard.Location = new System.Drawing.Point(14, 3);
+            this.lbladmindashboard.Name = "lbladmindashboard";
+            this.lbladmindashboard.Size = new System.Drawing.Size(390, 33);
+            this.lbladmindashboard.TabIndex = 32;
+            this.lbladmindashboard.Text = "Doctor Availability and Schedule";
+            // 
             // doctor_shedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "doctor_shedule";
             this.Size = new System.Drawing.Size(860, 684);
             this.Load += new System.EventHandler(this.doctor_shedule_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -132,5 +160,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lbladmindashboard;
     }
 }

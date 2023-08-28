@@ -60,5 +60,11 @@ namespace HealthCare_Plus.views.staff
             doctors doctors = new doctors();
             loadform(doctors);
         }
+
+        private void rooms_Click(object sender, EventArgs e)
+        {
+            rooms rooms = new rooms();
+            loadform(rooms);
+        }
     }
 }

@@ -67,3 +67,11 @@ C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.staff.doctoravailability.resources
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.staff.doctors.resources
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.staff.doctor_induvidual.resources
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.staff.medications.resources
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.staff.patient_records.resources
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.staff.resources.resources
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.staff.rooms.resources
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.staff.room_schedule.resources
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.staff.allowcate_room.resources
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.staff.booked_rooms.resources
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.staff.discharge.resources

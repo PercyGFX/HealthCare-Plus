@@ -35,7 +35,7 @@
             this.picboxlogout = new System.Windows.Forms.PictureBox();
             this.lblstaffdashboard = new System.Windows.Forms.Label();
             this.panelsidebar = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.rooms = new System.Windows.Forms.Button();
             this.picboxlogo = new System.Windows.Forms.PictureBox();
             this.btnreports = new System.Windows.Forms.Button();
             this.btnappoinments = new System.Windows.Forms.Button();
@@ -43,6 +43,7 @@
             this.btnrooms = new System.Windows.Forms.Button();
             this.btndoctors = new System.Windows.Forms.Button();
             this.panelcontent = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.paneltop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxminimize)).BeginInit();
@@ -114,7 +115,8 @@
             // panelsidebar
             // 
             this.panelsidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panelsidebar.Controls.Add(this.button1);
+            this.panelsidebar.Controls.Add(this.button2);
+            this.panelsidebar.Controls.Add(this.rooms);
             this.panelsidebar.Controls.Add(this.picboxlogo);
             this.panelsidebar.Controls.Add(this.btnreports);
             this.panelsidebar.Controls.Add(this.btnappoinments);
@@ -127,19 +129,20 @@
             this.panelsidebar.Size = new System.Drawing.Size(226, 817);
             this.panelsidebar.TabIndex = 3;
             // 
-            // button1
+            // rooms
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(9, 445);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(211, 58);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "ROOMS";
-            this.button1.UseVisualStyleBackColor = false;
+            this.rooms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.rooms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rooms.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rooms.ForeColor = System.Drawing.Color.White;
+            this.rooms.Location = new System.Drawing.Point(8, 508);
+            this.rooms.Name = "rooms";
+            this.rooms.Size = new System.Drawing.Size(211, 58);
+            this.rooms.TabIndex = 36;
+            this.rooms.Text = "ROOMS";
+            this.rooms.UseVisualStyleBackColor = false;
+            this.rooms.Click += new System.EventHandler(this.rooms_Click);
             // 
             // picboxlogo
             // 
@@ -158,7 +161,7 @@
             this.btnreports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnreports.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreports.ForeColor = System.Drawing.Color.White;
-            this.btnreports.Location = new System.Drawing.Point(9, 381);
+            this.btnreports.Location = new System.Drawing.Point(8, 444);
             this.btnreports.Name = "btnreports";
             this.btnreports.Size = new System.Drawing.Size(211, 58);
             this.btnreports.TabIndex = 7;
@@ -217,7 +220,7 @@
             this.btndoctors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndoctors.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndoctors.ForeColor = System.Drawing.Color.White;
-            this.btndoctors.Location = new System.Drawing.Point(8, 317);
+            this.btndoctors.Location = new System.Drawing.Point(7, 380);
             this.btndoctors.Name = "btndoctors";
             this.btndoctors.Size = new System.Drawing.Size(212, 58);
             this.btndoctors.TabIndex = 9;
@@ -231,6 +234,20 @@
             this.panelcontent.Name = "panelcontent";
             this.panelcontent.Size = new System.Drawing.Size(919, 742);
             this.panelcontent.TabIndex = 5;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(8, 317);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(212, 58);
+            this.button2.TabIndex = 37;
+            this.button2.Text = "RESOURCES";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // staffDashboard
             // 
@@ -269,6 +286,7 @@
         private System.Windows.Forms.Button btnrooms;
         private System.Windows.Forms.Button btndoctors;
         private System.Windows.Forms.Panel panelcontent;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button rooms;
+        private System.Windows.Forms.Button button2;
     }
 }

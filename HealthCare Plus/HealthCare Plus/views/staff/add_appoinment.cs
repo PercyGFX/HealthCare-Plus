@@ -131,12 +131,13 @@ namespace HealthCare_Plus.views.staff
                 string cost = txtcost.Text.Trim();
                 string description = rtextdescription.Text.Trim();
                 string isActive = "Active"; // Hardcoded value
+                int InvoiceStatus = 0;
 
                 using (MySqlConnection connection = dbManager.GetConnection())
                 {
                     dbManager.OpenConnection(connection);
 
-                    string insertQuery = "INSERT INTO appoiment (doctor_id, patient_id, description, date,time, isactive, cost) VALUES (@DoctorId, @PatientId, @Description, @Date, @Time, @IsActive, @Cost)";
+                    string insertQuery = "INSERT INTO appoiment (doctor_id, patient_id, description, date,time, isactive, cost, InvoiceStatus) VALUES (@DoctorId, @PatientId, @Description, @Date, @Time, @IsActive, @Cost, @InvoiceStatus)";
                     using (MySqlCommand insertCommand = new MySqlCommand(insertQuery, connection))
                     {
                         insertCommand.Parameters.AddWithValue("@DoctorId", doctorId);
@@ -146,6 +147,7 @@ namespace HealthCare_Plus.views.staff
                         insertCommand.Parameters.AddWithValue("@Time", appointmentTime);
                         insertCommand.Parameters.AddWithValue("@IsActive", isActive);
                         insertCommand.Parameters.AddWithValue("@Cost", cost);
+                        insertCommand.Parameters.AddWithValue("@InvoiceStatus", InvoiceStatus);
 
                         int rowsAffected = insertCommand.ExecuteNonQuery();
                         if (rowsAffected > 0)
