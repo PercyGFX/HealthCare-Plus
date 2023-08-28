@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
-            this.appoinmentgridview = new System.Windows.Forms.DataGridView();
-            this.btnaddappoinment = new System.Windows.Forms.Button();
+            this.medicationsgridview = new System.Windows.Forms.DataGridView();
+            this.btnaddmedication = new System.Windows.Forms.Button();
             this.btnsearch = new System.Windows.Forms.Button();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.appoinmentgridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicationsgridview)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -48,7 +48,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1129, 41);
+            this.panel1.Size = new System.Drawing.Size(941, 41);
             this.panel1.TabIndex = 17;
             // 
             // lbladmindashboard
@@ -63,49 +63,50 @@
             this.lbladmindashboard.TabIndex = 32;
             this.lbladmindashboard.Text = "Medications";
             // 
-            // appoinmentgridview
+            // medicationsgridview
             // 
-            this.appoinmentgridview.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.appoinmentgridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.appoinmentgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.appoinmentgridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.appoinmentgridview.DefaultCellStyle = dataGridViewCellStyle5;
-            this.appoinmentgridview.GridColor = System.Drawing.Color.Silver;
-            this.appoinmentgridview.Location = new System.Drawing.Point(20, 179);
-            this.appoinmentgridview.Name = "appoinmentgridview";
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            this.appoinmentgridview.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.appoinmentgridview.Size = new System.Drawing.Size(871, 428);
-            this.appoinmentgridview.TabIndex = 16;
+            this.medicationsgridview.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.medicationsgridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.medicationsgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.medicationsgridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.medicationsgridview.DefaultCellStyle = dataGridViewCellStyle2;
+            this.medicationsgridview.GridColor = System.Drawing.Color.Silver;
+            this.medicationsgridview.Location = new System.Drawing.Point(20, 139);
+            this.medicationsgridview.Name = "medicationsgridview";
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.medicationsgridview.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.medicationsgridview.Size = new System.Drawing.Size(871, 428);
+            this.medicationsgridview.TabIndex = 16;
             // 
-            // btnaddappoinment
+            // btnaddmedication
             // 
-            this.btnaddappoinment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.btnaddappoinment.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnaddappoinment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnaddappoinment.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnaddappoinment.ForeColor = System.Drawing.Color.White;
-            this.btnaddappoinment.Location = new System.Drawing.Point(20, 97);
-            this.btnaddappoinment.Name = "btnaddappoinment";
-            this.btnaddappoinment.Size = new System.Drawing.Size(138, 38);
-            this.btnaddappoinment.TabIndex = 15;
-            this.btnaddappoinment.Text = "Add";
-            this.btnaddappoinment.UseVisualStyleBackColor = false;
+            this.btnaddmedication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btnaddmedication.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnaddmedication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnaddmedication.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnaddmedication.ForeColor = System.Drawing.Color.White;
+            this.btnaddmedication.Location = new System.Drawing.Point(20, 57);
+            this.btnaddmedication.Name = "btnaddmedication";
+            this.btnaddmedication.Size = new System.Drawing.Size(180, 38);
+            this.btnaddmedication.TabIndex = 15;
+            this.btnaddmedication.Text = "Add Medication";
+            this.btnaddmedication.UseVisualStyleBackColor = false;
+            this.btnaddmedication.Click += new System.EventHandler(this.btnaddmedication_Click);
             // 
             // btnsearch
             // 
@@ -114,7 +115,7 @@
             this.btnsearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsearch.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsearch.ForeColor = System.Drawing.Color.White;
-            this.btnsearch.Location = new System.Drawing.Point(753, 97);
+            this.btnsearch.Location = new System.Drawing.Point(753, 57);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.Size = new System.Drawing.Size(138, 38);
             this.btnsearch.TabIndex = 19;
@@ -126,7 +127,7 @@
             this.txtsearch.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtsearch.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsearch.ForeColor = System.Drawing.Color.Black;
-            this.txtsearch.Location = new System.Drawing.Point(461, 97);
+            this.txtsearch.Location = new System.Drawing.Point(461, 57);
             this.txtsearch.Multiline = true;
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(286, 38);
@@ -138,15 +139,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.appoinmentgridview);
-            this.Controls.Add(this.btnaddappoinment);
+            this.Controls.Add(this.medicationsgridview);
+            this.Controls.Add(this.btnaddmedication);
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.txtsearch);
             this.Name = "medications";
-            this.Size = new System.Drawing.Size(1129, 652);
+            this.Size = new System.Drawing.Size(941, 607);
+            this.Load += new System.EventHandler(this.medications_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.appoinmentgridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicationsgridview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,8 +158,8 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbladmindashboard;
-        private System.Windows.Forms.DataGridView appoinmentgridview;
-        private System.Windows.Forms.Button btnaddappoinment;
+        private System.Windows.Forms.DataGridView medicationsgridview;
+        private System.Windows.Forms.Button btnaddmedication;
         private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.TextBox txtsearch;
     }

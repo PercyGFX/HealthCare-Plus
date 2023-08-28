@@ -318,6 +318,12 @@
     <Compile Include="views\staff\add_appoinment.Designer.cs">
       <DependentUpon>add_appoinment.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\staff\add_medication.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\staff\add_medication.Designer.cs">
+      <DependentUpon>add_medication.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\staff\allowcate_room.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -438,6 +444,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\staff\add_appoinment.resx">
       <DependentUpon>add_appoinment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\add_medication.resx">
+      <DependentUpon>add_medication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\staff\allowcate_room.resx">
       <DependentUpon>allowcate_room.cs</DependentUpon>
