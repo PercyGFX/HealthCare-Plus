@@ -84,7 +84,11 @@ namespace HealthCare_Plus.views.staff
             {
                 string formattedEntry = $"{doctor.Id} - {doctor.Name}";
                 combodoctor.Items.Add(formattedEntry);
+                
             }
+
+            combodoctor.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            combodoctor.AutoCompleteSource = AutoCompleteSource.ListItems;
         }
 
         private void btnavailability_Click(object sender, EventArgs e)

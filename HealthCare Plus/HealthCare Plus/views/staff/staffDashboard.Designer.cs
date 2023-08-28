@@ -35,14 +35,14 @@
             this.picboxlogout = new System.Windows.Forms.PictureBox();
             this.lblstaffdashboard = new System.Windows.Forms.Label();
             this.panelsidebar = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.picboxlogo = new System.Windows.Forms.PictureBox();
             this.btnreports = new System.Windows.Forms.Button();
             this.btnappoinments = new System.Windows.Forms.Button();
             this.btcdoctors = new System.Windows.Forms.Button();
             this.btnrooms = new System.Windows.Forms.Button();
-            this.btnpayments = new System.Windows.Forms.Button();
+            this.btndoctors = new System.Windows.Forms.Button();
             this.panelcontent = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.paneltop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxminimize)).BeginInit();
@@ -120,12 +120,26 @@
             this.panelsidebar.Controls.Add(this.btnappoinments);
             this.panelsidebar.Controls.Add(this.btcdoctors);
             this.panelsidebar.Controls.Add(this.btnrooms);
-            this.panelsidebar.Controls.Add(this.btnpayments);
+            this.panelsidebar.Controls.Add(this.btndoctors);
             this.panelsidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelsidebar.Location = new System.Drawing.Point(0, 0);
             this.panelsidebar.Name = "panelsidebar";
             this.panelsidebar.Size = new System.Drawing.Size(226, 817);
             this.panelsidebar.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(9, 445);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(211, 58);
+            this.button1.TabIndex = 36;
+            this.button1.Text = "ROOMS";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // picboxlogo
             // 
@@ -194,20 +208,22 @@
             this.btnrooms.TabIndex = 8;
             this.btnrooms.Text = "PATIENT RECORDS";
             this.btnrooms.UseVisualStyleBackColor = false;
+            this.btnrooms.Click += new System.EventHandler(this.btnrooms_Click);
             // 
-            // btnpayments
+            // btndoctors
             // 
-            this.btnpayments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.btnpayments.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnpayments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnpayments.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpayments.ForeColor = System.Drawing.Color.White;
-            this.btnpayments.Location = new System.Drawing.Point(8, 317);
-            this.btnpayments.Name = "btnpayments";
-            this.btnpayments.Size = new System.Drawing.Size(212, 58);
-            this.btnpayments.TabIndex = 9;
-            this.btnpayments.Text = "DOCTORS";
-            this.btnpayments.UseVisualStyleBackColor = false;
+            this.btndoctors.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btndoctors.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndoctors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndoctors.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndoctors.ForeColor = System.Drawing.Color.White;
+            this.btndoctors.Location = new System.Drawing.Point(8, 317);
+            this.btndoctors.Name = "btndoctors";
+            this.btndoctors.Size = new System.Drawing.Size(212, 58);
+            this.btndoctors.TabIndex = 9;
+            this.btndoctors.Text = "DOCTORS";
+            this.btndoctors.UseVisualStyleBackColor = false;
+            this.btndoctors.Click += new System.EventHandler(this.btndoctors_Click);
             // 
             // panelcontent
             // 
@@ -215,20 +231,6 @@
             this.panelcontent.Name = "panelcontent";
             this.panelcontent.Size = new System.Drawing.Size(919, 742);
             this.panelcontent.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(9, 445);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(211, 58);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "ROOMS";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // staffDashboard
             // 
@@ -265,7 +267,7 @@
         private System.Windows.Forms.Button btnappoinments;
         private System.Windows.Forms.Button btcdoctors;
         private System.Windows.Forms.Button btnrooms;
-        private System.Windows.Forms.Button btnpayments;
+        private System.Windows.Forms.Button btndoctors;
         private System.Windows.Forms.Panel panelcontent;
         private System.Windows.Forms.Button button1;
     }

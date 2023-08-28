@@ -330,6 +330,18 @@
     <Compile Include="views\staff\doctoravailability.Designer.cs">
       <DependentUpon>doctoravailability.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\staff\doctors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\staff\doctors.Designer.cs">
+      <DependentUpon>doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\staff\doctor_induvidual.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\staff\doctor_induvidual.Designer.cs">
+      <DependentUpon>doctor_induvidual.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\staff\doctor_shedule.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -384,6 +396,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\staff\doctoravailability.resx">
       <DependentUpon>doctoravailability.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\doctors.resx">
+      <DependentUpon>doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\doctor_induvidual.resx">
+      <DependentUpon>doctor_induvidual.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\staff\doctor_shedule.resx">
       <DependentUpon>doctor_shedule.cs</DependentUpon>

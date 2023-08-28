@@ -49,5 +49,16 @@ namespace HealthCare_Plus.views.staff
             doctor_shedule doctor_shedule = new doctor_shedule();
             loadform(doctor_shedule);
         }
+
+        private void btnrooms_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btndoctors_Click(object sender, EventArgs e)
+        {
+            doctors doctors = new doctors();
+            loadform(doctors);
+        }
     }
 }
