@@ -55,5 +55,36 @@ namespace HealthCare_Plus.views.staff
                 staffDashboard.loadform(add_medication);
             }
         }
+
+        // search
+
+        private void LoadDoctorData(string searchText = null)
+        {
+            using (MySqlConnection connection = dbManager.GetConnection())
+            {
+                dbManager.OpenConnection(connection);
+
+                string selectQuery = "SELECT id, patient_id, medication, description, date, cost FROM meications"; // Default query for loading all data
+
+                if (!string.IsNullOrWhiteSpace(searchText))
+                {
+                    selectQuery += $" WHERE id LIKE '%{searchText}%' OR medication LIKE '%{searchText}%' OR description LIKE '%{searchText}%'";
+                }
+
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(selectQuery, connection))
+                {
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+
+                    medicationsgridview.DataSource = dataTable;
+                }
+            }
+        }
+
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+            string searchText = txtsearch.Text.Trim().ToLower();
+            LoadDoctorData(searchText);
+        }
     }
 }

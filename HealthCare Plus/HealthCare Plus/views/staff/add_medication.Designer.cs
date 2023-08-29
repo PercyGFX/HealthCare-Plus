@@ -34,14 +34,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtcost = new System.Windows.Forms.RichTextBox();
             this.btnadd = new System.Windows.Forms.Button();
-            this.btncancel = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.txtmedication = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -116,19 +115,7 @@
             this.btnadd.TabIndex = 16;
             this.btnadd.Text = "Add";
             this.btnadd.UseVisualStyleBackColor = false;
-            // 
-            // btncancel
-            // 
-            this.btncancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncancel.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btncancel.ForeColor = System.Drawing.Color.Black;
-            this.btncancel.Location = new System.Drawing.Point(22, 377);
-            this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(288, 46);
-            this.btncancel.TabIndex = 15;
-            this.btncancel.Text = "Cancel";
-            this.btncancel.UseVisualStyleBackColor = true;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
             // label5
             // 
@@ -188,7 +175,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.OldLace;
-            this.panel2.Controls.Add(this.richTextBox1);
+            this.panel2.Controls.Add(this.txtmedication);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.combopatient);
             this.panel2.Controls.Add(this.date);
@@ -196,7 +183,6 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txtcost);
             this.panel2.Controls.Add(this.btnadd);
-            this.panel2.Controls.Add(this.btncancel);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label2);
@@ -205,17 +191,17 @@
             this.panel2.Size = new System.Drawing.Size(702, 468);
             this.panel2.TabIndex = 33;
             // 
-            // richTextBox1
+            // txtmedication
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(381, 46);
-            this.richTextBox1.Multiline = false;
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox1.Size = new System.Drawing.Size(288, 33);
-            this.richTextBox1.TabIndex = 30;
-            this.richTextBox1.Text = "";
+            this.txtmedication.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtmedication.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmedication.Location = new System.Drawing.Point(381, 46);
+            this.txtmedication.Multiline = false;
+            this.txtmedication.Name = "txtmedication";
+            this.txtmedication.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.txtmedication.Size = new System.Drawing.Size(288, 33);
+            this.txtmedication.TabIndex = 30;
+            this.txtmedication.Text = "";
             // 
             // label3
             // 
@@ -236,6 +222,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "add_medication";
             this.Size = new System.Drawing.Size(743, 560);
+            this.Load += new System.EventHandler(this.add_medication_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -252,14 +239,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox txtcost;
         private System.Windows.Forms.Button btnadd;
-        private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbladmindashboard;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox txtmedication;
         private System.Windows.Forms.Label label3;
     }
 }
