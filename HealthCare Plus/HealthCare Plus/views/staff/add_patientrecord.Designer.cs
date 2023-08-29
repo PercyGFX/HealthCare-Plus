@@ -30,17 +30,18 @@
         {
             this.combopatient = new System.Windows.Forms.ComboBox();
             this.date = new System.Windows.Forms.DateTimePicker();
-            this.rtextdescription = new System.Windows.Forms.RichTextBox();
+            this.txtrecord = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtcost = new System.Windows.Forms.RichTextBox();
+            this.txtrecordname = new System.Windows.Forms.RichTextBox();
             this.btnadd = new System.Windows.Forms.Button();
-            this.btncancel = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comborecordtype = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +60,7 @@
             // date
             // 
             this.date.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date.Location = new System.Drawing.Point(22, 134);
+            this.date.Location = new System.Drawing.Point(381, 129);
             this.date.MaxDate = new System.DateTime(2025, 8, 20, 0, 0, 0, 0);
             this.date.MinDate = new System.DateTime(2023, 8, 20, 0, 0, 0, 0);
             this.date.Name = "date";
@@ -67,39 +68,39 @@
             this.date.TabIndex = 24;
             this.date.Value = new System.DateTime(2023, 8, 20, 0, 0, 0, 0);
             // 
-            // rtextdescription
+            // txtrecord
             // 
-            this.rtextdescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtextdescription.Font = new System.Drawing.Font("Candara Light", 15.75F);
-            this.rtextdescription.ForeColor = System.Drawing.Color.Black;
-            this.rtextdescription.Location = new System.Drawing.Point(22, 303);
-            this.rtextdescription.Name = "rtextdescription";
-            this.rtextdescription.Size = new System.Drawing.Size(647, 132);
-            this.rtextdescription.TabIndex = 23;
-            this.rtextdescription.Text = "";
+            this.txtrecord.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtrecord.Font = new System.Drawing.Font("Candara Light", 15.75F);
+            this.txtrecord.ForeColor = System.Drawing.Color.Black;
+            this.txtrecord.Location = new System.Drawing.Point(22, 225);
+            this.txtrecord.Name = "txtrecord";
+            this.txtrecord.Size = new System.Drawing.Size(647, 132);
+            this.txtrecord.TabIndex = 23;
+            this.txtrecord.Text = "";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(18, 267);
+            this.label1.Location = new System.Drawing.Point(18, 189);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 24);
+            this.label1.Size = new System.Drawing.Size(72, 24);
             this.label1.TabIndex = 22;
-            this.label1.Text = "Description";
+            this.label1.Text = "Record";
             // 
-            // txtcost
+            // txtrecordname
             // 
-            this.txtcost.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtcost.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcost.Location = new System.Drawing.Point(381, 134);
-            this.txtcost.Multiline = false;
-            this.txtcost.Name = "txtcost";
-            this.txtcost.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.txtcost.Size = new System.Drawing.Size(288, 33);
-            this.txtcost.TabIndex = 19;
-            this.txtcost.Text = "";
+            this.txtrecordname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtrecordname.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtrecordname.Location = new System.Drawing.Point(381, 47);
+            this.txtrecordname.Multiline = false;
+            this.txtrecordname.Name = "txtrecordname";
+            this.txtrecordname.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.txtrecordname.Size = new System.Drawing.Size(288, 33);
+            this.txtrecordname.TabIndex = 19;
+            this.txtrecordname.Text = "";
             // 
             // btnadd
             // 
@@ -108,43 +109,31 @@
             this.btnadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnadd.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.ForeColor = System.Drawing.Color.White;
-            this.btnadd.Location = new System.Drawing.Point(381, 459);
+            this.btnadd.Location = new System.Drawing.Point(381, 379);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(288, 46);
             this.btnadd.TabIndex = 16;
             this.btnadd.Text = "Add";
             this.btnadd.UseVisualStyleBackColor = false;
-            // 
-            // btncancel
-            // 
-            this.btncancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncancel.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btncancel.ForeColor = System.Drawing.Color.Black;
-            this.btncancel.Location = new System.Drawing.Point(22, 459);
-            this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(288, 46);
-            this.btncancel.TabIndex = 15;
-            this.btncancel.Text = "Cancel";
-            this.btncancel.UseVisualStyleBackColor = true;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(377, 107);
+            this.label5.Location = new System.Drawing.Point(377, 18);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 24);
+            this.label5.Size = new System.Drawing.Size(128, 24);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Cost (in LKR)";
+            this.label5.Text = "Record Name";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(18, 107);
+            this.label4.Location = new System.Drawing.Point(377, 93);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 24);
             this.label4.TabIndex = 11;
@@ -157,7 +146,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(769, 41);
+            this.panel1.Size = new System.Drawing.Size(749, 41);
             this.panel1.TabIndex = 34;
             // 
             // lbladmindashboard
@@ -186,20 +175,48 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.OldLace;
+            this.panel2.Controls.Add(this.comborecordtype);
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.combopatient);
             this.panel2.Controls.Add(this.date);
-            this.panel2.Controls.Add(this.rtextdescription);
+            this.panel2.Controls.Add(this.txtrecord);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.txtcost);
+            this.panel2.Controls.Add(this.txtrecordname);
             this.panel2.Controls.Add(this.btnadd);
-            this.panel2.Controls.Add(this.btncancel);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(20, 112);
+            this.panel2.Location = new System.Drawing.Point(20, 65);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(702, 532);
+            this.panel2.Size = new System.Drawing.Size(702, 462);
             this.panel2.TabIndex = 33;
+            // 
+            // comborecordtype
+            // 
+            this.comborecordtype.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comborecordtype.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comborecordtype.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comborecordtype.FormattingEnabled = true;
+            this.comborecordtype.Items.AddRange(new object[] {
+            "Diagnose",
+            "Prescription",
+            "Lab Results",
+            "Medical History"});
+            this.comborecordtype.Location = new System.Drawing.Point(22, 131);
+            this.comborecordtype.Name = "comborecordtype";
+            this.comborecordtype.Size = new System.Drawing.Size(288, 34);
+            this.comborecordtype.TabIndex = 27;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(18, 103);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(120, 24);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Record Type";
             // 
             // add_patientrecord
             // 
@@ -208,7 +225,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "add_patientrecord";
-            this.Size = new System.Drawing.Size(769, 668);
+            this.Size = new System.Drawing.Size(749, 555);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -221,16 +238,17 @@
 
         private System.Windows.Forms.ComboBox combopatient;
         private System.Windows.Forms.DateTimePicker date;
-        private System.Windows.Forms.RichTextBox rtextdescription;
+        private System.Windows.Forms.RichTextBox txtrecord;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox txtcost;
+        private System.Windows.Forms.RichTextBox txtrecordname;
         private System.Windows.Forms.Button btnadd;
-        private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbladmindashboard;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ComboBox comborecordtype;
+        private System.Windows.Forms.Label label3;
     }
 }

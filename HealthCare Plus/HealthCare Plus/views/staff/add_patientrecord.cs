@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HealthCare_Plus.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,20 @@ namespace HealthCare_Plus.views.staff
         public add_patientrecord()
         {
             InitializeComponent();
+        }
+
+        private void btnadd_Click(object sender, EventArgs e)
+        {
+            if (AddPatientRecords.IsValidFormFields(
+                combopatient,
+                txtrecordname.Text,
+                comborecordtype,
+                date,
+                txtrecord.Text))
+            {
+                //code here
+
+            }
         }
     }
 }
