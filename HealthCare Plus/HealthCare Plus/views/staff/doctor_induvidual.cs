@@ -74,9 +74,37 @@ namespace HealthCare_Plus.views.staff
             }
         }
 
+        public void LoadDoctorSchedule(int doctorId)
+        {
+            using (MySqlConnection connection = dbManager.GetConnection())
+            {
+                dbManager.OpenConnection(connection);
+
+                string selectQuery = "SELECT a.id, p.name AS PatientName, a.description, a.date, a.time, a.cost " +
+                     "FROM appoiment a " +
+                     "INNER JOIN patient p ON a.patient_id = p.id " +
+                     "WHERE a.doctor_id = @DoctorId";
+
+                using (MySqlCommand cmd = new MySqlCommand(selectQuery, connection))
+                {
+                    cmd.Parameters.AddWithValue("@DoctorId", doctorId);
+
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
+                    {
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+
+                        doctorgridview.DataSource = dataTable;
+                    }
+                }
+            }
+        }
+
         private void doctor_induvidual_Load(object sender, EventArgs e)
         {
             LoadDoctorData(doctorId);
+            LoadDoctorSchedule(doctorId);
+
         }
     }
 }

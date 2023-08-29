@@ -324,6 +324,12 @@
     <Compile Include="views\staff\add_medication.Designer.cs">
       <DependentUpon>add_medication.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\staff\add_patientrecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\staff\add_patientrecord.Designer.cs">
+      <DependentUpon>add_patientrecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\staff\allowcate_room.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -447,6 +453,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\staff\add_medication.resx">
       <DependentUpon>add_medication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\add_patientrecord.resx">
+      <DependentUpon>add_patientrecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\staff\allowcate_room.resx">
       <DependentUpon>allowcate_room.cs</DependentUpon>

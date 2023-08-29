@@ -52,7 +52,8 @@ namespace HealthCare_Plus.views.staff
 
         private void btnrooms_Click(object sender, EventArgs e)
         {
-
+            patient_records patient_records = new patient_records();
+            loadform(patient_records);
         }
 
         private void btndoctors_Click(object sender, EventArgs e)

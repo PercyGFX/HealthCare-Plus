@@ -36,6 +36,7 @@
             this.doctorgridview = new System.Windows.Forms.DataGridView();
             this.btnsearch = new System.Windows.Forms.Button();
             this.txtsearch = new System.Windows.Forms.TextBox();
+            this.btnaddpatientrecord = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.doctorgridview)).BeginInit();
             this.SuspendLayout();
@@ -117,11 +118,26 @@
             this.txtsearch.Size = new System.Drawing.Size(286, 38);
             this.txtsearch.TabIndex = 17;
             // 
+            // btnaddpatientrecord
+            // 
+            this.btnaddpatientrecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btnaddpatientrecord.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnaddpatientrecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnaddpatientrecord.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnaddpatientrecord.ForeColor = System.Drawing.Color.White;
+            this.btnaddpatientrecord.Location = new System.Drawing.Point(20, 69);
+            this.btnaddpatientrecord.Name = "btnaddpatientrecord";
+            this.btnaddpatientrecord.Size = new System.Drawing.Size(138, 38);
+            this.btnaddpatientrecord.TabIndex = 19;
+            this.btnaddpatientrecord.Text = "Add Record";
+            this.btnaddpatientrecord.UseVisualStyleBackColor = false;
+            // 
             // patient_records
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnaddpatientrecord);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.doctorgridview);
             this.Controls.Add(this.btnsearch);
@@ -143,5 +159,6 @@
         private System.Windows.Forms.DataGridView doctorgridview;
         private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.TextBox txtsearch;
+        private System.Windows.Forms.Button btnaddpatientrecord;
     }
 }
