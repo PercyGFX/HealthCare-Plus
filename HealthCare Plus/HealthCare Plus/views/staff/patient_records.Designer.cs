@@ -33,12 +33,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
-            this.doctorgridview = new System.Windows.Forms.DataGridView();
+            this.patientrecordsgrid = new System.Windows.Forms.DataGridView();
             this.btnsearch = new System.Windows.Forms.Button();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.btnaddpatientrecord = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.doctorgridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patientrecordsgrid)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,10 +63,10 @@
             this.lbladmindashboard.TabIndex = 32;
             this.lbladmindashboard.Text = "Patient Records";
             // 
-            // doctorgridview
+            // patientrecordsgrid
             // 
-            this.doctorgridview.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.doctorgridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.patientrecordsgrid.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.patientrecordsgrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -74,8 +74,8 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.doctorgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.doctorgridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.patientrecordsgrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.patientrecordsgrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -83,15 +83,15 @@
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.doctorgridview.DefaultCellStyle = dataGridViewCellStyle5;
-            this.doctorgridview.GridColor = System.Drawing.Color.Silver;
-            this.doctorgridview.Location = new System.Drawing.Point(16, 142);
-            this.doctorgridview.Name = "doctorgridview";
+            this.patientrecordsgrid.DefaultCellStyle = dataGridViewCellStyle5;
+            this.patientrecordsgrid.GridColor = System.Drawing.Color.Silver;
+            this.patientrecordsgrid.Location = new System.Drawing.Point(16, 142);
+            this.patientrecordsgrid.Name = "patientrecordsgrid";
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            this.doctorgridview.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.doctorgridview.Size = new System.Drawing.Size(871, 428);
-            this.doctorgridview.TabIndex = 15;
+            this.patientrecordsgrid.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.patientrecordsgrid.Size = new System.Drawing.Size(871, 428);
+            this.patientrecordsgrid.TabIndex = 15;
             // 
             // btnsearch
             // 
@@ -106,6 +106,7 @@
             this.btnsearch.TabIndex = 18;
             this.btnsearch.Text = "Search";
             this.btnsearch.UseVisualStyleBackColor = false;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
             // txtsearch
             // 
@@ -140,14 +141,15 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnaddpatientrecord);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.doctorgridview);
+            this.Controls.Add(this.patientrecordsgrid);
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.txtsearch);
             this.Name = "patient_records";
             this.Size = new System.Drawing.Size(917, 682);
+            this.Load += new System.EventHandler(this.patient_records_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.doctorgridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patientrecordsgrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,7 +159,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbladmindashboard;
-        private System.Windows.Forms.DataGridView doctorgridview;
+        private System.Windows.Forms.DataGridView patientrecordsgrid;
         private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.Button btnaddpatientrecord;

@@ -79,7 +79,7 @@ namespace HealthCare_Plus.views.staff
                         int rowsAffected = insertCommand.ExecuteNonQuery();
                         if (rowsAffected > 0)
                         {
-                            MessageBox.Show("Medication data added successfully.", "Success");
+                            MessageBox.Show("Patient Record data added successfully.", "Success");
 
                             // Load back to the main form (adjust form name accordingly)
                             patient_records patient_records = new patient_records();
