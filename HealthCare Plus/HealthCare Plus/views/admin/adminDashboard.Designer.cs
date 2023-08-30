@@ -68,6 +68,7 @@
             this.panelsidebar.Name = "panelsidebar";
             this.panelsidebar.Size = new System.Drawing.Size(226, 763);
             this.panelsidebar.TabIndex = 0;
+            this.panelsidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelsidebar_Paint);
             // 
             // btnappoinments
             // 

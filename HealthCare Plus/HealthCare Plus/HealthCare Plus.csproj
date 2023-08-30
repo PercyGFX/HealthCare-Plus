@@ -259,6 +259,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\billspayment.cs" />
     <Compile Include="Controllers\patients.cs" />
     <Compile Include="Services\Database.cs" />
     <Compile Include="Services\md5convert.cs" />

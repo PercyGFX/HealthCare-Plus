@@ -13,20 +13,24 @@ namespace HealthCare_Plus.views.admin
     public partial class adminDashboard : Form
     {
 
-        // forms load to main container code
+     
 
+  
+
+
+
+        public adminDashboard()
+        {
+            InitializeComponent();
+        }
+
+        // forms load to main container code
         public void loadform(UserControl Form)
         {
             Form.Dock = DockStyle.Fill;
             this.panelcontent.Controls.Clear();
             this.panelcontent.Controls.Add(Form);
             Form.BringToFront();
-        }
-
-
-        public adminDashboard()
-        {
-            InitializeComponent();
         }
 
         private void picboxclose_Click(object sender, EventArgs e)
@@ -68,6 +72,11 @@ namespace HealthCare_Plus.views.admin
         {
             bills bills = new bills();
             loadform(bills);
+        }
+
+        private void panelsidebar_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
