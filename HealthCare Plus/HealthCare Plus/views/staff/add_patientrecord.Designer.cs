@@ -226,6 +226,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "add_patientrecord";
             this.Size = new System.Drawing.Size(749, 555);
+            this.Load += new System.EventHandler(this.add_patientrecord_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
