@@ -259,6 +259,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\patients.cs" />
     <Compile Include="Services\Database.cs" />
     <Compile Include="Services\md5convert.cs" />
     <Compile Include="Services\validations.cs" />
@@ -274,11 +275,23 @@
     <Compile Include="views\admin\add_doctor.Designer.cs">
       <DependentUpon>add_doctor.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\admin\add_room.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\admin\add_room.Designer.cs">
+      <DependentUpon>add_room.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\admin\adminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\admin\adminDashboard.Designer.cs">
       <DependentUpon>adminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\bills.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\admin\bills.Designer.cs">
+      <DependentUpon>bills.cs</DependentUpon>
     </Compile>
     <Compile Include="views\admin\doctors.cs">
       <SubType>UserControl</SubType>
@@ -297,6 +310,12 @@
     </Compile>
     <Compile Include="views\admin\patients.Designer.cs">
       <DependentUpon>patients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\rooms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\admin\rooms.Designer.cs">
+      <DependentUpon>rooms.cs</DependentUpon>
     </Compile>
     <Compile Include="views\staffRegistration.cs">
       <SubType>Form</SubType>
@@ -420,8 +439,14 @@
     <EmbeddedResource Include="views\admin\add_doctor.resx">
       <DependentUpon>add_doctor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\admin\add_room.resx">
+      <DependentUpon>add_room.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\admin\adminDashboard.resx">
       <DependentUpon>adminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\admin\bills.resx">
+      <DependentUpon>bills.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\admin\doctors.resx">
       <DependentUpon>doctors.cs</DependentUpon>
@@ -431,6 +456,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\admin\patients.resx">
       <DependentUpon>patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\admin\rooms.resx">
+      <DependentUpon>rooms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -513,9 +541,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('..\packages\Fody.4.0.2\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

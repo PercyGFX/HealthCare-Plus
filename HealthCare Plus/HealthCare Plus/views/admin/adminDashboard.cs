@@ -57,5 +57,17 @@ namespace HealthCare_Plus.views.admin
             doctors doctors = new doctors();
             loadform(doctors);
         }
+
+        private void btnrooms_Click(object sender, EventArgs e)
+        {
+            rooms rooms = new rooms();
+            loadform(rooms);
+        }
+
+        private void btnbillpay_Click(object sender, EventArgs e)
+        {
+            bills bills = new bills();
+            loadform(bills);
+        }
     }
 }

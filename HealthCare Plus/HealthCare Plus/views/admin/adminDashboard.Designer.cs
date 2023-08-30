@@ -30,20 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminDashboard));
             this.panelsidebar = new System.Windows.Forms.Panel();
+            this.btnappoinments = new System.Windows.Forms.Button();
             this.btnresources = new System.Windows.Forms.Button();
             this.picboxlogo = new System.Windows.Forms.PictureBox();
             this.btnreports = new System.Windows.Forms.Button();
             this.btnpatients = new System.Windows.Forms.Button();
             this.btcdoctors = new System.Windows.Forms.Button();
             this.btnrooms = new System.Windows.Forms.Button();
-            this.btnpayments = new System.Windows.Forms.Button();
+            this.btnbillpay = new System.Windows.Forms.Button();
             this.paneltop = new System.Windows.Forms.Panel();
             this.picboxclose = new System.Windows.Forms.PictureBox();
             this.picboxminimize = new System.Windows.Forms.PictureBox();
             this.picboxlogout = new System.Windows.Forms.PictureBox();
             this.lbladmindashboard = new System.Windows.Forms.Label();
             this.panelcontent = new System.Windows.Forms.Panel();
-            this.btnappoinments = new System.Windows.Forms.Button();
             this.panelsidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxlogo)).BeginInit();
             this.paneltop.SuspendLayout();
@@ -62,12 +62,26 @@
             this.panelsidebar.Controls.Add(this.btnpatients);
             this.panelsidebar.Controls.Add(this.btcdoctors);
             this.panelsidebar.Controls.Add(this.btnrooms);
-            this.panelsidebar.Controls.Add(this.btnpayments);
+            this.panelsidebar.Controls.Add(this.btnbillpay);
             this.panelsidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelsidebar.Location = new System.Drawing.Point(0, 0);
             this.panelsidebar.Name = "panelsidebar";
             this.panelsidebar.Size = new System.Drawing.Size(226, 763);
             this.panelsidebar.TabIndex = 0;
+            // 
+            // btnappoinments
+            // 
+            this.btnappoinments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btnappoinments.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnappoinments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnappoinments.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnappoinments.ForeColor = System.Drawing.Color.White;
+            this.btnappoinments.Location = new System.Drawing.Point(8, 253);
+            this.btnappoinments.Name = "btnappoinments";
+            this.btnappoinments.Size = new System.Drawing.Size(212, 58);
+            this.btnappoinments.TabIndex = 37;
+            this.btnappoinments.Text = "APPOINMENTS";
+            this.btnappoinments.UseVisualStyleBackColor = false;
             // 
             // btnresources
             // 
@@ -150,20 +164,22 @@
             this.btnrooms.TabIndex = 8;
             this.btnrooms.Text = "ROOMS";
             this.btnrooms.UseVisualStyleBackColor = false;
+            this.btnrooms.Click += new System.EventHandler(this.btnrooms_Click);
             // 
-            // btnpayments
+            // btnbillpay
             // 
-            this.btnpayments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.btnpayments.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnpayments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnpayments.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpayments.ForeColor = System.Drawing.Color.White;
-            this.btnpayments.Location = new System.Drawing.Point(8, 381);
-            this.btnpayments.Name = "btnpayments";
-            this.btnpayments.Size = new System.Drawing.Size(212, 58);
-            this.btnpayments.TabIndex = 9;
-            this.btnpayments.Text = "PAYMENTS";
-            this.btnpayments.UseVisualStyleBackColor = false;
+            this.btnbillpay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btnbillpay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbillpay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbillpay.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbillpay.ForeColor = System.Drawing.Color.White;
+            this.btnbillpay.Location = new System.Drawing.Point(8, 381);
+            this.btnbillpay.Name = "btnbillpay";
+            this.btnbillpay.Size = new System.Drawing.Size(212, 58);
+            this.btnbillpay.TabIndex = 9;
+            this.btnbillpay.Text = "BILL / PAYMENTS";
+            this.btnbillpay.UseVisualStyleBackColor = false;
+            this.btnbillpay.Click += new System.EventHandler(this.btnbillpay_Click);
             // 
             // paneltop
             // 
@@ -234,20 +250,6 @@
             this.panelcontent.Size = new System.Drawing.Size(917, 694);
             this.panelcontent.TabIndex = 2;
             // 
-            // btnappoinments
-            // 
-            this.btnappoinments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.btnappoinments.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnappoinments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnappoinments.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnappoinments.ForeColor = System.Drawing.Color.White;
-            this.btnappoinments.Location = new System.Drawing.Point(8, 253);
-            this.btnappoinments.Name = "btnappoinments";
-            this.btnappoinments.Size = new System.Drawing.Size(212, 58);
-            this.btnappoinments.TabIndex = 37;
-            this.btnappoinments.Text = "APPOINMENTS";
-            this.btnappoinments.UseVisualStyleBackColor = false;
-            // 
             // adminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,7 +282,7 @@
         private System.Windows.Forms.Button btnpatients;
         private System.Windows.Forms.Button btcdoctors;
         private System.Windows.Forms.Button btnrooms;
-        private System.Windows.Forms.Button btnpayments;
+        private System.Windows.Forms.Button btnbillpay;
         private System.Windows.Forms.Panel paneltop;
         private System.Windows.Forms.Label lbladmindashboard;
         private System.Windows.Forms.Panel panelcontent;
