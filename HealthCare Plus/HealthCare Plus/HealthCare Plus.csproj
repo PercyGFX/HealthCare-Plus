@@ -311,6 +311,12 @@
     <Compile Include="views\admin\patients.Designer.cs">
       <DependentUpon>patients.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\admin\payment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\admin\payment.Designer.cs">
+      <DependentUpon>payment.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\admin\rooms.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -456,6 +462,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\admin\patients.resx">
       <DependentUpon>patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\admin\payment.resx">
+      <DependentUpon>payment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\admin\rooms.resx">
       <DependentUpon>rooms.cs</DependentUpon>

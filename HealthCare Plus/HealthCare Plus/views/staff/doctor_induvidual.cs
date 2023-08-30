@@ -106,5 +106,10 @@ namespace HealthCare_Plus.views.staff
             LoadDoctorSchedule(doctorId);
 
         }
+
+        private void doctorgridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

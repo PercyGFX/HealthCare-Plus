@@ -78,12 +78,32 @@ namespace HealthCare_Plus.views.admin
                     selectQuery += $" WHERE id LIKE '%{searchText}%' OR patient LIKE '%{searchText}%' OR date LIKE '%{searchText}%' OR description LIKE '%{searchText}%' OR amount LIKE '%{searchText}%'";
                 }
 
-                using (MySqlDataAdapter adapter = new MySqlDataAdapter(selectQuery, connection))
+                using (MySqlCommand cmd = new MySqlCommand(selectQuery, connection))
                 {
-                    DataTable dataTable = new DataTable();
-                    adapter.Fill(dataTable);
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        // Clear existing data in the patientgridview
+                        patientgridview.Rows.Clear();
 
-                    patientgridview.DataSource = dataTable;
+                        while (reader.Read())
+                        {
+                            // Retrieve patient data from the reader
+                            int id = Convert.ToInt32(reader["id"]);
+                            string patientName = reader["patient"].ToString();
+                            DateTime date = Convert.ToDateTime(reader["date"]);
+                            string formattedDate = date.ToString("yyyy-MM-dd");
+                            string description = reader["description"].ToString();
+                            decimal amount = Convert.ToDecimal(reader["amount"]);
+                            int paymentStatus = Convert.ToInt32(reader["payment_status"]);
+                            string status = "Pay";
+
+                            // Map payment status to "Paid" or "Unpaid"
+                            string paymentStatusText = paymentStatus == 0 ? "Unpaid" : "Paid";
+
+                            // Add the patient data to the patientgridview
+                            patientgridview.Rows.Add(id, patientName, formattedDate, description, amount, paymentStatusText, status);
+                        }
+                    }
                 }
             }
         }
@@ -111,6 +131,10 @@ namespace HealthCare_Plus.views.admin
 
             // data grid load
             LoadDoctorData();
+
+            // format pay
+
+
 
         }
 
@@ -247,6 +271,38 @@ namespace HealthCare_Plus.views.admin
                 {
                     MessageBox.Show("No pending costs for the patient.", "Information");
                 }
+            }
+        }
+
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+            string searchText = txtsearch.Text.Trim().ToLower();
+            LoadDoctorData(searchText);
+        }
+
+        private void btnsearch_Click_1(object sender, EventArgs e)
+        {
+           
+            
+                string searchText = txtsearch.Text.Trim().ToLower();
+                LoadDoctorData(searchText);
+            
+        }
+
+        private void patientgridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                int selectedbillID = Convert.ToInt32(patientgridview.Rows[e.RowIndex].Cells["ID"].Value);
+
+                payment payment = new payment(selectedbillID);
+                if (ParentForm is adminDashboard adminDashboard)
+                {
+                    adminDashboard.loadform(payment);
+                }
+
+
+
             }
         }
     }

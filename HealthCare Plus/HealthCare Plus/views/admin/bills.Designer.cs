@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
             this.patientgridview = new System.Windows.Forms.DataGridView();
@@ -40,6 +41,13 @@
             this.combopatient = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PatientID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Action = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.patientgridview)).BeginInit();
             this.panel2.SuspendLayout();
@@ -80,22 +88,31 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.patientgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.patientgridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.patientgridview.DefaultCellStyle = dataGridViewCellStyle2;
+            this.patientgridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.PatientID,
+            this.Date,
+            this.Description,
+            this.Amount,
+            this.Status,
+            this.Action});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.patientgridview.DefaultCellStyle = dataGridViewCellStyle3;
             this.patientgridview.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.patientgridview.Location = new System.Drawing.Point(22, 257);
             this.patientgridview.Name = "patientgridview";
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.patientgridview.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.patientgridview.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.patientgridview.Size = new System.Drawing.Size(871, 428);
             this.patientgridview.TabIndex = 16;
+            this.patientgridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.patientgridview_CellContentClick);
             // 
             // btncreatebill
             // 
@@ -125,6 +142,7 @@
             this.btnsearch.TabIndex = 19;
             this.btnsearch.Text = "Search";
             this.btnsearch.UseVisualStyleBackColor = false;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click_1);
             // 
             // txtsearch
             // 
@@ -170,6 +188,45 @@
             this.panel2.Size = new System.Drawing.Size(871, 118);
             this.panel2.TabIndex = 32;
             // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // PatientID
+            // 
+            this.PatientID.HeaderText = "Patient";
+            this.PatientID.Name = "PatientID";
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            // 
+            // Description
+            // 
+            this.Description.HeaderText = "Description";
+            this.Description.Name = "Description";
+            // 
+            // Amount
+            // 
+            this.Amount.HeaderText = "Amount";
+            this.Amount.Name = "Amount";
+            // 
+            // Status
+            // 
+            this.Status.HeaderText = "Status";
+            this.Status.Name = "Status";
+            // 
+            // Action
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Action.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Action.HeaderText = "Action";
+            this.Action.Name = "Action";
+            this.Action.Text = "Pay";
+            // 
             // bills
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,5 +261,12 @@
         private System.Windows.Forms.ComboBox combopatient;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PatientID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        private System.Windows.Forms.DataGridViewButtonColumn Action;
     }
 }
