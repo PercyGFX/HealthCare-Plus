@@ -34,7 +34,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
             this.patientgridview = new System.Windows.Forms.DataGridView();
-            this.btnaddpatient = new System.Windows.Forms.Button();
+            this.btncreatebill = new System.Windows.Forms.Button();
             this.btnsearch = new System.Windows.Forms.Button();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.combopatient = new System.Windows.Forms.ComboBox();
@@ -97,19 +97,20 @@
             this.patientgridview.Size = new System.Drawing.Size(871, 428);
             this.patientgridview.TabIndex = 16;
             // 
-            // btnaddpatient
+            // btncreatebill
             // 
-            this.btnaddpatient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.btnaddpatient.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnaddpatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnaddpatient.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnaddpatient.ForeColor = System.Drawing.Color.White;
-            this.btnaddpatient.Location = new System.Drawing.Point(408, 32);
-            this.btnaddpatient.Name = "btnaddpatient";
-            this.btnaddpatient.Size = new System.Drawing.Size(138, 38);
-            this.btnaddpatient.TabIndex = 15;
-            this.btnaddpatient.Text = "Create a Bill";
-            this.btnaddpatient.UseVisualStyleBackColor = false;
+            this.btncreatebill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btncreatebill.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncreatebill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncreatebill.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncreatebill.ForeColor = System.Drawing.Color.White;
+            this.btncreatebill.Location = new System.Drawing.Point(408, 32);
+            this.btncreatebill.Name = "btncreatebill";
+            this.btncreatebill.Size = new System.Drawing.Size(138, 38);
+            this.btncreatebill.TabIndex = 15;
+            this.btncreatebill.Text = "Create a Bill";
+            this.btncreatebill.UseVisualStyleBackColor = false;
+            this.btncreatebill.Click += new System.EventHandler(this.btncreatebill_Click);
             // 
             // btnsearch
             // 
@@ -163,7 +164,7 @@
             this.panel2.BackColor = System.Drawing.Color.OldLace;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.combopatient);
-            this.panel2.Controls.Add(this.btnaddpatient);
+            this.panel2.Controls.Add(this.btncreatebill);
             this.panel2.Location = new System.Drawing.Point(22, 56);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(871, 118);
@@ -181,6 +182,7 @@
             this.Controls.Add(this.txtsearch);
             this.Name = "bills";
             this.Size = new System.Drawing.Size(918, 724);
+            this.Load += new System.EventHandler(this.bills_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.patientgridview)).EndInit();
@@ -196,7 +198,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbladmindashboard;
         private System.Windows.Forms.DataGridView patientgridview;
-        private System.Windows.Forms.Button btnaddpatient;
+        private System.Windows.Forms.Button btncreatebill;
         private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.ComboBox combopatient;
