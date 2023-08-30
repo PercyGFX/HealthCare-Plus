@@ -65,6 +65,7 @@
             this.btnadd.TabIndex = 16;
             this.btnadd.Text = "Add";
             this.btnadd.UseVisualStyleBackColor = false;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
             // panel1
             // 
