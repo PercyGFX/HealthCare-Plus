@@ -30,5 +30,25 @@ namespace HealthCare_Plus.views.admin
                 adminDashboard.loadform(revenue_report);
             }
         }
+
+        private void btnunpaidbills_Click(object sender, EventArgs e)
+        {
+
+            unpaidbills_report unpaidbills_report = new unpaidbills_report();
+            if (ParentForm is adminDashboard adminDashboard)
+            {
+                adminDashboard.loadform(unpaidbills_report);
+            }
+
+        }
+
+        private void btnappoinments_Click(object sender, EventArgs e)
+        {
+            appoinments_reports appoinments_reports = new appoinments_reports();
+            if (ParentForm is adminDashboard adminDashboard)
+            {
+                adminDashboard.loadform(appoinments_reports);
+            }
+        }
     }
 }

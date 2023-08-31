@@ -103,3 +103,5 @@ C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\Microsoft.E
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\Microsoft.Extensions.Primitives.xml
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\System.ValueTuple.xml
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.admin.revenue_report.resources
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.admin.appoinments_reports.resources
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.admin.unpaidbills_report.resources

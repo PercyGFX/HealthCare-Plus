@@ -353,6 +353,12 @@
     <Compile Include="views\admin\adminDashboard.Designer.cs">
       <DependentUpon>adminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\admin\appoinments_reports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\admin\appoinments_reports.Designer.cs">
+      <DependentUpon>appoinments_reports.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\admin\bills.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -406,6 +412,12 @@
     </Compile>
     <Compile Include="views\admin\rooms.Designer.cs">
       <DependentUpon>rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\unpaidbills_report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\admin\unpaidbills_report.Designer.cs">
+      <DependentUpon>unpaidbills_report.cs</DependentUpon>
     </Compile>
     <Compile Include="views\staffRegistration.cs">
       <SubType>Form</SubType>
@@ -538,6 +550,9 @@
     <EmbeddedResource Include="views\admin\adminDashboard.resx">
       <DependentUpon>adminDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\admin\appoinments_reports.resx">
+      <DependentUpon>appoinments_reports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\admin\bills.resx">
       <DependentUpon>bills.cs</DependentUpon>
     </EmbeddedResource>
@@ -564,6 +579,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\admin\rooms.resx">
       <DependentUpon>rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\admin\unpaidbills_report.resx">
+      <DependentUpon>unpaidbills_report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\login.resx">
       <DependentUpon>login.cs</DependentUpon>
