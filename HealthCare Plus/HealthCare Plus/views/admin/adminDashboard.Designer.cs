@@ -106,6 +106,7 @@
             this.btnreports.TabIndex = 7;
             this.btnreports.Text = "REPORTS";
             this.btnreports.UseVisualStyleBackColor = false;
+            this.btnreports.Click += new System.EventHandler(this.btnreports_Click);
             // 
             // btnpatients
             // 
