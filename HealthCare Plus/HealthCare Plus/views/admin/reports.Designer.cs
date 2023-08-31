@@ -90,6 +90,7 @@
             this.btnadddoctor.TabIndex = 3;
             this.btnadddoctor.Text = "Revenue";
             this.btnadddoctor.UseVisualStyleBackColor = false;
+            this.btnadddoctor.Click += new System.EventHandler(this.btnadddoctor_Click);
             // 
             // button1
             // 

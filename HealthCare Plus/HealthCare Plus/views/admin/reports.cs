@@ -21,5 +21,14 @@ namespace HealthCare_Plus.views.admin
         {
 
         }
+
+        private void btnadddoctor_Click(object sender, EventArgs e)
+        {
+            revenue_report revenue_report = new revenue_report();
+            if (ParentForm is adminDashboard adminDashboard)
+            {
+                adminDashboard.loadform(revenue_report);
+            }
+        }
     }
 }
