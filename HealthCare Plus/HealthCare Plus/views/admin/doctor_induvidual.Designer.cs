@@ -34,24 +34,23 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblspecialized = new System.Windows.Forms.Label();
+            this.lblphone = new System.Windows.Forms.Label();
+            this.lblage = new System.Windows.Forms.Label();
+            this.lblqualifications = new System.Windows.Forms.Label();
+            this.lblemail = new System.Windows.Forms.Label();
+            this.lbllocation = new System.Windows.Forms.Label();
+            this.lblname = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btncancel = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblname = new System.Windows.Forms.Label();
-            this.lbllocation = new System.Windows.Forms.Label();
-            this.lblemail = new System.Windows.Forms.Label();
-            this.lblqualifications = new System.Windows.Forms.Label();
-            this.lblage = new System.Windows.Forms.Label();
-            this.lblphone = new System.Windows.Forms.Label();
-            this.lblspecialized = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
             this.doctorgridview = new System.Windows.Forms.DataGridView();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -102,6 +101,83 @@
             this.panel2.Size = new System.Drawing.Size(826, 200);
             this.panel2.TabIndex = 32;
             // 
+            // lblspecialized
+            // 
+            this.lblspecialized.AutoSize = true;
+            this.lblspecialized.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblspecialized.ForeColor = System.Drawing.Color.Blue;
+            this.lblspecialized.Location = new System.Drawing.Point(536, 97);
+            this.lblspecialized.Name = "lblspecialized";
+            this.lblspecialized.Size = new System.Drawing.Size(61, 24);
+            this.lblspecialized.TabIndex = 29;
+            this.lblspecialized.Text = "Name";
+            // 
+            // lblphone
+            // 
+            this.lblphone.AutoSize = true;
+            this.lblphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblphone.ForeColor = System.Drawing.Color.Blue;
+            this.lblphone.Location = new System.Drawing.Point(517, 58);
+            this.lblphone.Name = "lblphone";
+            this.lblphone.Size = new System.Drawing.Size(61, 24);
+            this.lblphone.TabIndex = 28;
+            this.lblphone.Text = "Name";
+            // 
+            // lblage
+            // 
+            this.lblage.AutoSize = true;
+            this.lblage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblage.ForeColor = System.Drawing.Color.Blue;
+            this.lblage.Location = new System.Drawing.Point(429, 18);
+            this.lblage.Name = "lblage";
+            this.lblage.Size = new System.Drawing.Size(61, 24);
+            this.lblage.TabIndex = 27;
+            this.lblage.Text = "Name";
+            // 
+            // lblqualifications
+            // 
+            this.lblqualifications.AutoSize = true;
+            this.lblqualifications.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblqualifications.ForeColor = System.Drawing.Color.Blue;
+            this.lblqualifications.Location = new System.Drawing.Point(145, 135);
+            this.lblqualifications.Name = "lblqualifications";
+            this.lblqualifications.Size = new System.Drawing.Size(61, 24);
+            this.lblqualifications.TabIndex = 26;
+            this.lblqualifications.Text = "Name";
+            // 
+            // lblemail
+            // 
+            this.lblemail.AutoSize = true;
+            this.lblemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblemail.ForeColor = System.Drawing.Color.Blue;
+            this.lblemail.Location = new System.Drawing.Point(85, 97);
+            this.lblemail.Name = "lblemail";
+            this.lblemail.Size = new System.Drawing.Size(61, 24);
+            this.lblemail.TabIndex = 25;
+            this.lblemail.Text = "Name";
+            // 
+            // lbllocation
+            // 
+            this.lbllocation.AutoSize = true;
+            this.lbllocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbllocation.ForeColor = System.Drawing.Color.Blue;
+            this.lbllocation.Location = new System.Drawing.Point(105, 58);
+            this.lbllocation.Name = "lbllocation";
+            this.lbllocation.Size = new System.Drawing.Size(61, 24);
+            this.lbllocation.TabIndex = 24;
+            this.lbllocation.Text = "Name";
+            // 
+            // lblname
+            // 
+            this.lblname.AutoSize = true;
+            this.lblname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblname.ForeColor = System.Drawing.Color.Blue;
+            this.lblname.Location = new System.Drawing.Point(85, 18);
+            this.lblname.Name = "lblname";
+            this.lblname.Size = new System.Drawing.Size(61, 24);
+            this.lblname.TabIndex = 23;
+            this.lblname.Text = "Name";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -112,20 +188,6 @@
             this.label1.Size = new System.Drawing.Size(131, 24);
             this.label1.TabIndex = 22;
             this.label1.Text = "Qualifications :";
-            // 
-            // btncancel
-            // 
-            this.btncancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncancel.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btncancel.ForeColor = System.Drawing.Color.Black;
-            this.btncancel.Location = new System.Drawing.Point(330, 633);
-            this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(288, 46);
-            this.btncancel.TabIndex = 15;
-            this.btncancel.Text = "Close";
-            this.btncancel.UseVisualStyleBackColor = true;
-            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
             // label7
             // 
@@ -193,83 +255,6 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Name :";
             // 
-            // lblname
-            // 
-            this.lblname.AutoSize = true;
-            this.lblname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblname.ForeColor = System.Drawing.Color.Blue;
-            this.lblname.Location = new System.Drawing.Point(85, 18);
-            this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(61, 24);
-            this.lblname.TabIndex = 23;
-            this.lblname.Text = "Name";
-            // 
-            // lbllocation
-            // 
-            this.lbllocation.AutoSize = true;
-            this.lbllocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbllocation.ForeColor = System.Drawing.Color.Blue;
-            this.lbllocation.Location = new System.Drawing.Point(105, 58);
-            this.lbllocation.Name = "lbllocation";
-            this.lbllocation.Size = new System.Drawing.Size(61, 24);
-            this.lbllocation.TabIndex = 24;
-            this.lbllocation.Text = "Name";
-            // 
-            // lblemail
-            // 
-            this.lblemail.AutoSize = true;
-            this.lblemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblemail.ForeColor = System.Drawing.Color.Blue;
-            this.lblemail.Location = new System.Drawing.Point(85, 97);
-            this.lblemail.Name = "lblemail";
-            this.lblemail.Size = new System.Drawing.Size(61, 24);
-            this.lblemail.TabIndex = 25;
-            this.lblemail.Text = "Name";
-            // 
-            // lblqualifications
-            // 
-            this.lblqualifications.AutoSize = true;
-            this.lblqualifications.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblqualifications.ForeColor = System.Drawing.Color.Blue;
-            this.lblqualifications.Location = new System.Drawing.Point(145, 135);
-            this.lblqualifications.Name = "lblqualifications";
-            this.lblqualifications.Size = new System.Drawing.Size(61, 24);
-            this.lblqualifications.TabIndex = 26;
-            this.lblqualifications.Text = "Name";
-            // 
-            // lblage
-            // 
-            this.lblage.AutoSize = true;
-            this.lblage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblage.ForeColor = System.Drawing.Color.Blue;
-            this.lblage.Location = new System.Drawing.Point(429, 18);
-            this.lblage.Name = "lblage";
-            this.lblage.Size = new System.Drawing.Size(61, 24);
-            this.lblage.TabIndex = 27;
-            this.lblage.Text = "Name";
-            // 
-            // lblphone
-            // 
-            this.lblphone.AutoSize = true;
-            this.lblphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblphone.ForeColor = System.Drawing.Color.Blue;
-            this.lblphone.Location = new System.Drawing.Point(517, 58);
-            this.lblphone.Name = "lblphone";
-            this.lblphone.Size = new System.Drawing.Size(61, 24);
-            this.lblphone.TabIndex = 28;
-            this.lblphone.Text = "Name";
-            // 
-            // lblspecialized
-            // 
-            this.lblspecialized.AutoSize = true;
-            this.lblspecialized.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblspecialized.ForeColor = System.Drawing.Color.Blue;
-            this.lblspecialized.Location = new System.Drawing.Point(536, 97);
-            this.lblspecialized.Name = "lblspecialized";
-            this.lblspecialized.Size = new System.Drawing.Size(61, 24);
-            this.lblspecialized.TabIndex = 29;
-            this.lblspecialized.Text = "Name";
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.OldLace;
@@ -278,18 +263,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(826, 334);
             this.panel3.TabIndex = 33;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label15.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(46, 257);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(206, 33);
-            this.label15.TabIndex = 33;
-            this.label15.Text = "Doctor Schedule";
             // 
             // doctorgridview
             // 
@@ -321,6 +294,18 @@
             this.doctorgridview.Size = new System.Drawing.Size(823, 409);
             this.doctorgridview.TabIndex = 34;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label15.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(46, 257);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(206, 33);
+            this.label15.TabIndex = 33;
+            this.label15.Text = "Doctor Schedule";
+            // 
             // doctor_induvidual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -329,10 +314,9 @@
             this.Controls.Add(this.label15);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.btncancel);
             this.Controls.Add(this.panel1);
             this.Name = "doctor_induvidual";
-            this.Size = new System.Drawing.Size(916, 723);
+            this.Size = new System.Drawing.Size(916, 668);
             this.Load += new System.EventHandler(this.doctor_induvidual_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -364,7 +348,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridView doctorgridview;

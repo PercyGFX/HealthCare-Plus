@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
             this.roomgridview = new System.Windows.Forms.DataGridView();
@@ -39,7 +39,6 @@
             this.btnaddroom = new System.Windows.Forms.Button();
             this.btnsearch = new System.Windows.Forms.Button();
             this.txtsearch = new System.Windows.Forms.TextBox();
-            this.bookedrooms = new System.Windows.Forms.Button();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RoomName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RoomType = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,14 +75,14 @@
             // 
             this.roomgridview.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.roomgridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.roomgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.roomgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.roomgridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.roomgridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -91,20 +90,20 @@
             this.RoomType,
             this.Availability,
             this.Edit});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.roomgridview.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.roomgridview.DefaultCellStyle = dataGridViewCellStyle11;
             this.roomgridview.GridColor = System.Drawing.Color.Silver;
             this.roomgridview.Location = new System.Drawing.Point(20, 239);
             this.roomgridview.Name = "roomgridview";
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            this.roomgridview.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            this.roomgridview.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.roomgridview.Size = new System.Drawing.Size(871, 428);
             this.roomgridview.TabIndex = 36;
             // 
@@ -169,20 +168,6 @@
             this.txtsearch.Size = new System.Drawing.Size(286, 38);
             this.txtsearch.TabIndex = 38;
             // 
-            // bookedrooms
-            // 
-            this.bookedrooms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.bookedrooms.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bookedrooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bookedrooms.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bookedrooms.ForeColor = System.Drawing.Color.White;
-            this.bookedrooms.Location = new System.Drawing.Point(695, 64);
-            this.bookedrooms.Name = "bookedrooms";
-            this.bookedrooms.Size = new System.Drawing.Size(196, 38);
-            this.bookedrooms.TabIndex = 41;
-            this.bookedrooms.Text = "Booked Rooms Info";
-            this.bookedrooms.UseVisualStyleBackColor = false;
-            // 
             // ID
             // 
             this.ID.HeaderText = "ID";
@@ -224,7 +209,6 @@
             this.Controls.Add(this.btnaddroom);
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.txtsearch);
-            this.Controls.Add(this.bookedrooms);
             this.Name = "rooms";
             this.Size = new System.Drawing.Size(910, 690);
             this.Load += new System.EventHandler(this.rooms_Load);
@@ -248,7 +232,6 @@
         private System.Windows.Forms.Button btnaddroom;
         private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.TextBox txtsearch;
-        private System.Windows.Forms.Button bookedrooms;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomName;
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomType;

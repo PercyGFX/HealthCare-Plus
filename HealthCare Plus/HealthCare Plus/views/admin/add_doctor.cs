@@ -80,5 +80,10 @@ namespace HealthCare_Plus.views.admin
                 }
             }
         }
+
+        private void add_doctor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

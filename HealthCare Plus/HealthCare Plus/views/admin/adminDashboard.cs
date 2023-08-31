@@ -78,5 +78,11 @@ namespace HealthCare_Plus.views.admin
         {
 
         }
+
+        private void btnresources_Click(object sender, EventArgs e)
+        {
+            resources resources = new resources();
+            loadform(resources);
+        }
     }
 }
