@@ -50,5 +50,14 @@ namespace HealthCare_Plus.views.admin
                 adminDashboard.loadform(appoinments_reports);
             }
         }
+
+        private void btnrooallowcations_Click(object sender, EventArgs e)
+        {
+            roomallowcations_reports roomallowcations_reports = new roomallowcations_reports();
+            if (ParentForm is adminDashboard adminDashboard)
+            {
+                adminDashboard.loadform(roomallowcations_reports);
+            }
+        }
     }
 }

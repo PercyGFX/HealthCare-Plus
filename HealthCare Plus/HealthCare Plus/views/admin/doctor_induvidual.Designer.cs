@@ -51,6 +51,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.doctorgridview = new System.Windows.Forms.DataGridView();
             this.label15 = new System.Windows.Forms.Label();
+            this.btnedit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -82,6 +83,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.OldLace;
+            this.panel2.Controls.Add(this.btnedit);
             this.panel2.Controls.Add(this.lblspecialized);
             this.panel2.Controls.Add(this.lblphone);
             this.panel2.Controls.Add(this.lblage);
@@ -306,6 +308,21 @@
             this.label15.TabIndex = 33;
             this.label15.Text = "Doctor Schedule";
             // 
+            // btnedit
+            // 
+            this.btnedit.BackColor = System.Drawing.Color.Teal;
+            this.btnedit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnedit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnedit.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnedit.ForeColor = System.Drawing.Color.White;
+            this.btnedit.Location = new System.Drawing.Point(382, 135);
+            this.btnedit.Name = "btnedit";
+            this.btnedit.Size = new System.Drawing.Size(158, 46);
+            this.btnedit.TabIndex = 34;
+            this.btnedit.Text = "Edit";
+            this.btnedit.UseVisualStyleBackColor = false;
+            this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
+            // 
             // doctor_induvidual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -351,5 +368,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridView doctorgridview;
+        private System.Windows.Forms.Button btnedit;
     }
 }

@@ -37,7 +37,6 @@
             this.txtlocation = new System.Windows.Forms.RichTextBox();
             this.txtage = new System.Windows.Forms.RichTextBox();
             this.btnadd = new System.Windows.Forms.Button();
-            this.btncancel = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -62,7 +61,6 @@
             this.panel2.Controls.Add(this.txtlocation);
             this.panel2.Controls.Add(this.txtage);
             this.panel2.Controls.Add(this.btnadd);
-            this.panel2.Controls.Add(this.btncancel);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
@@ -171,19 +169,6 @@
             this.btnadd.Text = "Add";
             this.btnadd.UseVisualStyleBackColor = false;
             this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
-            // 
-            // btncancel
-            // 
-            this.btncancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncancel.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btncancel.ForeColor = System.Drawing.Color.Black;
-            this.btncancel.Location = new System.Drawing.Point(22, 465);
-            this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(288, 46);
-            this.btncancel.TabIndex = 15;
-            this.btncancel.Text = "Cancel";
-            this.btncancel.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -312,7 +297,6 @@
         private System.Windows.Forms.RichTextBox txtlocation;
         private System.Windows.Forms.RichTextBox txtage;
         private System.Windows.Forms.Button btnadd;
-        private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;

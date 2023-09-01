@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using HealthCare_Plus.Controllers;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,37 +14,6 @@ namespace HealthCare_Plus.views.admin
 {
     public partial class doctors : UserControl
     {
-
-        
-
-        // database object 
-        Database dbManager = new Database();
-
-
-        //load doctors to data gridview
-        private void LoadDoctorData(string searchText = null)
-        {
-            using (MySqlConnection connection = dbManager.GetConnection())
-            {
-                dbManager.OpenConnection(connection);
-
-                string selectQuery = "SELECT id, name, age, specialized_area, location, phone, email, qualifications FROM doctor"; // Default query for loading all data
-
-                if (!string.IsNullOrWhiteSpace(searchText))
-                {
-                    selectQuery += $" WHERE id LIKE '%{searchText}%' OR name LIKE '%{searchText}%' OR age LIKE '%{searchText}%' OR specialized_area LIKE '%{searchText}%' OR location LIKE '%{searchText}%' OR phone LIKE '%{searchText}%' OR email LIKE '%{searchText}%' OR qualifications LIKE '%{searchText}%'";
-                }
-
-                using (MySqlDataAdapter adapter = new MySqlDataAdapter(selectQuery, connection))
-                {
-                    DataTable dataTable = new DataTable();
-                    adapter.Fill(dataTable);
-
-                    doctorgridview.DataSource = dataTable;
-                }
-            }
-        }
-
 
         public doctors()
         {
@@ -60,12 +30,12 @@ namespace HealthCare_Plus.views.admin
                 if (ParentForm is adminDashboard adminDashboard)
                 {
                     adminDashboard.loadform(doctor_induvidual);
-                }
-
-                
+                }      
                 
             }
         }
+
+        doctorClass doctorClass = new doctorClass();
 
         private void orders_Click(object sender, EventArgs e)
         {
@@ -79,7 +49,7 @@ namespace HealthCare_Plus.views.admin
 
         private void doctors_Load(object sender, EventArgs e)
         {
-            LoadDoctorData();
+            doctorClass.LoadDoctorData(doctorgridview);
 
             doctorgridview.Columns["id"].HeaderText = "ID";
             doctorgridview.Columns["name"].HeaderText = "Name";
@@ -94,7 +64,7 @@ namespace HealthCare_Plus.views.admin
         private void button1_Click(object sender, EventArgs e)
         {
             string searchText = txtsearch.Text.Trim().ToLower();
-            LoadDoctorData(searchText);
+            doctorClass.LoadDoctorData(doctorgridview, searchText);
         }
     }
 }

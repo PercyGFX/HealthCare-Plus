@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnunpaidbills = new System.Windows.Forms.Button();
+            this.btnrevenuereports = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
-            this.btnrevenuereports = new System.Windows.Forms.Button();
-            this.btnunpaidbills = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnappoinments = new System.Windows.Forms.Button();
+            this.btnrooallowcations = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -49,6 +50,36 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(826, 91);
             this.panel2.TabIndex = 33;
+            // 
+            // btnunpaidbills
+            // 
+            this.btnunpaidbills.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btnunpaidbills.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnunpaidbills.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnunpaidbills.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnunpaidbills.ForeColor = System.Drawing.Color.White;
+            this.btnunpaidbills.Location = new System.Drawing.Point(237, 18);
+            this.btnunpaidbills.Name = "btnunpaidbills";
+            this.btnunpaidbills.Size = new System.Drawing.Size(138, 38);
+            this.btnunpaidbills.TabIndex = 35;
+            this.btnunpaidbills.Text = "Unpaid Bills";
+            this.btnunpaidbills.UseVisualStyleBackColor = false;
+            this.btnunpaidbills.Click += new System.EventHandler(this.btnunpaidbills_Click);
+            // 
+            // btnrevenuereports
+            // 
+            this.btnrevenuereports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btnrevenuereports.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnrevenuereports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrevenuereports.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnrevenuereports.ForeColor = System.Drawing.Color.White;
+            this.btnrevenuereports.Location = new System.Drawing.Point(28, 18);
+            this.btnrevenuereports.Name = "btnrevenuereports";
+            this.btnrevenuereports.Size = new System.Drawing.Size(138, 38);
+            this.btnrevenuereports.TabIndex = 3;
+            this.btnrevenuereports.Text = "Revenue";
+            this.btnrevenuereports.UseVisualStyleBackColor = false;
+            this.btnrevenuereports.Click += new System.EventHandler(this.btnadddoctor_Click);
             // 
             // panel1
             // 
@@ -72,39 +103,10 @@
             this.lbladmindashboard.TabIndex = 32;
             this.lbladmindashboard.Text = "Reports";
             // 
-            // btnrevenuereports
-            // 
-            this.btnrevenuereports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.btnrevenuereports.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnrevenuereports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnrevenuereports.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnrevenuereports.ForeColor = System.Drawing.Color.White;
-            this.btnrevenuereports.Location = new System.Drawing.Point(28, 18);
-            this.btnrevenuereports.Name = "btnrevenuereports";
-            this.btnrevenuereports.Size = new System.Drawing.Size(138, 38);
-            this.btnrevenuereports.TabIndex = 3;
-            this.btnrevenuereports.Text = "Revenue";
-            this.btnrevenuereports.UseVisualStyleBackColor = false;
-            this.btnrevenuereports.Click += new System.EventHandler(this.btnadddoctor_Click);
-            // 
-            // btnunpaidbills
-            // 
-            this.btnunpaidbills.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.btnunpaidbills.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnunpaidbills.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnunpaidbills.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnunpaidbills.ForeColor = System.Drawing.Color.White;
-            this.btnunpaidbills.Location = new System.Drawing.Point(237, 18);
-            this.btnunpaidbills.Name = "btnunpaidbills";
-            this.btnunpaidbills.Size = new System.Drawing.Size(138, 38);
-            this.btnunpaidbills.TabIndex = 35;
-            this.btnunpaidbills.Text = "Unpaid Bills";
-            this.btnunpaidbills.UseVisualStyleBackColor = false;
-            this.btnunpaidbills.Click += new System.EventHandler(this.btnunpaidbills_Click);
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.OldLace;
+            this.panel3.Controls.Add(this.btnrooallowcations);
             this.panel3.Controls.Add(this.btnappoinments);
             this.panel3.Location = new System.Drawing.Point(20, 180);
             this.panel3.Name = "panel3";
@@ -125,6 +127,21 @@
             this.btnappoinments.Text = "Appoinments";
             this.btnappoinments.UseVisualStyleBackColor = false;
             this.btnappoinments.Click += new System.EventHandler(this.btnappoinments_Click);
+            // 
+            // btnrooallowcations
+            // 
+            this.btnrooallowcations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.btnrooallowcations.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnrooallowcations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrooallowcations.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnrooallowcations.ForeColor = System.Drawing.Color.White;
+            this.btnrooallowcations.Location = new System.Drawing.Point(237, 25);
+            this.btnrooallowcations.Name = "btnrooallowcations";
+            this.btnrooallowcations.Size = new System.Drawing.Size(193, 38);
+            this.btnrooallowcations.TabIndex = 36;
+            this.btnrooallowcations.Text = "Room Allowcations";
+            this.btnrooallowcations.UseVisualStyleBackColor = false;
+            this.btnrooallowcations.Click += new System.EventHandler(this.btnrooallowcations_Click);
             // 
             // reports
             // 
@@ -153,5 +170,6 @@
         private System.Windows.Forms.Button btnrevenuereports;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnappoinments;
+        private System.Windows.Forms.Button btnrooallowcations;
     }
 }

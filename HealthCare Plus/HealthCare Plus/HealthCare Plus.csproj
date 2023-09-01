@@ -333,7 +333,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\billspayment.cs" />
+    <Compile Include="Controllers\doctorClass.cs" />
     <Compile Include="Controllers\patients.cs" />
+    <Compile Include="Controllers\reportsClass.cs" />
     <Compile Include="Services\Database.cs" />
     <Compile Include="Services\md5convert.cs" />
     <Compile Include="Services\validations.cs" />
@@ -385,6 +387,12 @@
     <Compile Include="views\admin\doctors.Designer.cs">
       <DependentUpon>doctors.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\admin\doctor_edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\admin\doctor_edit.Designer.cs">
+      <DependentUpon>doctor_edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\admin\doctor_induvidual.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -396,6 +404,12 @@
     </Compile>
     <Compile Include="views\admin\patients.Designer.cs">
       <DependentUpon>patients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\patient_edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\admin\patient_edit.Designer.cs">
+      <DependentUpon>patient_edit.cs</DependentUpon>
     </Compile>
     <Compile Include="views\admin\payment.cs">
       <SubType>UserControl</SubType>
@@ -420,6 +434,12 @@
     </Compile>
     <Compile Include="views\admin\revenue_report.Designer.cs">
       <DependentUpon>revenue_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\roomallowcations_reports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\admin\roomallowcations_reports.Designer.cs">
+      <DependentUpon>roomallowcations_reports.cs</DependentUpon>
     </Compile>
     <Compile Include="views\admin\rooms.cs">
       <SubType>UserControl</SubType>
@@ -573,11 +593,17 @@
     <EmbeddedResource Include="views\admin\doctors.resx">
       <DependentUpon>doctors.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\admin\doctor_edit.resx">
+      <DependentUpon>doctor_edit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\admin\doctor_induvidual.resx">
       <DependentUpon>doctor_induvidual.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\admin\patients.resx">
       <DependentUpon>patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\admin\patient_edit.resx">
+      <DependentUpon>patient_edit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\admin\payment.resx">
       <DependentUpon>payment.cs</DependentUpon>
@@ -590,6 +616,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\admin\revenue_report.resx">
       <DependentUpon>revenue_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\admin\roomallowcations_reports.resx">
+      <DependentUpon>roomallowcations_reports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\admin\rooms.resx">
       <DependentUpon>rooms.cs</DependentUpon>
