@@ -35,7 +35,7 @@ namespace HealthCare_Plus.views.admin
                 dbManager.OpenConnection(connection);
 
                 // Construct the SQL query
-                string selectQuery = "SELECT id, patient, date, description, amount FROM bill WHERE date BETWEEN @FromDate AND @ToDate AND payment_status = 1";
+                string selectQuery = "SELECT id, patient, date, description, amount FROM bill WHERE date BETWEEN @FromDate AND @ToDate AND payment_status = 0";
 
                 using (MySqlCommand cmd = new MySqlCommand(selectQuery, connection))
                 {
@@ -79,12 +79,33 @@ namespace HealthCare_Plus.views.admin
                     worksheet.Cells[1, iC + 1].Value = dataGridView.Columns[iC].HeaderText;
                 }
 
-                // Populate the Excel worksheet with data from the DataGridView
+                // Format and populate the Excel worksheet with data from the DataGridView
                 for (int i = 0; i < dataGridView.Rows.Count; i++)
                 {
                     for (int j = 0; j < dataGridView.Columns.Count; j++)
                     {
-                        worksheet.Cells[i + 2, j + 1].Value = dataGridView.Rows[i].Cells[j].Value;
+                        object cellValue = dataGridView.Rows[i].Cells[j].Value;
+
+                        // Check if the cell value is a DateTime
+                        if (cellValue is DateTime dateTimeValue)
+                        {
+                            if (dateTimeValue.TimeOfDay.TotalSeconds > 0)
+                            {
+                                // Handle DateTime values with time component
+                                worksheet.Cells[i + 2, j + 1].Value = dateTimeValue.ToString("yyyy-MM-dd"); // Customize the format as needed
+                            }
+
+                        }
+                        else if (cellValue is TimeSpan timeSpanValue)
+                        {
+                            // Handle TimeSpan (time-only) values
+                            worksheet.Cells[i + 2, j + 1].Value = timeSpanValue.ToString("hh\\:mm\\:ss"); // Customize the format as needed
+                        }
+                        else
+                        {
+                            // For non-DateTime and non-TimeSpan values, simply copy the value
+                            worksheet.Cells[i + 2, j + 1].Value = cellValue;
+                        }
                     }
                 }
 
