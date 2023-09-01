@@ -1,4 +1,5 @@
 C:\lottery\HealthCare-Plus\HealthCare Plus\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\packages\EPPlus.6.2.8\lib\net462\EPPlus.xml
 C:\lottery\HealthCare-Plus\HealthCare Plus\packages\Google.Protobuf.3.21.9\lib\net45\Google.Protobuf.xml
 C:\lottery\HealthCare-Plus\HealthCare Plus\packages\itext.8.0.1\lib\net461\itext.barcodes.xml
 C:\lottery\HealthCare-Plus\HealthCare Plus\packages\itext.8.0.1\lib\net461\itext.bouncy-castle-connector.xml
@@ -21,6 +22,7 @@ C:\lottery\HealthCare-Plus\HealthCare Plus\packages\Microsoft.Extensions.Logging
 C:\lottery\HealthCare-Plus\HealthCare Plus\packages\Microsoft.Extensions.Logging.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.Logging.Abstractions.xml
 C:\lottery\HealthCare-Plus\HealthCare Plus\packages\Microsoft.Extensions.Options.5.0.0\lib\net461\Microsoft.Extensions.Options.xml
 C:\lottery\HealthCare-Plus\HealthCare Plus\packages\Microsoft.Extensions.Primitives.5.0.0\lib\net461\Microsoft.Extensions.Primitives.xml
+C:\lottery\HealthCare-Plus\HealthCare Plus\packages\Microsoft.IO.RecyclableMemoryStream.1.4.1\lib\net46\Microsoft.IO.RecyclableMemoryStream.xml
 C:\lottery\HealthCare-Plus\HealthCare Plus\packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.xml
 C:\lottery\HealthCare-Plus\HealthCare Plus\packages\Microsoft.Win32.Registry.AccessControl.6.0.0\lib\net461\Microsoft.Win32.Registry.AccessControl.xml
 C:\lottery\HealthCare-Plus\HealthCare Plus\packages\Microsoft.Win32.SystemEvents.6.0.0\lib\net461\Microsoft.Win32.SystemEvents.xml
