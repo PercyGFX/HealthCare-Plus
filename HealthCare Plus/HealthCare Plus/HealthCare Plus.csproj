@@ -533,6 +533,12 @@
     <Compile Include="views\staff\doctor_shedule.Designer.cs">
       <DependentUpon>doctor_shedule.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\staff\edit_appoinment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\staff\edit_appoinment.Designer.cs">
+      <DependentUpon>edit_appoinment.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\staff\medications.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -674,6 +680,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\staff\doctor_shedule.resx">
       <DependentUpon>doctor_shedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\edit_appoinment.resx">
+      <DependentUpon>edit_appoinment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\staff\medications.resx">
       <DependentUpon>medications.cs</DependentUpon>

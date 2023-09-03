@@ -57,5 +57,37 @@ namespace HealthCare_Plus.views.staff
         {
             LoadAppointmentData();
         }
+
+        private void appoinmentgridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                // Get the selected row
+                DataGridViewRow selectedRow = appoinmentgridview.Rows[e.RowIndex];
+
+                // Extract the values you want from the selected row
+                int appointmentId = Convert.ToInt32(selectedRow.Cells["id"].Value);
+                string doctorName = selectedRow.Cells["DoctorName"].Value.ToString();
+                string patientName = selectedRow.Cells["PatientName"].Value.ToString();
+                string description = selectedRow.Cells["description"].Value.ToString();
+                DateTime date = Convert.ToDateTime(selectedRow.Cells["date"].Value);
+                string time = selectedRow.Cells["time"].Value.ToString();
+                decimal cost = Convert.ToDecimal(selectedRow.Cells["cost"].Value);
+
+                // Create an instance of the "edit_appointments" form
+                edit_appoinment edit_appoinment = new edit_appoinment(appointmentId, doctorName, patientName, description, date, time, cost);
+
+                if (ParentForm is staffDashboard staffDashboard)
+                {
+                    staffDashboard.loadform(edit_appoinment);
+                }
+                // Show the form
+               
+
+                // Optionally, handle any actions after the "edit_appointments" form is closed if needed
+                // For example, refreshing the data grid view after editing
+            }
+
+        }
     }
 }

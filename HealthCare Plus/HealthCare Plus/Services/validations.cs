@@ -415,6 +415,39 @@ namespace HealthCare_Plus.Services
             return true;
         }
 
+        //////////////// edi validations //////////////////////
+        ///
+
+        public class EditAppointmentValidations
+        {
+            public static bool IsValidFields(DateTimePicker date, string cost, string description)
+            {
+                // Validate the date
+                if (date.Value < DateTime.Today)
+                {
+                    MessageBox.Show("Please select a valid appointment date.");
+                    return false;
+                }
+
+                // Validate the cost (assuming it should be a positive number)
+                if (!decimal.TryParse(cost, out decimal costValue) || costValue <= 0)
+                {
+                    MessageBox.Show("Please enter a valid cost (positive number).");
+                    return false;
+                }
+
+                // Validate the description (assuming it should not be empty)
+                if (string.IsNullOrWhiteSpace(description))
+                {
+                    MessageBox.Show("Please enter a description.");
+                    return false;
+                }
+
+                // All validations passed
+                return true;
+            }
+        }
+
     }
 
 }

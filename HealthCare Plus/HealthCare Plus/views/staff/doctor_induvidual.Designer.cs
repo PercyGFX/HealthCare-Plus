@@ -317,7 +317,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "doctor_induvidual";
-            this.Size = new System.Drawing.Size(921, 703);
+            this.Size = new System.Drawing.Size(921, 646);
             this.Load += new System.EventHandler(this.doctor_induvidual_Load);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.doctorgridview)).EndInit();

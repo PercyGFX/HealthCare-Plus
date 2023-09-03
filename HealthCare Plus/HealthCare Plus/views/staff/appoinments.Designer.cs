@@ -92,6 +92,7 @@
             this.appoinmentgridview.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.appoinmentgridview.Size = new System.Drawing.Size(871, 428);
             this.appoinmentgridview.TabIndex = 11;
+            this.appoinmentgridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.appoinmentgridview_CellContentClick);
             // 
             // btnaddappoinment
             // 

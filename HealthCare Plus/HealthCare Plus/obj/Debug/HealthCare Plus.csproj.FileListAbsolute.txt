@@ -110,3 +110,4 @@ C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\Microsoft.I
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.admin.roomallowcations_reports.resources
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.admin.doctor_edit.resources
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.admin.patient_edit.resources
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.staff.edit_appoinment.resources
