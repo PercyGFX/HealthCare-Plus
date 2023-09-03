@@ -101,11 +101,11 @@
             // 
             this.lbladmindashboard.AutoSize = true;
             this.lbladmindashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbladmindashboard.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbladmindashboard.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbladmindashboard.ForeColor = System.Drawing.Color.Black;
-            this.lbladmindashboard.Location = new System.Drawing.Point(14, 3);
+            this.lbladmindashboard.Location = new System.Drawing.Point(15, 5);
             this.lbladmindashboard.Name = "lbladmindashboard";
-            this.lbladmindashboard.Size = new System.Drawing.Size(105, 33);
+            this.lbladmindashboard.Size = new System.Drawing.Size(100, 28);
             this.lbladmindashboard.TabIndex = 32;
             this.lbladmindashboard.Text = "Doctors";
             // 

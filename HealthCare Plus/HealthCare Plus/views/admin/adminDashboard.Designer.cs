@@ -53,7 +53,7 @@
             // 
             // panelsidebar
             // 
-            this.panelsidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelsidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panelsidebar.Controls.Add(this.btnresources);
             this.panelsidebar.Controls.Add(this.picboxlogo);
             this.panelsidebar.Controls.Add(this.btnreports);
@@ -170,7 +170,7 @@
             // 
             // paneltop
             // 
-            this.paneltop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.paneltop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.paneltop.Controls.Add(this.picboxclose);
             this.paneltop.Controls.Add(this.picboxminimize);
             this.paneltop.Controls.Add(this.picboxlogout);
@@ -221,11 +221,11 @@
             // 
             this.lbladmindashboard.AutoSize = true;
             this.lbladmindashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbladmindashboard.Font = new System.Drawing.Font("Bebas Neue", 27.75F, System.Drawing.FontStyle.Bold);
+            this.lbladmindashboard.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbladmindashboard.ForeColor = System.Drawing.Color.White;
             this.lbladmindashboard.Location = new System.Drawing.Point(6, 13);
             this.lbladmindashboard.Name = "lbladmindashboard";
-            this.lbladmindashboard.Size = new System.Drawing.Size(248, 44);
+            this.lbladmindashboard.Size = new System.Drawing.Size(297, 38);
             this.lbladmindashboard.TabIndex = 31;
             this.lbladmindashboard.Text = "Admin Dashboard";
             // 

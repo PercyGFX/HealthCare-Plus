@@ -16,8 +16,6 @@ namespace HealthCare_Plus.Controllers
         // database object 
         Database dbManager = new Database();
 
-        adminDashboard adminDashboard = new adminDashboard();
-
         // Add doctor method ///////////////////////
 
         public bool AddDoctor(string name, string age, string location, string phone, string email, string specialized, string qualifications)
