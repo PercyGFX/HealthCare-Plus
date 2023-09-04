@@ -71,7 +71,7 @@ namespace HealthCare_Plus.views.staff
                         else
                         {
                             // No rows were deleted (appointment ID not found)
-                            MessageBox.Show("Appointment not found or deletion failed.");
+                            MessageBox.Show("Appointment already billed. deletion failed.");
                         }
                     }
                 }
@@ -126,12 +126,12 @@ namespace HealthCare_Plus.views.staff
                             if (rowsAffected > 0)
                             {
                                 // Insertion successful
-                                MessageBox.Show("Appointment added successfully.");
+                                MessageBox.Show("Appointment edited successfully.");
                             }
                             else
                             {
                                 // Insertion failed
-                                MessageBox.Show("Failed to add the appointment.");
+                                MessageBox.Show("Failed to edit the appointment.");
                             }
                         }
                     }

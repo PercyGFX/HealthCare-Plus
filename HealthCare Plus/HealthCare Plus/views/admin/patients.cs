@@ -76,7 +76,30 @@ namespace HealthCare_Plus.views.admin
 
         private void patientgridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                // Get the selected row
+                DataGridViewRow selectedRow = patientgridview.Rows[e.RowIndex];
 
+                // Extract data from the selected row
+                int id = Convert.ToInt32(selectedRow.Cells["id"].Value);
+                string name = selectedRow.Cells["name"].Value.ToString();
+                string address = selectedRow.Cells["address"].Value.ToString();
+                string phone = selectedRow.Cells["phone"].Value.ToString();
+                int age = Convert.ToInt32(selectedRow.Cells["age"].Value);
+                string bloodType = selectedRow.Cells["blood_type"].Value.ToString();
+                string description = selectedRow.Cells["description"].Value.ToString();
+               
+
+               // load patient edit
+
+                patient_edit patient_edit = new patient_edit(id, name, address, phone, age, bloodType, description);
+
+                if (ParentForm is adminDashboard adminDashboard)
+                {
+                    adminDashboard.loadform(patient_edit);
+                }
+            }
         }
     }
 }
