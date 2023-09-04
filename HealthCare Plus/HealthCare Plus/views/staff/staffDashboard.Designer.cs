@@ -35,6 +35,7 @@
             this.picboxlogout = new System.Windows.Forms.PictureBox();
             this.lblstaffdashboard = new System.Windows.Forms.Label();
             this.panelsidebar = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.rooms = new System.Windows.Forms.Button();
             this.picboxlogo = new System.Windows.Forms.PictureBox();
             this.btnmedications = new System.Windows.Forms.Button();
@@ -43,7 +44,6 @@
             this.btnrooms = new System.Windows.Forms.Button();
             this.btndoctors = new System.Windows.Forms.Button();
             this.panelcontent = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.paneltop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxminimize)).BeginInit();
@@ -104,11 +104,11 @@
             // 
             this.lblstaffdashboard.AutoSize = true;
             this.lblstaffdashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblstaffdashboard.Font = new System.Drawing.Font("Bebas Neue", 27.75F, System.Drawing.FontStyle.Bold);
+            this.lblstaffdashboard.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold);
             this.lblstaffdashboard.ForeColor = System.Drawing.Color.White;
-            this.lblstaffdashboard.Location = new System.Drawing.Point(7, 11);
+            this.lblstaffdashboard.Location = new System.Drawing.Point(6, 13);
             this.lblstaffdashboard.Name = "lblstaffdashboard";
-            this.lblstaffdashboard.Size = new System.Drawing.Size(241, 44);
+            this.lblstaffdashboard.Size = new System.Drawing.Size(261, 38);
             this.lblstaffdashboard.TabIndex = 31;
             this.lblstaffdashboard.Text = "Staff Dashboard";
             // 
@@ -128,6 +128,20 @@
             this.panelsidebar.Name = "panelsidebar";
             this.panelsidebar.Size = new System.Drawing.Size(226, 817);
             this.panelsidebar.TabIndex = 3;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(8, 317);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(212, 58);
+            this.button2.TabIndex = 37;
+            this.button2.Text = "RESOURCES";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // rooms
             // 
@@ -235,20 +249,6 @@
             this.panelcontent.Name = "panelcontent";
             this.panelcontent.Size = new System.Drawing.Size(919, 742);
             this.panelcontent.TabIndex = 5;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(39)))), ((int)(((byte)(105)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(8, 317);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(212, 58);
-            this.button2.TabIndex = 37;
-            this.button2.Text = "RESOURCES";
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // staffDashboard
             // 

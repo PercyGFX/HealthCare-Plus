@@ -145,5 +145,51 @@ namespace HealthCare_Plus.Controllers
         }
 
 
+        ////////////////////// edit doctor ////////////////////////////////////////
+        ///
+
+
+       public bool UpdateDoctorData(
+       int doctorId,
+       string name,
+       string age,
+       string location,
+       string phone,
+       string email,
+       string specialized,
+       string qualifications)
+        {
+            using (MySqlConnection connection = dbManager.GetConnection())
+            {
+                dbManager.OpenConnection(connection);
+
+                string updateQuery = "UPDATE doctor SET name = @Name, age = @Age, specialized_area = @Specialized, location = @Location, phone = @Phone, email = @Email, qualifications = @Qualifications WHERE id = @DoctorId";
+
+                using (MySqlCommand updateCommand = new MySqlCommand(updateQuery, connection))
+                {
+                    updateCommand.Parameters.AddWithValue("@DoctorId", doctorId);
+                    updateCommand.Parameters.AddWithValue("@Name", name);
+                    updateCommand.Parameters.AddWithValue("@Age", age);
+                    updateCommand.Parameters.AddWithValue("@Specialized", specialized);
+                    updateCommand.Parameters.AddWithValue("@Location", location);
+                    updateCommand.Parameters.AddWithValue("@Phone", phone);
+                    updateCommand.Parameters.AddWithValue("@Email", email);
+                    updateCommand.Parameters.AddWithValue("@Qualifications", qualifications);
+
+                    int rowsAffected = updateCommand.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        return true; // Update successful
+                    }
+                    else
+                    {
+                        return false; // Update failed or doctor ID not found
+                    }
+                }
+            }
+        }
+
+
     }
 }

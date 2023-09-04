@@ -77,26 +77,26 @@ namespace HealthCare_Plus.views.admin
                     dbManager.OpenConnection(connection);
 
                     // Define the SQL UPDATE statement
-                    string updateQuery = "UPDATE patient " +
-                                         "SET name = @Name, " +
-                                         "age = @Age, " +
-                                         "address = @Address, " +
-                                         "phone = @Phone, " +
-                                         "blood_type = @BloodType, " +
-                                         "description = @Description " +
-                                         "WHERE id = @PatientId";
+string updateQuery = "UPDATE patient " +
+                     "SET name = @Name, " +
+                     "age = @Age, " +
+                     "address = @Address, " +
+                     "phone = @Phone, " +
+                     "blood_type = @BloodType, " +
+                     "description = @Description " +
+                     "WHERE id = @PatientId";
 
-                    using (MySqlCommand updateCommand = new MySqlCommand(updateQuery, connection))
-                    {
-                        updateCommand.Parameters.AddWithValue("@Name", name);
-                        updateCommand.Parameters.AddWithValue("@Age", age);
-                        updateCommand.Parameters.AddWithValue("@Address", address);
-                        updateCommand.Parameters.AddWithValue("@Phone", phone);
-                        updateCommand.Parameters.AddWithValue("@BloodType", bloodType);
-                        updateCommand.Parameters.AddWithValue("@Description", description);
-                        updateCommand.Parameters.AddWithValue("@PatientId", patientId); // Use the patientId to specify which patient to update
+using (MySqlCommand updateCommand = new MySqlCommand(updateQuery, connection))
+{
+    updateCommand.Parameters.AddWithValue("@Name", name);
+    updateCommand.Parameters.AddWithValue("@Age", age);
+    updateCommand.Parameters.AddWithValue("@Address", address);
+    updateCommand.Parameters.AddWithValue("@Phone", phone);
+    updateCommand.Parameters.AddWithValue("@BloodType", bloodType);
+    updateCommand.Parameters.AddWithValue("@Description", description);
+    updateCommand.Parameters.AddWithValue("@PatientId", patientId); // Use the patientId to specify which patient to update
 
-                        int rowsAffected = updateCommand.ExecuteNonQuery();
+    int rowsAffected = updateCommand.ExecuteNonQuery();
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Patient data updated successfully.", "Success");

@@ -1,4 +1,5 @@
-﻿using HealthCare_Plus.Services;
+﻿using HealthCare_Plus.Controllers;
+using HealthCare_Plus.Services;
 using HealthCare_Plus.views.staff;
 using MySql.Data.MySqlClient;
 using System;
@@ -49,6 +50,8 @@ namespace HealthCare_Plus.views.admin
         // database object 
         Database dbManager = new Database();
 
+        doctorClass doctorClass = new doctorClass();
+
         private void doctor_edit_Load(object sender, EventArgs e)
         {
             txtname.Text = doctorName;
@@ -79,45 +82,25 @@ namespace HealthCare_Plus.views.admin
                 string specialized = txtspecialized.Text.Trim();
                 string qualifications = rtextqualifications.Text.Trim();
 
-                using (MySqlConnection connection = dbManager.GetConnection())
+                if (doctorClass.UpdateDoctorData(doctorId, name, age, location, phone, email, specialized, qualifications) )
                 {
-                    dbManager.OpenConnection(connection);
+                    MessageBox.Show("Doctor data updated successfully.", "Success");
 
-                    // Create and execute the database query to insert the data
-                    string updateQuery = "UPDATE doctor SET name = @Name, age = @Age, specialized_area = @Specialized, location = @Location, phone = @Phone, email = @Email, qualifications = @Qualifications WHERE id = @DoctorId";
-                    using (MySqlCommand insertCommand = new MySqlCommand(updateQuery, connection))
+                    // Reload or navigate to the desired form here
+                    // Example: Reload the "doctors" form
+                    doctors doctorsForm = new doctors();
+                    if (ParentForm is adminDashboard adminDashboard)
                     {
-
-                        insertCommand.Parameters.AddWithValue("@DoctorId", doctorId);
-
-                        insertCommand.Parameters.AddWithValue("@Name", name);
-                        insertCommand.Parameters.AddWithValue("@Age", age);
-                        insertCommand.Parameters.AddWithValue("@Specialized", specialized);
-                        insertCommand.Parameters.AddWithValue("@Location", location);
-                        insertCommand.Parameters.AddWithValue("@Phone", phone);
-                        insertCommand.Parameters.AddWithValue("@Email", email);
-                        insertCommand.Parameters.AddWithValue("@Qualifications", qualifications);
-
-                        int rowsAffected = insertCommand.ExecuteNonQuery();
-                        if (rowsAffected > 0)
-                        {
-                            MessageBox.Show("Doctor data updated successfully.", "Success");
-
-                            // load back the to the all doctors form
-
-                            doctors doctors = new doctors();
-                            if (ParentForm is adminDashboard adminDashboard)
-                            {
-                                adminDashboard.loadform(doctors);
-                            }
-                        }
-                        else
-                        {
-                            MessageBox.Show("Failed to update doctor data.", "Error");
-                        }
+                        adminDashboard.loadform(doctorsForm);
                     }
+
+                } else
+                {
+                    MessageBox.Show("Failed to update doctor data.", "Error");
                 }
             }
         }
+
+        ////
     }
 }
