@@ -1,5 +1,7 @@
 ﻿using HealthCare_Plus.Controllers;
 using MySql.Data.MySqlClient;
+using PdfSharp.Pdf;
+using PdfSharp.Drawing;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +11,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static iText.StyledXmlParser.Jsoup.Select.Evaluator;
+
 
 namespace HealthCare_Plus.views.admin
 {
@@ -40,7 +44,49 @@ namespace HealthCare_Plus.views.admin
         private void btnmarkpay_Click(object sender, EventArgs e)
         {
             // mark bill as paid
-            billspayment.MarkBillAsPaid(_billId);
+            if(billspayment.MarkBillAsPaid(_billId))
+            {
+                MessageBox.Show("Bill marked as paid.", "Success");
+
+                bills bills = new bills();
+                if (ParentForm is adminDashboard adminDashboard)
+                {
+                    adminDashboard.loadform(bills);
+                }
+
+            } else
+            {
+                MessageBox.Show("Failed to mark bill as paid.", "Error");
+            }
+        }
+
+        private void btnprint_Click(object sender, EventArgs e)
+        {
+            string discharge ;
+
+            if (btnmarkpay.Visible == false)
+            {
+                discharge = "Bill is Paid";
+            } else
+            {
+                discharge = "Bill is Not Paid";
+            }
+            string billId = lblid.Text;
+            string patient = lblpatient.Text;
+            string date = lbldate.Text;
+            string amount = lblamount.Text;
+            string description = lbldescription.Text;
+            
+
+            billspayment.GenerateBillPDF(billId, patient, date, amount, description, discharge);
+
+            // Display a message or handle any other logic as needed
+            MessageBox.Show("Bill PDF generated successfully!");
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -40,9 +40,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblbillid = new System.Windows.Forms.Label();
             this.btnmarkpay = new System.Windows.Forms.Button();
             this.lbldischarge = new System.Windows.Forms.Label();
+            this.btnprint = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -72,6 +73,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.OldLace;
+            this.panel2.Controls.Add(this.btnprint);
             this.panel2.Controls.Add(this.lblamount);
             this.panel2.Controls.Add(this.lblpatient);
             this.panel2.Controls.Add(this.lbldescription);
@@ -81,11 +83,12 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.lblbillid);
             this.panel2.Location = new System.Drawing.Point(20, 56);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(826, 200);
             this.panel2.TabIndex = 33;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // lblamount
             // 
@@ -103,7 +106,7 @@
             this.lblpatient.AutoSize = true;
             this.lblpatient.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpatient.ForeColor = System.Drawing.Color.Blue;
-            this.lblpatient.Location = new System.Drawing.Point(460, 18);
+            this.lblpatient.Location = new System.Drawing.Point(478, 18);
             this.lblpatient.Name = "lblpatient";
             this.lblpatient.Size = new System.Drawing.Size(61, 24);
             this.lblpatient.TabIndex = 27;
@@ -136,7 +139,7 @@
             this.lblid.AutoSize = true;
             this.lblid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblid.ForeColor = System.Drawing.Color.Blue;
-            this.lblid.Location = new System.Drawing.Point(61, 18);
+            this.lblid.Location = new System.Drawing.Point(85, 18);
             this.lblid.Name = "lblid";
             this.lblid.Size = new System.Drawing.Size(61, 24);
             this.lblid.TabIndex = 23;
@@ -182,20 +185,20 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(378, 18);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 24);
+            this.label3.Size = new System.Drawing.Size(98, 24);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Patient :";
+            this.label3.Text = "Patient ID :";
             // 
-            // label2
+            // lblbillid
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(18, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 24);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "ID :";
+            this.lblbillid.AutoSize = true;
+            this.lblbillid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblbillid.ForeColor = System.Drawing.Color.Black;
+            this.lblbillid.Location = new System.Drawing.Point(18, 18);
+            this.lblbillid.Name = "lblbillid";
+            this.lblbillid.Size = new System.Drawing.Size(66, 24);
+            this.lblbillid.TabIndex = 9;
+            this.lblbillid.Text = "Bill ID :";
             // 
             // btnmarkpay
             // 
@@ -223,6 +226,21 @@
             this.lbldischarge.TabIndex = 35;
             this.lbldischarge.Text = "This bill is already Paid!";
             this.lbldischarge.Visible = false;
+            // 
+            // btnprint
+            // 
+            this.btnprint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnprint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnprint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnprint.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnprint.ForeColor = System.Drawing.Color.White;
+            this.btnprint.Location = new System.Drawing.Point(675, 141);
+            this.btnprint.Name = "btnprint";
+            this.btnprint.Size = new System.Drawing.Size(134, 46);
+            this.btnprint.TabIndex = 36;
+            this.btnprint.Text = "Print";
+            this.btnprint.UseVisualStyleBackColor = false;
+            this.btnprint.Click += new System.EventHandler(this.btnprint_Click);
             // 
             // payment
             // 
@@ -259,8 +277,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblbillid;
         private System.Windows.Forms.Button btnmarkpay;
         private System.Windows.Forms.Label lbldischarge;
+        private System.Windows.Forms.Button btnprint;
     }
 }

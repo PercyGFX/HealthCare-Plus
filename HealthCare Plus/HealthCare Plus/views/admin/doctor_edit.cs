@@ -36,7 +36,7 @@ namespace HealthCare_Plus.views.admin
             // Store the doctor ID
             doctorId = id;
 
-            // Use the provided values to populate your form controls
+            // get arguments to vriables
             _age = age;
             doctorName = name;
             _location = location;
@@ -47,13 +47,12 @@ namespace HealthCare_Plus.views.admin
 
         }
 
-        // database object 
-        Database dbManager = new Database();
-
+        // call doctor class
         doctorClass doctorClass = new doctorClass();
 
         private void doctor_edit_Load(object sender, EventArgs e)
         {
+            // load  database values to componenets
             txtname.Text = doctorName;
             txtage.Text = _age;
             txtlocation.Text = _location;
@@ -65,6 +64,7 @@ namespace HealthCare_Plus.views.admin
 
         private void btnadd_Click(object sender, EventArgs e)
         {
+            //check validations
             if (AddDoctorValidations.IsValidFormFields(
                    txtname.Text.Trim(),
                    txtage.Text.Trim(),
@@ -74,6 +74,7 @@ namespace HealthCare_Plus.views.admin
                    txtspecialized.Text.Trim(),
                    rtextqualifications.Text.Trim()))
             {
+                // call updatedoctor data sending values
                 string name = txtname.Text.Trim();
                 string age = txtage.Text.Trim();
                 string location = txtlocation.Text.Trim();
@@ -84,10 +85,10 @@ namespace HealthCare_Plus.views.admin
 
                 if (doctorClass.UpdateDoctorData(doctorId, name, age, location, phone, email, specialized, qualifications) )
                 {
+                    //success message
                     MessageBox.Show("Doctor data updated successfully.", "Success");
 
-                    // Reload or navigate to the desired form here
-                    // Example: Reload the "doctors" form
+                    //back to doctos
                     doctors doctorsForm = new doctors();
                     if (ParentForm is adminDashboard adminDashboard)
                     {
@@ -95,7 +96,7 @@ namespace HealthCare_Plus.views.admin
                     }
 
                 } else
-                {
+                {   // error message if failed
                     MessageBox.Show("Failed to update doctor data.", "Error");
                 }
             }

@@ -1,6 +1,8 @@
 ﻿using HealthCare_Plus.views.admin;
 using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Asn1.Ocsp;
+using PdfSharp.Pdf;
+using PdfSharp.Drawing;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -67,9 +69,9 @@ namespace HealthCare_Plus.Controllers
             }
         }
 
-        // button mark payment as paid
+        // button mark payment as paid///////////
 
-        public void MarkBillAsPaid(int billId)
+        public bool MarkBillAsPaid(int billId)
         {
             using (MySqlConnection connection = dbManager.GetConnection())
             {
@@ -84,18 +86,59 @@ namespace HealthCare_Plus.Controllers
                     int rowsAffected = cmd.ExecuteNonQuery();
                     if (rowsAffected > 0)
                     {
-                        MessageBox.Show("Bill marked as paid.", "Success");
-                        // Load back to the main form (adjust form name accordingly)
-                        bills bills = new bills();
-                        adminDashboard adminDashboard = new adminDashboard();
-                        adminDashboard.loadform(bills);
+
+                        return true;
                     }
                     else
                     {
-                        MessageBox.Show("Failed to mark bill as paid.", "Error");
+                        return false;
                     }
                 }
             }
         }
+
+
+        /////////  print bill function ////////////////////
+        ///
+
+        public static void GenerateBillPDF(string billId, string patient, string date, string amount, string description, string discharge)
+        {
+            // Create a new PDF document
+            PdfDocument document = new PdfDocument();
+
+            // Add a page to the document
+            PdfPage page = document.AddPage();
+            XGraphics gfx = XGraphics.FromPdfPage(page);
+
+            // Define font and text formatting
+            XFont font = new XFont("Arial", 12);
+            XStringFormat format = new XStringFormat();
+            format.Alignment = XStringAlignment.Near;
+
+            double yCoordinate = 50;
+
+            // Create the content for the PDF with each piece of information on a new line
+            gfx.DrawString($"Bill ID: {billId}", font, XBrushes.Black, 50, yCoordinate, format);
+            yCoordinate += 20;
+
+            gfx.DrawString($"Patient ID: {patient}", font, XBrushes.Black, 50, yCoordinate, format);
+            yCoordinate += 20;
+            gfx.DrawString($"Date: {date}", font, XBrushes.Black, 50, yCoordinate, format);
+            yCoordinate += 20;
+            gfx.DrawString($"Amount: {amount}", font, XBrushes.Black, 50, yCoordinate, format);
+            yCoordinate += 20;
+            gfx.DrawString($"Description: {description}", font, XBrushes.Black, 50, yCoordinate, format);
+            yCoordinate += 20;
+            gfx.DrawString($"Bill Status: {discharge}", font, XBrushes.Black, 50, yCoordinate, format);
+
+            // Save the PDF to a file
+            string filePath = "generated_" + billId + "_bill.pdf";
+            document.Save(filePath);
+
+            // Optionally, open the generated PDF
+            System.Diagnostics.Process.Start(filePath);
+        }
+
+
     }
 }
