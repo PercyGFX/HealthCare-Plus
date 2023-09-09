@@ -340,7 +340,7 @@
   <ItemGroup>
     <Compile Include="Controllers\billspayment.cs" />
     <Compile Include="Controllers\doctorClass.cs" />
-    <Compile Include="Controllers\patients.cs" />
+    <Compile Include="Controllers\patientsClass.cs" />
     <Compile Include="Controllers\reportsClass.cs" />
     <Compile Include="Services\Database.cs" />
     <Compile Include="Services\md5convert.cs" />
