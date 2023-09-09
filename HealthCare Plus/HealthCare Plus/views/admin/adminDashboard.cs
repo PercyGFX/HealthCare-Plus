@@ -91,5 +91,11 @@ namespace HealthCare_Plus.views.admin
             loadform(reports);
 
         }
+
+        private void adminDashboard_Load(object sender, EventArgs e)
+        {
+            adminWelcome adminWelcome = new adminWelcome();
+            loadform(adminWelcome);
+        }
     }
 }

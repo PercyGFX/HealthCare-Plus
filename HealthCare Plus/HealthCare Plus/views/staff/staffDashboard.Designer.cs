@@ -259,6 +259,7 @@
             this.Controls.Add(this.panelsidebar);
             this.Controls.Add(this.panelcontent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "staffDashboard";
             this.Text = "staffDashboard";
             this.paneltop.ResumeLayout(false);

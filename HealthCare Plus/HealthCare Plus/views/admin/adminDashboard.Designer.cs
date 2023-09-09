@@ -248,9 +248,11 @@
             this.Controls.Add(this.panelsidebar);
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "adminDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "adminDashboard";
+            this.Load += new System.EventHandler(this.adminDashboard_Load);
             this.panelsidebar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picboxlogo)).EndInit();
             this.paneltop.ResumeLayout(false);

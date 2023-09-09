@@ -375,6 +375,12 @@
     <Compile Include="views\admin\adminDashboard.Designer.cs">
       <DependentUpon>adminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\admin\adminWelcome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\admin\adminWelcome.Designer.cs">
+      <DependentUpon>adminWelcome.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\admin\appoinments_reports.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -595,6 +601,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\admin\adminDashboard.resx">
       <DependentUpon>adminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\admin\adminWelcome.resx">
+      <DependentUpon>adminWelcome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\admin\appoinments_reports.resx">
       <DependentUpon>appoinments_reports.cs</DependentUpon>
