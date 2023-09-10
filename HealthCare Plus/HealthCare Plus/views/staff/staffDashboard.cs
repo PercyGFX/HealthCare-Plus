@@ -73,5 +73,11 @@ namespace HealthCare_Plus.views.staff
             medications medications = new medications();
             loadform(medications);
         }
+
+        private void staffDashboard_Load(object sender, EventArgs e)
+        {
+            welcomeStaff welcomeStaff = new welcomeStaff();
+            loadform(welcomeStaff);
+        }
     }
 }

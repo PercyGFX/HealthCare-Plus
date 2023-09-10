@@ -587,6 +587,12 @@
     <Compile Include="views\staff\staffDashboard.Designer.cs">
       <DependentUpon>staffDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\staff\welcomeStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\staff\welcomeStaff.Designer.cs">
+      <DependentUpon>welcomeStaff.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="views\admin\addpatient.resx">
       <DependentUpon>addpatient.cs</DependentUpon>
     </EmbeddedResource>
@@ -716,6 +722,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\staff\staffDashboard.resx">
       <DependentUpon>staffDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\staff\welcomeStaff.resx">
+      <DependentUpon>welcomeStaff.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

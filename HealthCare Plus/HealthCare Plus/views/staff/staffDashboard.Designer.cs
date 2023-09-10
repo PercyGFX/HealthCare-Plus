@@ -245,7 +245,7 @@
             // 
             // panelcontent
             // 
-            this.panelcontent.Location = new System.Drawing.Point(226, 70);
+            this.panelcontent.Location = new System.Drawing.Point(226, 75);
             this.panelcontent.Name = "panelcontent";
             this.panelcontent.Size = new System.Drawing.Size(919, 742);
             this.panelcontent.TabIndex = 5;
@@ -262,6 +262,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "staffDashboard";
             this.Text = "staffDashboard";
+            this.Load += new System.EventHandler(this.staffDashboard_Load);
             this.paneltop.ResumeLayout(false);
             this.paneltop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxclose)).EndInit();

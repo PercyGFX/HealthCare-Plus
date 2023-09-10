@@ -114,3 +114,4 @@ C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\PdfSharp.xml
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\bin\Debug\PdfSharp.Charting.xml
 C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.admin.adminWelcome.resources
+C:\lottery\HealthCare-Plus\HealthCare Plus\HealthCare Plus\obj\Debug\HealthCare_Plus.views.staff.welcomeStaff.resources
