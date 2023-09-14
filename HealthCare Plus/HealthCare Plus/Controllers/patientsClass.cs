@@ -1,9 +1,11 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace HealthCare_Plus.Controllers
 {
@@ -48,6 +50,36 @@ namespace HealthCare_Plus.Controllers
                 }
             }
         }
+
+
+
+        ///////////////// LOAD PATIENT DATA /////////////////////////////////////////////////
+        ///
+
+        public void LoadPatientData(DataGridView patientgridview, string searchText = null)
+        {
+            using (MySqlConnection connection = dbManager.GetConnection())
+            {
+                dbManager.OpenConnection(connection);
+
+                string selectQuery = "SELECT id, name, address, phone, age, blood_type, description FROM patient"; // Default query for loading all patient data
+
+                if (!string.IsNullOrWhiteSpace(searchText))
+                {
+                    selectQuery += $" WHERE id LIKE '%{searchText}%' OR name LIKE '%{searchText}%' OR address LIKE '%{searchText}%' OR phone LIKE '%{searchText}%' OR age LIKE '%{searchText}%' OR blood_type LIKE '%{searchText}%' OR description LIKE '%{searchText}%'";
+                }
+
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(selectQuery, connection))
+                {
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+
+                    patientgridview.DataSource = dataTable;
+                }
+            }
+        }
+
+
 
 
 

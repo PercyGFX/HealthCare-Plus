@@ -36,7 +36,6 @@
             this.txtphone = new System.Windows.Forms.RichTextBox();
             this.txtaddress = new System.Windows.Forms.RichTextBox();
             this.btnadd = new System.Windows.Forms.Button();
-            this.btncancel = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblphone = new System.Windows.Forms.Label();
@@ -64,7 +63,7 @@
             // rtextdescription
             // 
             this.rtextdescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtextdescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.rtextdescription.Font = new System.Drawing.Font("Candara Light", 15.75F);
             this.rtextdescription.ForeColor = System.Drawing.Color.Black;
             this.rtextdescription.Location = new System.Drawing.Point(22, 327);
             this.rtextdescription.Name = "rtextdescription";
@@ -145,19 +144,6 @@
             this.btnadd.Text = "Add";
             this.btnadd.UseVisualStyleBackColor = false;
             this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
-            // 
-            // btncancel
-            // 
-            this.btncancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncancel.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btncancel.ForeColor = System.Drawing.Color.Black;
-            this.btncancel.Location = new System.Drawing.Point(22, 465);
-            this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(288, 46);
-            this.btncancel.TabIndex = 15;
-            this.btncancel.Text = "Cancel";
-            this.btncancel.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -246,7 +232,6 @@
             this.panel2.Controls.Add(this.txtphone);
             this.panel2.Controls.Add(this.txtaddress);
             this.panel2.Controls.Add(this.btnadd);
-            this.panel2.Controls.Add(this.btncancel);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.lblphone);
@@ -284,7 +269,6 @@
         private System.Windows.Forms.RichTextBox txtphone;
         private System.Windows.Forms.RichTextBox txtaddress;
         private System.Windows.Forms.Button btnadd;
-        private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblphone;
