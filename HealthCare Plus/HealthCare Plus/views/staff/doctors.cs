@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using HealthCare_Plus.Controllers;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,43 +19,26 @@ namespace HealthCare_Plus.views.staff
             InitializeComponent();
         }
 
-        // database object 
-        Database dbManager = new Database();
 
-        //load doctor data
+        //doctor object
+        doctorClass doctorClass = new doctorClass();
 
-        private void LoadDoctorData(string searchText = null)
-        {
-            using (MySqlConnection connection = dbManager.GetConnection())
-            {
-                dbManager.OpenConnection(connection);
 
-                string selectQuery = "SELECT id, name, age, specialized_area, location, phone, email, qualifications FROM doctor"; // Default query for loading all data
 
-                if (!string.IsNullOrWhiteSpace(searchText))
-                {
-                    selectQuery += $" WHERE id LIKE '%{searchText}%' OR name LIKE '%{searchText}%' OR age LIKE '%{searchText}%' OR specialized_area LIKE '%{searchText}%' OR location LIKE '%{searchText}%' OR phone LIKE '%{searchText}%' OR email LIKE '%{searchText}%' OR qualifications LIKE '%{searchText}%'";
-                }
-
-                using (MySqlDataAdapter adapter = new MySqlDataAdapter(selectQuery, connection))
-                {
-                    DataTable dataTable = new DataTable();
-                    adapter.Fill(dataTable);
-
-                    doctorgridview.DataSource = dataTable;
-                }
-            }
-        }
+  
 
         private void btnsearch_Click(object sender, EventArgs e)
         {
             string searchText = txtsearch.Text.Trim().ToLower();
-            LoadDoctorData(searchText);
+            //LoadDoctorData(searchText);
+            doctorClass.LoadDoctorData(doctorgridview, searchText);
         }
 
         private void doctors_Load(object sender, EventArgs e)
         {
-            LoadDoctorData();
+            //LoadDoctorData();
+
+            doctorClass.LoadDoctorData(doctorgridview);
 
             doctorgridview.Columns["id"].HeaderText = "ID";
             doctorgridview.Columns["name"].HeaderText = "Name";
