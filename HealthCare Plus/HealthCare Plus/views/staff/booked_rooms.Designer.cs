@@ -67,7 +67,7 @@
             this.bookedroomsgridview.AllowUserToAddRows = false;
             this.bookedroomsgridview.AllowUserToDeleteRows = false;
             this.bookedroomsgridview.AllowUserToOrderColumns = true;
-            this.bookedroomsgridview.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.bookedroomsgridview.BackgroundColor = System.Drawing.Color.White;
             this.bookedroomsgridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;

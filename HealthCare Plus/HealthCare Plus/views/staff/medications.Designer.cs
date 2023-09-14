@@ -65,7 +65,7 @@
             // 
             // medicationsgridview
             // 
-            this.medicationsgridview.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.medicationsgridview.BackgroundColor = System.Drawing.Color.White;
             this.medicationsgridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;

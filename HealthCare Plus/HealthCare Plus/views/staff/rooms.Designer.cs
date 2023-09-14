@@ -34,16 +34,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
             this.roomgridview = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RoomName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RoomType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Availability = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnroonallowcate = new System.Windows.Forms.Button();
             this.btnsearch = new System.Windows.Forms.Button();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.bookedrooms = new System.Windows.Forms.Button();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RoomName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RoomType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Availability = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.roomgridview)).BeginInit();
             this.panel2.SuspendLayout();
@@ -73,7 +73,7 @@
             // 
             // roomgridview
             // 
-            this.roomgridview.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.roomgridview.BackgroundColor = System.Drawing.Color.White;
             this.roomgridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -105,6 +105,30 @@
             this.roomgridview.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.roomgridview.Size = new System.Drawing.Size(871, 428);
             this.roomgridview.TabIndex = 16;
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.Width = 150;
+            // 
+            // RoomName
+            // 
+            this.RoomName.HeaderText = "Room Name";
+            this.RoomName.Name = "RoomName";
+            this.RoomName.Width = 300;
+            // 
+            // RoomType
+            // 
+            this.RoomType.HeaderText = "Room Type";
+            this.RoomType.Name = "RoomType";
+            this.RoomType.Width = 150;
+            // 
+            // Availability
+            // 
+            this.Availability.HeaderText = "Availability";
+            this.Availability.Name = "Availability";
+            this.Availability.Width = 200;
             // 
             // btnroonallowcate
             // 
@@ -182,30 +206,6 @@
             this.bookedrooms.Text = "Booked Rooms Info";
             this.bookedrooms.UseVisualStyleBackColor = false;
             this.bookedrooms.Click += new System.EventHandler(this.bookedrooms_Click);
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.Width = 150;
-            // 
-            // RoomName
-            // 
-            this.RoomName.HeaderText = "Room Name";
-            this.RoomName.Name = "RoomName";
-            this.RoomName.Width = 300;
-            // 
-            // RoomType
-            // 
-            this.RoomType.HeaderText = "Room Type";
-            this.RoomType.Name = "RoomType";
-            this.RoomType.Width = 150;
-            // 
-            // Availability
-            // 
-            this.Availability.HeaderText = "Availability";
-            this.Availability.Name = "Availability";
-            this.Availability.Width = 200;
             // 
             // rooms
             // 
