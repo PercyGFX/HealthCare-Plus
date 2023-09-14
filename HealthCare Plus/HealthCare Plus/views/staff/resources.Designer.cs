@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
-            this.doctorgridview = new System.Windows.Forms.DataGridView();
+            this.resourcegridview = new System.Windows.Forms.DataGridView();
             this.btnsearch = new System.Windows.Forms.Button();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.doctorgridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resourcegridview)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -62,35 +62,35 @@
             this.lbladmindashboard.TabIndex = 32;
             this.lbladmindashboard.Text = "Resources";
             // 
-            // doctorgridview
+            // resourcegridview
             // 
-            this.doctorgridview.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.doctorgridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.doctorgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.doctorgridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.doctorgridview.DefaultCellStyle = dataGridViewCellStyle8;
-            this.doctorgridview.GridColor = System.Drawing.Color.Silver;
-            this.doctorgridview.Location = new System.Drawing.Point(20, 159);
-            this.doctorgridview.Name = "doctorgridview";
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            this.doctorgridview.RowsDefaultCellStyle = dataGridViewCellStyle9;
-            this.doctorgridview.Size = new System.Drawing.Size(871, 428);
-            this.doctorgridview.TabIndex = 15;
+            this.resourcegridview.BackgroundColor = System.Drawing.Color.White;
+            this.resourcegridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.resourcegridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.resourcegridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.resourcegridview.DefaultCellStyle = dataGridViewCellStyle2;
+            this.resourcegridview.GridColor = System.Drawing.Color.Silver;
+            this.resourcegridview.Location = new System.Drawing.Point(20, 159);
+            this.resourcegridview.Name = "resourcegridview";
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.resourcegridview.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.resourcegridview.Size = new System.Drawing.Size(871, 428);
+            this.resourcegridview.TabIndex = 15;
             // 
             // btnsearch
             // 
@@ -105,6 +105,7 @@
             this.btnsearch.TabIndex = 18;
             this.btnsearch.Text = "Search";
             this.btnsearch.UseVisualStyleBackColor = false;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
             // txtsearch
             // 
@@ -123,14 +124,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.doctorgridview);
+            this.Controls.Add(this.resourcegridview);
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.txtsearch);
             this.Name = "resources";
             this.Size = new System.Drawing.Size(930, 615);
+            this.Load += new System.EventHandler(this.resources_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.doctorgridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resourcegridview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,7 +142,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbladmindashboard;
-        private System.Windows.Forms.DataGridView doctorgridview;
+        private System.Windows.Forms.DataGridView resourcegridview;
         private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.TextBox txtsearch;
     }

@@ -79,5 +79,11 @@ namespace HealthCare_Plus.views.staff
             welcomeStaff welcomeStaff = new welcomeStaff();
             loadform(welcomeStaff);
         }
+
+        private void btnresources_Click(object sender, EventArgs e)
+        {
+            resources resources = new resources();
+            loadform(resources);
+        }
     }
 }
