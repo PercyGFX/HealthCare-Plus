@@ -1,5 +1,6 @@
 ﻿using HealthCare_Plus.Services;
 using MySql.Data.MySqlClient;
+using OfficeOpenXml.ConditionalFormatting;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -88,11 +89,14 @@ namespace HealthCare_Plus
                                 staffInsertCommand.ExecuteNonQuery();
                             }
 
-                            Console.WriteLine("Registration successful!");
+                            MessageBox.Show("Registration was sucessful. Now you can login", "Success");
+                            this.Hide();
+                            login login = new login();
+                            login.Show();
                         }
                         else
                         {
-                            Console.WriteLine("Registration failed.");
+                            MessageBox.Show("Something went wrong. please check and register again", "Error");
                         }
                     }
                 }
