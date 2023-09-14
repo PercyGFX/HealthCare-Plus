@@ -142,7 +142,7 @@
             // 
             // revenuereportgrid
             // 
-            this.revenuereportgrid.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.revenuereportgrid.BackgroundColor = System.Drawing.Color.White;
             this.revenuereportgrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;

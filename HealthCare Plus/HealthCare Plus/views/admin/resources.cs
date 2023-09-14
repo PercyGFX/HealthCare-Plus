@@ -49,6 +49,9 @@ namespace HealthCare_Plus.views.admin
         private void resources_Load(object sender, EventArgs e)
         {
             LoadResourceData();
+            resourcegridview.Columns["description"].HeaderText = "Description";
+            resourcegridview.Columns["description"].Width = 400;
+            resourcegridview.Columns["name"].Width = 200;
         }
 
         private void btnsearch_Click(object sender, EventArgs e)

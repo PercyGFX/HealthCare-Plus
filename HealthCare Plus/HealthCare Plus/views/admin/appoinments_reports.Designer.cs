@@ -158,7 +158,7 @@
             // 
             // appoinmentgridview
             // 
-            this.appoinmentgridview.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.appoinmentgridview.BackgroundColor = System.Drawing.Color.White;
             this.appoinmentgridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;

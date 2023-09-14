@@ -34,6 +34,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnedit = new System.Windows.Forms.Button();
             this.lblspecialized = new System.Windows.Forms.Label();
             this.lblphone = new System.Windows.Forms.Label();
             this.lblage = new System.Windows.Forms.Label();
@@ -51,7 +52,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.doctorgridview = new System.Windows.Forms.DataGridView();
             this.label15 = new System.Windows.Forms.Label();
-            this.btnedit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -102,6 +102,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(826, 200);
             this.panel2.TabIndex = 32;
+            // 
+            // btnedit
+            // 
+            this.btnedit.BackColor = System.Drawing.Color.Teal;
+            this.btnedit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnedit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnedit.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnedit.ForeColor = System.Drawing.Color.White;
+            this.btnedit.Location = new System.Drawing.Point(382, 135);
+            this.btnedit.Name = "btnedit";
+            this.btnedit.Size = new System.Drawing.Size(158, 46);
+            this.btnedit.TabIndex = 34;
+            this.btnedit.Text = "Edit";
+            this.btnedit.UseVisualStyleBackColor = false;
+            this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
             // 
             // lblspecialized
             // 
@@ -287,13 +302,13 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.doctorgridview.DefaultCellStyle = dataGridViewCellStyle2;
-            this.doctorgridview.GridColor = System.Drawing.Color.Silver;
+            this.doctorgridview.GridColor = System.Drawing.Color.White;
             this.doctorgridview.Location = new System.Drawing.Point(0, 0);
             this.doctorgridview.Name = "doctorgridview";
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             this.doctorgridview.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.doctorgridview.Size = new System.Drawing.Size(823, 409);
+            this.doctorgridview.Size = new System.Drawing.Size(823, 372);
             this.doctorgridview.TabIndex = 34;
             // 
             // label15
@@ -307,21 +322,6 @@
             this.label15.Size = new System.Drawing.Size(206, 33);
             this.label15.TabIndex = 33;
             this.label15.Text = "Doctor Schedule";
-            // 
-            // btnedit
-            // 
-            this.btnedit.BackColor = System.Drawing.Color.Teal;
-            this.btnedit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnedit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnedit.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnedit.ForeColor = System.Drawing.Color.White;
-            this.btnedit.Location = new System.Drawing.Point(382, 135);
-            this.btnedit.Name = "btnedit";
-            this.btnedit.Size = new System.Drawing.Size(158, 46);
-            this.btnedit.TabIndex = 34;
-            this.btnedit.Text = "Edit";
-            this.btnedit.UseVisualStyleBackColor = false;
-            this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
             // 
             // doctor_induvidual
             // 

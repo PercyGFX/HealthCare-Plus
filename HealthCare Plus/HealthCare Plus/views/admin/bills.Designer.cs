@@ -35,12 +35,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
             this.patientgridview = new System.Windows.Forms.DataGridView();
-            this.btncreatebill = new System.Windows.Forms.Button();
-            this.btnsearch = new System.Windows.Forms.Button();
-            this.txtsearch = new System.Windows.Forms.TextBox();
-            this.combopatient = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PatientID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +42,12 @@
             this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Action = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btncreatebill = new System.Windows.Forms.Button();
+            this.btnsearch = new System.Windows.Forms.Button();
+            this.txtsearch = new System.Windows.Forms.TextBox();
+            this.combopatient = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.patientgridview)).BeginInit();
             this.panel2.SuspendLayout();
@@ -77,7 +77,7 @@
             // 
             // patientgridview
             // 
-            this.patientgridview.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.patientgridview.BackgroundColor = System.Drawing.Color.White;
             this.patientgridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -113,6 +113,45 @@
             this.patientgridview.Size = new System.Drawing.Size(871, 428);
             this.patientgridview.TabIndex = 16;
             this.patientgridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.patientgridview_CellContentClick);
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // PatientID
+            // 
+            this.PatientID.HeaderText = "Patient";
+            this.PatientID.Name = "PatientID";
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            // 
+            // Description
+            // 
+            this.Description.HeaderText = "Description";
+            this.Description.Name = "Description";
+            // 
+            // Amount
+            // 
+            this.Amount.HeaderText = "Amount";
+            this.Amount.Name = "Amount";
+            // 
+            // Status
+            // 
+            this.Status.HeaderText = "Status";
+            this.Status.Name = "Status";
+            // 
+            // Action
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Action.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Action.HeaderText = "Action";
+            this.Action.Name = "Action";
+            this.Action.Text = "Pay";
             // 
             // btncreatebill
             // 
@@ -187,45 +226,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(871, 118);
             this.panel2.TabIndex = 32;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // PatientID
-            // 
-            this.PatientID.HeaderText = "Patient";
-            this.PatientID.Name = "PatientID";
-            // 
-            // Date
-            // 
-            this.Date.HeaderText = "Date";
-            this.Date.Name = "Date";
-            // 
-            // Description
-            // 
-            this.Description.HeaderText = "Description";
-            this.Description.Name = "Description";
-            // 
-            // Amount
-            // 
-            this.Amount.HeaderText = "Amount";
-            this.Amount.Name = "Amount";
-            // 
-            // Status
-            // 
-            this.Status.HeaderText = "Status";
-            this.Status.Name = "Status";
-            // 
-            // Action
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Action.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Action.HeaderText = "Action";
-            this.Action.Name = "Action";
-            this.Action.Text = "Pay";
             // 
             // bills
             // 
