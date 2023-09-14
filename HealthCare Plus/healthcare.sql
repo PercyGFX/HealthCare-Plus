@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 31, 2023 at 09:26 PM
+-- Generation Time: Sep 14, 2023 at 08:14 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -45,8 +45,10 @@ CREATE TABLE `appoiment` (
 
 INSERT INTO `appoiment` (`id`, `doctor_id`, `patient_id`, `description`, `date`, `time`, `isactive`, `cost`, `InvoiceStatus`) VALUES
 (3, 2, 1, 'test', '2023-08-30', NULL, 'Active', 2000, 1),
-(4, 1, 1, 'sugar check', '2023-08-28', '11:13:00', 'Active', 300, 1),
-(5, 2, 1, 'gffg', '2023-08-30', '00:00:00', 'Active', 200, 1);
+(5, 2, 1, 'gffg', '2023-08-30', '00:00:00', 'Active', 200, 1),
+(6, 2, 1, 'jjjjjjjjjjjjjjjjj', '2023-09-08', '00:00:00', 'Active', 989898, 1),
+(7, 0, 0, 'test', '2023-10-05', '04:00:00', '1', 2000, 0),
+(8, 0, 0, 'sugar check', '2023-09-07', '07:00:00', '1', 300, 0);
 
 -- --------------------------------------------------------
 
@@ -68,7 +70,8 @@ CREATE TABLE `bill` (
 --
 
 INSERT INTO `bill` (`id`, `patient`, `date`, `description`, `amount`, `payment_status`) VALUES
-(4, 1, '2023-08-30', '', 3700, 1);
+(4, 1, '2023-08-30', '', 3700, 1),
+(5, 1, '2023-09-02', 'User ID is 1 & created on 2023/09/02', 767, 1);
 
 -- --------------------------------------------------------
 
@@ -94,8 +97,10 @@ CREATE TABLE `doctor` (
 --
 
 INSERT INTO `doctor` (`id`, `name`, `age`, `specialized_area`, `location`, `phone`, `email`, `qualifications`, `is_available`, `is_active`) VALUES
-(1, 'nimal', 40, 'Heart Diseases', 'walasmulla', '0775001170', 'nimal@gmaiil.com', 'MBBS Ruhuna', 0, 0),
-(2, 'jhg', 0, 'jhg', 'jhg', 'jhg', 'jhg', 'hgjhg', 0, 0);
+(1, 'nimal ranathunga', 40, 'Heart Diseases', 'walasmulla', '0775001170', 'nimal@gmaiil.com', 'MBBS Ruhuna', 0, 0),
+(2, 'Jagath ranasinghe', 10, 'nigga techjhg', 'colobo', '0774005560', 'isurangabtk@nmail.com', 'btek', 0, 0),
+(3, 'Prabath', 10, 'test', 'matara', '9885006670', 'nishan@gmail.com', 'MBBS', 0, 0),
+(14, 'simon', 100, 'jh', 'colombo', 'jh', 'jh', 'jh', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -143,8 +148,11 @@ CREATE TABLE `patient` (
 --
 
 INSERT INTO `patient` (`id`, `name`, `address`, `phone`, `age`, `blood_type`, `description`, `is_active`) VALUES
-(1, 'Sumanapaala', '123/asds', '0885006670', 30, 'A+', 'sugar issue', 'Active'),
-(2, 'Nimal', 'waduraba', '0775006670', 45, 'A+', 'Skill Issue', 'Active');
+(1, 'Sumanapaala', '123/asds k', '0775004460', 30, 'A+', 'sugar issue, skill issue', 'Active'),
+(2, 'Nimal', 'waduraba', '0775006670', 45, 'A+', 'Skill Issue', 'Active'),
+(3, 'Sugathapaala', 'Kirama', '75500660', 30, 'a+', 'issues with tissues', 'Active'),
+(4, 'sugatha', 'derana', '0775001170', 30, 'b-', 'skill issue with', 'Active'),
+(5, 'nimal', '123', '8987', 20, 'b-', 'kamal', 'Active');
 
 -- --------------------------------------------------------
 
@@ -357,19 +365,19 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `appoiment`
 --
 ALTER TABLE `appoiment`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `bill`
 --
 ALTER TABLE `bill`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `doctor`
 --
 ALTER TABLE `doctor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `meications`
@@ -381,7 +389,7 @@ ALTER TABLE `meications`
 -- AUTO_INCREMENT for table `patient`
 --
 ALTER TABLE `patient`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `patient_records`
