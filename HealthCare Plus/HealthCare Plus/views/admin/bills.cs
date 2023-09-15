@@ -241,7 +241,7 @@ namespace HealthCare_Plus.views.admin
                         if (rowsAffected > 0)
                         {
                             // Insert record into the bill table
-                            string description = $"User ID is {patientId} & created on {DateTime.Now.ToString("yyyy/MM/dd")}";
+                            string description = $"Patient ID is {patientId} & created on {DateTime.Now.ToString("yyyy/MM/dd")}";
                             string insertBillQuery = "INSERT INTO bill (patient, date, description, amount, payment_status) VALUES (@PatientId, @Date, @Description, @Amount, 0)";
                             using (MySqlCommand insertCmd = new MySqlCommand(insertBillQuery, connection))
                             {

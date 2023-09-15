@@ -34,18 +34,17 @@
             this.txtcost = new System.Windows.Forms.RichTextBox();
             this.txtage = new System.Windows.Forms.RichTextBox();
             this.btnadd = new System.Windows.Forms.Button();
-            this.btncancel = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.time = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
             this.combodoctor = new System.Windows.Forms.ComboBox();
             this.combopatient = new System.Windows.Forms.ComboBox();
             this.date = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
-            this.time = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -123,19 +122,6 @@
             this.btnadd.UseVisualStyleBackColor = false;
             this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
-            // btncancel
-            // 
-            this.btncancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncancel.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btncancel.ForeColor = System.Drawing.Color.Black;
-            this.btncancel.Location = new System.Drawing.Point(22, 459);
-            this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(288, 46);
-            this.btncancel.TabIndex = 15;
-            this.btncancel.Text = "Cancel";
-            this.btncancel.UseVisualStyleBackColor = true;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -203,7 +189,6 @@
             this.panel2.Controls.Add(this.txtcost);
             this.panel2.Controls.Add(this.txtage);
             this.panel2.Controls.Add(this.btnadd);
-            this.panel2.Controls.Add(this.btncancel);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
@@ -214,8 +199,34 @@
             this.panel2.TabIndex = 31;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // time
+            // 
+            this.time.CustomFormat = "HH:mm:ss";
+            this.time.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.time.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.time.Location = new System.Drawing.Point(22, 218);
+            this.time.MaxDate = new System.DateTime(2025, 8, 20, 0, 0, 0, 0);
+            this.time.MinDate = new System.DateTime(2023, 8, 20, 0, 0, 0, 0);
+            this.time.Name = "time";
+            this.time.ShowUpDown = true;
+            this.time.Size = new System.Drawing.Size(288, 33);
+            this.time.TabIndex = 28;
+            this.time.Value = new System.DateTime(2023, 8, 20, 0, 0, 0, 0);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(18, 191);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 24);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "Time";
+            // 
             // combodoctor
             // 
+            this.combodoctor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.combodoctor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.combodoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.combodoctor.Font = new System.Drawing.Font("Calibri", 15.75F);
@@ -227,6 +238,7 @@
             // 
             // combopatient
             // 
+            this.combopatient.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.combopatient.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.combopatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.combopatient.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -246,31 +258,6 @@
             this.date.Size = new System.Drawing.Size(288, 33);
             this.date.TabIndex = 24;
             this.date.Value = new System.DateTime(2023, 8, 20, 0, 0, 0, 0);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(18, 191);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 24);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "Time";
-            // 
-            // time
-            // 
-            this.time.CustomFormat = "HH:mm:ss";
-            this.time.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.time.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.time.Location = new System.Drawing.Point(22, 218);
-            this.time.MaxDate = new System.DateTime(2025, 8, 20, 0, 0, 0, 0);
-            this.time.MinDate = new System.DateTime(2023, 8, 20, 0, 0, 0, 0);
-            this.time.Name = "time";
-            this.time.ShowUpDown = true;
-            this.time.Size = new System.Drawing.Size(288, 33);
-            this.time.TabIndex = 28;
-            this.time.Value = new System.DateTime(2023, 8, 20, 0, 0, 0, 0);
             // 
             // add_appoinment
             // 
@@ -297,7 +284,6 @@
         private System.Windows.Forms.RichTextBox txtcost;
         private System.Windows.Forms.RichTextBox txtage;
         private System.Windows.Forms.Button btnadd;
-        private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

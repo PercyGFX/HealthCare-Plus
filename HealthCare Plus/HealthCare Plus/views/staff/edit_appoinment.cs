@@ -67,6 +67,11 @@ namespace HealthCare_Plus.views.staff
                         {
                             // Deletion successful
                             MessageBox.Show("Appointment deleted successfully.");
+                            appoinments appoinments = new appoinments();
+                            if (ParentForm is staffDashboard staffDashboard)
+                            {
+                                staffDashboard.loadform(appoinments);
+                            }
                         }
                         else
                         {
@@ -127,6 +132,11 @@ namespace HealthCare_Plus.views.staff
                             {
                                 // Insertion successful
                                 MessageBox.Show("Appointment edited successfully.");
+                                appoinments appoinments = new appoinments();
+                                if (ParentForm is staffDashboard staffDashboard)
+                                {
+                                    staffDashboard.loadform(appoinments);
+                                }
                             }
                             else
                             {
