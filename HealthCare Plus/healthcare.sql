@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 14, 2023 at 08:14 PM
+-- Generation Time: Sep 15, 2023 at 08:21 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -44,11 +44,7 @@ CREATE TABLE `appoiment` (
 --
 
 INSERT INTO `appoiment` (`id`, `doctor_id`, `patient_id`, `description`, `date`, `time`, `isactive`, `cost`, `InvoiceStatus`) VALUES
-(3, 2, 1, 'test', '2023-08-30', NULL, 'Active', 2000, 1),
-(5, 2, 1, 'gffg', '2023-08-30', '00:00:00', 'Active', 200, 1),
-(6, 2, 1, 'jjjjjjjjjjjjjjjjj', '2023-09-08', '00:00:00', 'Active', 989898, 1),
-(7, 0, 0, 'test', '2023-10-05', '04:00:00', '1', 2000, 0),
-(8, 0, 0, 'sugar check', '2023-09-07', '07:00:00', '1', 300, 0);
+(10, 16, 8, 'Normal appoinment', '2023-09-22', '06:00:00', 'Active', 2500, 1);
 
 -- --------------------------------------------------------
 
@@ -70,8 +66,8 @@ CREATE TABLE `bill` (
 --
 
 INSERT INTO `bill` (`id`, `patient`, `date`, `description`, `amount`, `payment_status`) VALUES
-(4, 1, '2023-08-30', '', 3700, 1),
-(5, 1, '2023-09-02', 'User ID is 1 & created on 2023/09/02', 767, 1);
+(6, 8, '2023-09-15', 'User ID is 8 & created on 2023/09/15', 2500, 1),
+(7, 7, '2023-09-15', 'Patient ID is 7 & created on 2023/09/15', 3500, 0);
 
 -- --------------------------------------------------------
 
@@ -97,10 +93,10 @@ CREATE TABLE `doctor` (
 --
 
 INSERT INTO `doctor` (`id`, `name`, `age`, `specialized_area`, `location`, `phone`, `email`, `qualifications`, `is_available`, `is_active`) VALUES
-(1, 'nimal ranathunga', 40, 'Heart Diseases', 'walasmulla', '0775001170', 'nimal@gmaiil.com', 'MBBS Ruhuna', 0, 0),
-(2, 'Jagath ranasinghe', 10, 'nigga techjhg', 'colobo', '0774005560', 'isurangabtk@nmail.com', 'btek', 0, 0),
-(3, 'Prabath', 10, 'test', 'matara', '9885006670', 'nishan@gmail.com', 'MBBS', 0, 0),
-(14, 'simon', 100, 'jh', 'colombo', 'jh', 'jh', 'jh', 0, 0);
+(16, 'Dr. Kamal Gunawardene', 35, 'Heart', 'Matara', '076300560', 'kamal.guna@gmail.com', 'MBBS', 0, 0),
+(17, 'Dr. Nimal Rathnayake', 42, 'Neurology', 'Colombo', '071234567', 'nimalrathnayake@gmail.com', 'MD', 0, 0),
+(18, 'Dr. Liyanage Bandara', 43, 'Ophthalmology', 'Badulla', '079876543', 'liyanagebandara@gmail.com', 'MD', 0, 0),
+(19, 'Dr. Kirshantha', 36, 'Pulmonology', 'Anuradhapura', '074321098', 'krishantha@gmail.com', 'MBBS, MD', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -123,8 +119,7 @@ CREATE TABLE `meications` (
 --
 
 INSERT INTO `meications` (`id`, `patient_id`, `medication`, `description`, `date`, `cost`, `InvoiceStatus`) VALUES
-(1, 1, '0', '0', '2023-08-29', 300, 1),
-(2, 1, 'test 2`', 'test', '2023-08-30', 400, 1);
+(3, 7, 'For Sugar', '500mg insulin', '2023-09-22', 500, 1);
 
 -- --------------------------------------------------------
 
@@ -148,11 +143,10 @@ CREATE TABLE `patient` (
 --
 
 INSERT INTO `patient` (`id`, `name`, `address`, `phone`, `age`, `blood_type`, `description`, `is_active`) VALUES
-(1, 'Sumanapaala', '123/asds k', '0775004460', 30, 'A+', 'sugar issue, skill issue', 'Active'),
-(2, 'Nimal', 'waduraba', '0775006670', 45, 'A+', 'Skill Issue', 'Active'),
-(3, 'Sugathapaala', 'Kirama', '75500660', 30, 'a+', 'issues with tissues', 'Active'),
-(4, 'sugatha', 'derana', '0775001170', 30, 'b-', 'skill issue with', 'Active'),
-(5, 'nimal', '123', '8987', 20, 'b-', 'kamal', 'Active');
+(7, 'Nimal Silva', '123/a Matara', '077334450', 34, 'A+', 'blood sugar', 'Active'),
+(8, 'Mrs Pavani', '456/A Colombo', '071234567', 45, 'B-', 'Ko known issues', 'Active'),
+(9, 'Kamal Gunasena', '789/c Galle', '076543210', 28, 'O+', 'asthma', 'Active'),
+(10, 'Bandara perera', '333/f Nuwara', '078765432', 41, 'O+', 'heart condition', 'Active');
 
 -- --------------------------------------------------------
 
@@ -174,7 +168,7 @@ CREATE TABLE `patient_records` (
 --
 
 INSERT INTO `patient_records` (`id`, `patient_id`, `record_name`, `date`, `record_type`, `record`) VALUES
-(1, 1, 'test', '2023-08-31', 'Diagnose', 'Test test');
+(2, 8, 'High Suger', '2023-09-22', 'Diagnose', 'High Sugar');
 
 -- --------------------------------------------------------
 
@@ -193,8 +187,7 @@ CREATE TABLE `resources` (
 --
 
 INSERT INTO `resources` (`id`, `name`, `description`) VALUES
-(1, 'record 1', 'test'),
-(2, 'Test 2', 'Test 2');
+(4, 'X- Ray Machine', 'Nestled within the bustling corridors of our hospital, the MarvelScan X-ray machine is an indispensable tool in our mission to provide top-tier healthcare.');
 
 -- --------------------------------------------------------
 
@@ -214,9 +207,11 @@ CREATE TABLE `rooms` (
 --
 
 INSERT INTO `rooms` (`id`, `room_name`, `room_type`, `availability`) VALUES
-(1, 'Room 1', 'Normal', 1),
-(2, 'Room 2', 'Normal', 0),
-(3, 'Room 3', 'Normal', 1);
+(7, 'Room 1', 'Normal', 1),
+(8, 'Room 2', 'Normal', 1),
+(9, 'North Room', 'VIP', 1),
+(10, 'LifeCare Theater', 'Normal', 1),
+(11, 'Room 3', 'Normal', 1);
 
 -- --------------------------------------------------------
 
@@ -239,8 +234,7 @@ CREATE TABLE `room_allowcation` (
 --
 
 INSERT INTO `room_allowcation` (`id`, `patient_id`, `room_id`, `admit_date`, `discharge_date`, `cost`, `InvoiceStatus`) VALUES
-(1, 1, 1, '2023-08-30', '2023-08-31', 200, 1),
-(2, 1, 2, '2023-08-30', NULL, 300, 1);
+(3, 7, 7, '2023-09-23', '2023-09-27', 750, 1);
 
 -- --------------------------------------------------------
 
@@ -261,8 +255,7 @@ CREATE TABLE `staff` (
 --
 
 INSERT INTO `staff` (`id`, `user_id`, `name`, `address`, `phone`) VALUES
-(1, 2, 'hgf', 'hgf', '0775001170'),
-(2, 3, 'hgf', 'hgf', '0775001170');
+(9, 10, 'Nishantha', 'Matara', '0775001170');
 
 -- --------------------------------------------------------
 
@@ -284,8 +277,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `email`, `username`, `password`, `role`) VALUES
 (1, 'isurangabtk@gmail.com', 'admin', '25d55ad283aa400af464c76d713c07ad', 1),
-(2, 'hgf', 'yuggh', 'ff3d025d04b0dafd333a401f2ce2341f', 2),
-(3, 'hgf', 'user', '25d55ad283aa400af464c76d713c07ad', 2);
+(10, 'nishantha@gmail.com', 'user', '25d55ad283aa400af464c76d713c07ad', 2);
 
 --
 -- Indexes for dumped tables
@@ -365,67 +357,67 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `appoiment`
 --
 ALTER TABLE `appoiment`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `bill`
 --
 ALTER TABLE `bill`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `doctor`
 --
 ALTER TABLE `doctor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `meications`
 --
 ALTER TABLE `meications`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `patient`
 --
 ALTER TABLE `patient`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `patient_records`
 --
 ALTER TABLE `patient_records`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `resources`
 --
 ALTER TABLE `resources`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `rooms`
 --
 ALTER TABLE `rooms`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `room_allowcation`
 --
 ALTER TABLE `room_allowcation`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
