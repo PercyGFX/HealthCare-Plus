@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtpassword = new System.Windows.Forms.RichTextBox();
             this.txtusername = new System.Windows.Forms.RichTextBox();
             this.txtphone = new System.Windows.Forms.RichTextBox();
             this.txtemail = new System.Windows.Forms.RichTextBox();
@@ -48,6 +47,7 @@
             this.txtname = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picboxexit = new System.Windows.Forms.PictureBox();
+            this.txtpassword = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxexit)).BeginInit();
@@ -94,18 +94,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(702, 412);
             this.panel2.TabIndex = 27;
-            // 
-            // txtpassword
-            // 
-            this.txtpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtpassword.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpassword.Location = new System.Drawing.Point(381, 243);
-            this.txtpassword.Multiline = false;
-            this.txtpassword.Name = "txtpassword";
-            this.txtpassword.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.txtpassword.Size = new System.Drawing.Size(288, 41);
-            this.txtpassword.TabIndex = 21;
-            this.txtpassword.Text = "";
             // 
             // txtusername
             // 
@@ -277,6 +265,16 @@
             this.picboxexit.TabStop = false;
             this.picboxexit.Click += new System.EventHandler(this.exit_Click);
             // 
+            // txtpassword
+            // 
+            this.txtpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtpassword.Font = new System.Drawing.Font("Candara Light", 15.75F);
+            this.txtpassword.Location = new System.Drawing.Point(381, 252);
+            this.txtpassword.Name = "txtpassword";
+            this.txtpassword.PasswordChar = '*';
+            this.txtpassword.Size = new System.Drawing.Size(288, 26);
+            this.txtpassword.TabIndex = 22;
+            // 
             // staffRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,7 +303,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RichTextBox txtpassword;
         private System.Windows.Forms.RichTextBox txtusername;
         private System.Windows.Forms.RichTextBox txtphone;
         private System.Windows.Forms.RichTextBox txtemail;
@@ -321,5 +318,6 @@
         private System.Windows.Forms.RichTextBox txtname;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox picboxexit;
+        private System.Windows.Forms.TextBox txtpassword;
     }
 }
