@@ -34,15 +34,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbladmindashboard = new System.Windows.Forms.Label();
             this.roomgridview = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RoomName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RoomType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Availability = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnaddroom = new System.Windows.Forms.Button();
             this.btnsearch = new System.Windows.Forms.Button();
             this.txtsearch = new System.Windows.Forms.TextBox();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RoomName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RoomType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Availability = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.roomgridview)).BeginInit();
             this.panel2.SuspendLayout();
@@ -105,6 +105,30 @@
             this.roomgridview.Size = new System.Drawing.Size(871, 428);
             this.roomgridview.TabIndex = 36;
             // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.Width = 150;
+            // 
+            // RoomName
+            // 
+            this.RoomName.HeaderText = "Room Name";
+            this.RoomName.Name = "RoomName";
+            this.RoomName.Width = 300;
+            // 
+            // RoomType
+            // 
+            this.RoomType.HeaderText = "Room Type";
+            this.RoomType.Name = "RoomType";
+            this.RoomType.Width = 150;
+            // 
+            // Availability
+            // 
+            this.Availability.HeaderText = "Availability";
+            this.Availability.Name = "Availability";
+            this.Availability.Width = 200;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -154,6 +178,7 @@
             this.btnsearch.TabIndex = 39;
             this.btnsearch.Text = "Search";
             this.btnsearch.UseVisualStyleBackColor = false;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
             // txtsearch
             // 
@@ -165,30 +190,6 @@
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(286, 38);
             this.txtsearch.TabIndex = 38;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.Width = 150;
-            // 
-            // RoomName
-            // 
-            this.RoomName.HeaderText = "Room Name";
-            this.RoomName.Name = "RoomName";
-            this.RoomName.Width = 300;
-            // 
-            // RoomType
-            // 
-            this.RoomType.HeaderText = "Room Type";
-            this.RoomType.Name = "RoomType";
-            this.RoomType.Width = 150;
-            // 
-            // Availability
-            // 
-            this.Availability.HeaderText = "Availability";
-            this.Availability.Name = "Availability";
-            this.Availability.Width = 200;
             // 
             // rooms
             // 

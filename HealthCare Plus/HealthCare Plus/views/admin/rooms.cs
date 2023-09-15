@@ -86,5 +86,11 @@ namespace HealthCare_Plus.views.admin
                 adminDashboard.loadform(add_room);
             }
         }
+
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+            string search = txtsearch.Text;
+            LoadRoomData(search);
+        }
     }
 }

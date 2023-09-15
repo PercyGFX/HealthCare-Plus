@@ -31,6 +31,19 @@ namespace HealthCare_Plus.views.admin
             string roomtype = comboroomtype.Text;
             int availability = 1; // hardcode with 1
 
+            // Validate input
+            if (string.IsNullOrWhiteSpace(roomname))
+            {
+                MessageBox.Show("Please enter a room name.", "Validation Error");
+                return; // Exit the method if validation fails
+            }
+
+            if (string.IsNullOrWhiteSpace(roomtype))
+            {
+                MessageBox.Show("Please select a room type.", "Validation Error");
+                return; // Exit the method if validation fails
+            }
+
             using (MySqlConnection connection = dbManager.GetConnection())
             {
                 dbManager.OpenConnection(connection);
@@ -42,7 +55,6 @@ namespace HealthCare_Plus.views.admin
                     cmd.Parameters.AddWithValue("@Room_Name", roomname);
                     cmd.Parameters.AddWithValue("@Room_Type", roomtype);
                     cmd.Parameters.AddWithValue("@Availability", availability);
-
 
                     int rowsAffected = cmd.ExecuteNonQuery();
                     if (rowsAffected > 0)
