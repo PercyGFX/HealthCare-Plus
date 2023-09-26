@@ -15,7 +15,7 @@
 
 ### Tech Stack
 - Visual Studio 2022
-- XAMPP to run mysql server
+- XAMPP or MYSQL workbench to run mysql server
 - MySql.Data, EPPlus, PDFshap nuget packages
 
 
